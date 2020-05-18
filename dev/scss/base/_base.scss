@@ -9,3 +9,24 @@ ul{
     }
 }
 
+.big-spacing{
+    margin-bottom: 70px;
+}
+
+.spacing-h-content{
+    margin-bottom: 25px;
+}
+
+.show-for-md{
+    display: none;
+    @include md{
+        display: block;
+    }
+}
+
+.show-for-lg{
+    display: none;
+    @include lg{
+        display: block;
+    }
+}

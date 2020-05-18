@@ -1,3 +1,230 @@
 /* =============
     Section-2
 ============= */
+
+#section-2{
+
+    #hero-2{
+        background-image: url("../img/section-2/hero-2.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 0 -190px;
+        height: 25vh;
+    }
+
+    #date-container{
+        display: grid;
+        grid-template-columns: 0px auto 0px;
+        grid-template-areas: ". date-content .";
+
+        #date-content{
+            grid-area: date-content;
+
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(2,1fr);
+            grid-template-areas: "g1 g3" "g2 g4";
+            
+            #g1{
+                grid-area: g1;
+            }
+
+            #g2{
+                grid-area: g2;
+            }
+
+            #g3{
+                grid-area: g3;
+            }
+
+            #g4{
+                grid-area: g4;
+            }
+
+        }
+    }
+
+    #general-hours-container{
+        display: grid;
+        grid-template-columns: 0px auto 0px;
+        grid-template-areas: ". hours-content .";
+
+        #hours-content{
+
+            grid-area: hours-content;
+
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(2,1fr);
+            grid-template-areas: "g1 g2 g3" "g4 g5 g6";
+
+            #g1{
+                grid-area: g1;
+            }
+
+            #g2{
+                grid-area: g2;
+            }
+
+            #g3{
+                grid-area: g3;
+            }
+
+            #g4{
+                grid-area: g4;
+            }
+
+            #g5{
+                grid-area: g5;
+            }
+
+            #g6{
+                grid-area: g6;
+            }
+        }
+            
+
+
+            
+        }
+        
+
+        #tree-container{
+            #lemon-img{
+                background-image: url("../img/section-2/lemons.jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                height: 60vh;
+            }
+            
+            #tree-content{
+                display: grid;
+                grid-template-areas: ". tree-text .";
+                grid-template-columns: 10px auto 10px;
+
+                #tree-text{
+                    grid-area: tree-text;
+                }
+            }
+
+                
+        }
+
+
+        #quote{
+            display: grid;
+            grid-template-areas: ". quote-text";
+            grid-template-columns: 10px auto 10px;
+
+            #quote-text{
+                grid-area: quote-text;
+            }
+        }
+
+        #photography-container{
+            display: grid;
+            grid-template-areas: ". photography-content";
+            grid-template-columns: 10px auto 10px;
+
+            #photography-content{
+                grid-area: photography-content;
+            }
+
+            #photo-img{
+                background-image: url("../img/section-2/photo.jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                height: 45vh;
+            }
+
+            
+
+        }
+
+
+
+
+        
+    
+        
+    
+    
+    
+    
+    
+    
+    
+    
+        
+        #intro-type{
+            font-family: 'Playfair Display', serif;
+            font-size: rem-calc(25);
+            line-height: rem-calc (40);
+            font-weight: 700;
+            color: $middle-brown;
+            text-align: justify;
+            margin: 0 10px;
+        }
+    
+        h1{
+            font-family: 'Playfair Display', serif;
+            font-size: rem-calc(30);
+            line-height: rem-calc(42);
+            font-weight: 700;
+            color: $middle-brown;
+            text-align: center;
+        }
+    
+        h2{
+            font-family: 'Playfair Display', serif;
+            font-size: rem-calc(22);
+            font-weight: 700;
+            color: $dark-brown;
+        }
+    
+        h3{
+            font-family: 'Playfair Display', serif;
+            font-size: rem-calc(18);
+            font-weight: 400;
+            color: $dark-orange;
+        }
+    
+        h4{
+            font-family: Helvetica, sans-serif;
+            font-size: rem-calc(16);
+            line-height: rem-calc(23);
+            font-weight: 700;
+
+            span{
+                display: block;
+            }
+        }
+    
+        #date-type{
+            font-family: Helvetica, sans-serif;
+            font-size: rem-calc(16);
+            line-height: rem-calc(23);
+            font-weight: 400;
+            color: $middle-brown;
+        }
+    
+        p{
+            font-family: Helvetica, sans-serif;
+            font-size: rem-calc(16);
+            font-weight: 400;
+            line-height: rem-calc(23);
+            text-align: justify;
+        }
+        
+    
+    }
+
+
+
+
+
+
+
+    

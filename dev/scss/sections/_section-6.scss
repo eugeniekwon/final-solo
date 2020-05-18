@@ -3,9 +3,31 @@
 ============= */
 
 #section-6{
-
+    #hero{
+        background-image: url("../img/section-6/hero-6.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 0 -5px;
+        height: 25vh;
+    }
             
 
 
 
-        }
+    
+    h2{
+        font-family: 'Playfair Display', serif;
+        font-size: rem-calc(22);
+        font-weight: 700;
+        color: $dark-brown;
+        
+    }
+    p{
+        font-family: Helvetica, sans-serif;
+        font-size: rem-calc(16);
+        font-weight: 400;
+        line-height: rem-calc(23);
+        text-align: justify;
+    }
+
+}

@@ -1,3 +1,87 @@
 /* =============
     Section-4
 ============= */
+
+#section-4{
+    
+    #hero{
+        background-image: url("../img/section-4/hero-4.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 25vh;
+    }
+
+    #g1{
+        background-image: url("../img/section-4/g1.jpg");  
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: -130px 0px;
+        height: 43vh;
+    }
+
+    #g2{
+        background-image: url("../img/section-4/g2.jpg");  
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 0 -120px;
+        height: 43vh;
+    }
+
+    #g3{
+        background-image: url("../img/section-4/g3.jpg");  
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 43vh;
+    }
+    
+    #g4{
+        background-image: url("../img/section-4/g4.jpg");  
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: -40px 0px;
+        height: 43vh;
+    }
+
+    #g5{
+        background-image: url("../img/section-4/g5.jpg");  
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: -10px 0px;
+        height: 43vh;
+    }
+    
+    #g6{
+        background-image: url("../img/section-4/g6.jpg");  
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 0px -70px;
+        height: 43vh;
+    }
+
+    #g7{
+        background-image: url("../img/section-4/g7.jpg");  
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 0px -200px;
+        height: 43vh;
+    }
+
+    #g8{
+        background-image: url("../img/section-4/g8.jpg");  
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: -80px 0;
+        height: 43vh;
+    }
+
+
+    p{
+        font-family: Helvetica, sans-serif;
+        font-size: rem-calc(16);
+        font-weight: 400;
+        line-height: rem-calc(23);
+        text-align: justify;
+    }
+}

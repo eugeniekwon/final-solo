@@ -1,3 +1,47 @@
 /* =============
     Section-3
 ============= */
+
+#section-3{
+    
+    #hero{
+        background-image: url("../img/section-3/hero-3.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 0 -430px;
+        height: 15vh;
+    }
+
+    #people-img{
+        background-image: url("../img/section-3/people-group.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 30vh; 
+    }
+
+    h2{
+        font-family: 'Playfair Display', serif;
+        font-size: rem-calc(19);
+        font-weight: 700;
+        color: $dark-brown;
+        
+    }
+
+    h3{
+        font-family: 'Playfair Display', serif;
+        font-size: rem-calc(18);
+        font-weight: 400;
+        line-height: rem-calc(24);
+        text-align: justify;
+        color: $dark-orange;
+    }
+
+    p{
+        font-family: Helvetica, sans-serif;
+        font-size: rem-calc(16);
+        font-weight: 400;
+        line-height: rem-calc(23);
+        text-align: justify;
+    }
+}

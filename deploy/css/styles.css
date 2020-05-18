@@ -322,12 +322,37 @@ ul {
   ul li {
     list-style: none; }
 
+.big-spacing {
+  margin-bottom: 70px; }
+
+.spacing-h-content {
+  margin-bottom: 25px; }
+
+.show-for-md {
+  display: none; }
+  @media (min-width: 768px) {
+    .show-for-md {
+      display: block; } }
+.show-for-lg {
+  display: none; }
+  @media (min-width: 992px) {
+    .show-for-lg {
+      display: block; } }
 /* =============
     Typography
 ============= */
+h1, h2, h3, h4, h5, h6, p {
+  padding: 0;
+  margin: 0; }
+
 /* =============
     Buttons
 ============= */
+.button {
+  font-family: Helvetica, sans-serif;
+  font-size: 1rem;
+  font-weight: 700; }
+
 /* =============
     Forms
 ============= */
@@ -352,21 +377,373 @@ textarea {
 /* =============
     Footer
 ============= */
+#footer h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #776555; }
+
+@media (min-width: 768px) {
+  #footer h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4375rem;
+    font-weight: 400; } }
+
+#footer p {
+  font-family: Helvetica, sans-serif;
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.5625rem;
+  text-align: center; }
+
 /* =============
     Section-1
 ============= */
+#section-1 #hero {
+  background-image: url("../img/section-1/main-hero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 -150px;
+  height: 50vh; }
+
 /* =============
     Section-2
 ============= */
+#section-2 #hero-2 {
+  background-image: url("../img/section-2/hero-2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 -190px;
+  height: 25vh; }
+
+#section-2 #date-container {
+  display: grid;
+  grid-template-columns: 0px auto 0px;
+  grid-template-areas: ". date-content ."; }
+  #section-2 #date-container #date-content {
+    grid-area: date-content;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "g1 g3" "g2 g4"; }
+    #section-2 #date-container #date-content #g1 {
+      grid-area: g1; }
+    #section-2 #date-container #date-content #g2 {
+      grid-area: g2; }
+    #section-2 #date-container #date-content #g3 {
+      grid-area: g3; }
+    #section-2 #date-container #date-content #g4 {
+      grid-area: g4; }
+
+#section-2 #general-hours-container {
+  display: grid;
+  grid-template-columns: 0px auto 0px;
+  grid-template-areas: ". hours-content ."; }
+  #section-2 #general-hours-container #hours-content {
+    grid-area: hours-content;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "g1 g2 g3" "g4 g5 g6"; }
+    #section-2 #general-hours-container #hours-content #g1 {
+      grid-area: g1; }
+    #section-2 #general-hours-container #hours-content #g2 {
+      grid-area: g2; }
+    #section-2 #general-hours-container #hours-content #g3 {
+      grid-area: g3; }
+    #section-2 #general-hours-container #hours-content #g4 {
+      grid-area: g4; }
+    #section-2 #general-hours-container #hours-content #g5 {
+      grid-area: g5; }
+    #section-2 #general-hours-container #hours-content #g6 {
+      grid-area: g6; }
+
+#section-2 #tree-container #lemon-img {
+  background-image: url("../img/section-2/lemons.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 60vh; }
+
+#section-2 #tree-container #tree-content {
+  display: grid;
+  grid-template-areas: ". tree-text .";
+  grid-template-columns: 10px auto 10px; }
+  #section-2 #tree-container #tree-content #tree-text {
+    grid-area: tree-text; }
+
+#section-2 #quote {
+  display: grid;
+  grid-template-areas: ". quote-text";
+  grid-template-columns: 10px auto 10px; }
+  #section-2 #quote #quote-text {
+    grid-area: quote-text; }
+
+#section-2 #photography-container {
+  display: grid;
+  grid-template-areas: ". photography-content";
+  grid-template-columns: 10px auto 10px; }
+  #section-2 #photography-container #photography-content {
+    grid-area: photography-content; }
+  #section-2 #photography-container #photo-img {
+    background-image: url("../img/section-2/photo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 45vh; }
+
+#section-2 #intro-type {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5625rem;
+  line-height: rem-calc 40;
+  font-weight: 700;
+  color: #A07C63;
+  text-align: justify;
+  margin: 0 10px; }
+
+#section-2 h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.875rem;
+  line-height: 2.625rem;
+  font-weight: 700;
+  color: #A07C63;
+  text-align: center; }
+
+#section-2 h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.375rem;
+  font-weight: 700;
+  color: #776555; }
+
+#section-2 h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.125rem;
+  font-weight: 400;
+  color: #BC6F2C; }
+
+#section-2 h4 {
+  font-family: Helvetica, sans-serif;
+  font-size: 1rem;
+  line-height: 1.4375rem;
+  font-weight: 700; }
+  #section-2 h4 span {
+    display: block; }
+
+#section-2 #date-type {
+  font-family: Helvetica, sans-serif;
+  font-size: 1rem;
+  line-height: 1.4375rem;
+  font-weight: 400;
+  color: #A07C63; }
+
+#section-2 p {
+  font-family: Helvetica, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.4375rem;
+  text-align: justify; }
+
 /* =============
     Section-3
 ============= */
+#section-3 #hero {
+  background-image: url("../img/section-3/hero-3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 -430px;
+  height: 15vh; }
+
+#section-3 #people-img {
+  background-image: url("../img/section-3/people-group.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 30vh; }
+
+#section-3 h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.1875rem;
+  font-weight: 700;
+  color: #776555; }
+
+#section-3 h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  text-align: justify;
+  color: #BC6F2C; }
+
+#section-3 p {
+  font-family: Helvetica, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.4375rem;
+  text-align: justify; }
+
 /* =============
     Section-4
 ============= */
+#section-4 #hero {
+  background-image: url("../img/section-4/hero-4.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 25vh; }
+
+#section-4 #g1 {
+  background-image: url("../img/section-4/g1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: -130px 0px;
+  height: 43vh; }
+
+#section-4 #g2 {
+  background-image: url("../img/section-4/g2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 -120px;
+  height: 43vh; }
+
+#section-4 #g3 {
+  background-image: url("../img/section-4/g3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 43vh; }
+
+#section-4 #g4 {
+  background-image: url("../img/section-4/g4.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: -40px 0px;
+  height: 43vh; }
+
+#section-4 #g5 {
+  background-image: url("../img/section-4/g5.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: -10px 0px;
+  height: 43vh; }
+
+#section-4 #g6 {
+  background-image: url("../img/section-4/g6.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0px -70px;
+  height: 43vh; }
+
+#section-4 #g7 {
+  background-image: url("../img/section-4/g7.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0px -200px;
+  height: 43vh; }
+
+#section-4 #g8 {
+  background-image: url("../img/section-4/g8.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: -80px 0;
+  height: 43vh; }
+
+#section-4 p {
+  font-family: Helvetica, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.4375rem;
+  text-align: justify; }
+
 /* =============
     Section-5
 ============= */
+#section-5 #hero {
+  background-image: url("../img/section-5/hero-5.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 -55px;
+  height: 25vh; }
+
+#section-5 #history-1-img {
+  background-image: url("../img/section-5/history-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 60vh; }
+
+#section-5 #history-2-img {
+  background-image: url("../img/section-5/history-2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 40vh; }
+
+#section-5 #phs-1-img {
+  background-image: url("../img/section-5/phs-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 60vh; }
+
+#section-5 #phs-2-img {
+  background-image: url("../img/section-5/phs-2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0px -90px;
+  height: 40vh;
+  width: 130vw; }
+
+#section-5 #history-h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5625rem;
+  font-weight: 700;
+  color: #776555; }
+
+#section-5 #history-p {
+  font-family: Helvetica, sans-serif;
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.5625rem;
+  text-align: justify; }
+
+#section-5 h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.375rem;
+  font-weight: 700;
+  color: #776555; }
+
+#section-5 h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.4375rem;
+  font-weight: 700;
+  color: #BC6F2C; }
+
+#section-5 p {
+  font-family: Helvetica, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.4375rem;
+  text-align: justify; }
+
 /* =============
     Section-6
 ============= */
+#section-6 #hero {
+  background-image: url("../img/section-6/hero-6.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 -5px;
+  height: 25vh; }
+
+#section-6 h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.375rem;
+  font-weight: 700;
+  color: #776555; }
+
+#section-6 p {
+  font-family: Helvetica, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.4375rem;
+  text-align: justify; }
