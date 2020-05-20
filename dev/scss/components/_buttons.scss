@@ -6,4 +6,28 @@
     font-family: Helvetica, sans-serif;
     font-size: rem-calc(16);
     font-weight: 700;
+    color: $white;
+    background-color: $green;
+    border-radius: 5px;
+    height: 33px;
+    margin: 0px 100px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.button-sg{
+    font-family: Helvetica, sans-serif;
+    font-size: rem-calc(16);
+    font-weight: 700;
+    color: $white;
+    background-color: $green;
+    border-radius: 5px;
+    height: 33px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

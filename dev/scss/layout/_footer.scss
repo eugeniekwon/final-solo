@@ -2,17 +2,41 @@
     Footer
 ============= */
 
-#footer{
+footer{
 
+    background-color: $light-pink;
+    width: 100%;
+    
+    #social-medias{
+        ul{
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            margin: 25px 120px;
 
+            li{
+                margin-bottom: 35px;
 
+                a:link{
+                    color: $middle-pink;
+                } 
 
+                a:hover{
+                    color: $dark-pink;
+                } 
+
+            }
+        }
+        
+    }
 
     h2{
         font-family: 'Playfair Display', serif;
         font-size: rem-calc(18);
         font-weight: 700;
-        color: $dark-brown;
+        color: $dark-pink;
+        text-align: center;
+        padding: 35px 0px;
     }
 
     h3{
@@ -21,17 +45,13 @@
             font-size: rem-calc(23);
             font-weight: 400;
         }
-        
     }
 
     p{
-        
         font-family: Helvetica, sans-serif;
         font-size: rem-calc(18);
         font-weight: 400;
         line-height: rem-calc(25);
         text-align: center;
-        
-        
     }
 }

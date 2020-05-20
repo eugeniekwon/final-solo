@@ -12,6 +12,17 @@
         height: 25vh;
     }
 
+    #intro-type{
+        font-family: 'Playfair Display', serif;
+        font-size: rem-calc(25);
+        line-height: rem-calc(40);
+        font-weight: 700;
+        color: $middle-brown;
+        text-align: justify;
+        margin: 70px 10px;
+    }
+
+
     #date-container{
         display: grid;
         grid-template-columns: 0px auto 0px;
@@ -24,21 +35,32 @@
             grid-template-columns: repeat(2,1fr);
             grid-template-rows: repeat(2,1fr);
             grid-template-areas: "g1 g3" "g2 g4";
+            row-gap: 25px;
             
             #g1{
                 grid-area: g1;
+                text-align: center;
             }
 
             #g2{
                 grid-area: g2;
+                text-align: center;
             }
 
             #g3{
                 grid-area: g3;
+                background-color: $cream;
+                width: 60px;
+                height: 71px;
+                text-align: center;
             }
 
             #g4{
                 grid-area: g4;
+                background-color: $cream;
+                width: 60px;
+                height: 71px;
+                text-align: center;
             }
 
         }
@@ -49,6 +71,8 @@
         grid-template-columns: 0px auto 0px;
         grid-template-areas: ". hours-content .";
 
+        
+
         #hours-content{
 
             grid-area: hours-content;
@@ -57,29 +81,56 @@
             grid-template-columns: repeat(3,1fr);
             grid-template-rows: repeat(2,1fr);
             grid-template-areas: "g1 g2 g3" "g4 g5 g6";
+            row-gap: 25px;
 
             #g1{
                 grid-area: g1;
+                background-color: $bright-pink;
+                width: 93px;
+                height: 71px;
+                text-align: center;
+
+                
             }
 
             #g2{
                 grid-area: g2;
+                background-color: $bright-pink;
+                width: 93px;
+                height: 71px;
+                text-align: center;
             }
 
             #g3{
                 grid-area: g3;
+                background-color: $bright-pink;
+                width: 93px;
+                height: 71px;
+                text-align: center;
             }
 
             #g4{
                 grid-area: g4;
+                background-color: $bright-pink;
+                width: 93px;
+                height: 71px;
+                text-align: center;
             }
 
             #g5{
                 grid-area: g5;
+                background-color: $bright-pink;
+                width: 93px;
+                height: 71px;
+                text-align: center;
             }
 
             #g6{
                 grid-area: g6;
+                background-color: $bright-pink;
+                width: 93px;
+                height: 71px;
+                text-align: center;
             }
         }
             
@@ -158,15 +209,7 @@
     
     
         
-        #intro-type{
-            font-family: 'Playfair Display', serif;
-            font-size: rem-calc(25);
-            line-height: rem-calc (40);
-            font-weight: 700;
-            color: $middle-brown;
-            text-align: justify;
-            margin: 0 10px;
-        }
+        
     
         h1{
             font-family: 'Playfair Display', serif;
@@ -182,6 +225,7 @@
             font-size: rem-calc(22);
             font-weight: 700;
             color: $dark-brown;
+            
         }
     
         h3{
@@ -196,6 +240,7 @@
             font-size: rem-calc(16);
             line-height: rem-calc(23);
             font-weight: 700;
+            color: $white;
 
             span{
                 display: block;

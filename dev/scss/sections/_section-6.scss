@@ -3,12 +3,47 @@
 ============= */
 
 #section-6{
+
+    text-align: center;
+
     #hero{
         background-image: url("../img/section-6/hero-6.jpg");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: 0 -5px;
         height: 25vh;
+    }
+
+    ul{
+        
+        #address{
+
+            >div{
+                font-size: rem-calc(40);
+                color: $light-orange;
+            }
+
+        }
+
+        #phone{
+
+            >div{
+                font-size: rem-calc(40);
+                color: $light-orange;
+            }
+
+        }
+
+        #email{
+
+            >div{
+                font-size: rem-calc(40);
+                color: $light-orange;
+            }
+
+        }
+
+        
     }
             
 
@@ -27,7 +62,6 @@
         font-size: rem-calc(16);
         font-weight: 400;
         line-height: rem-calc(23);
-        text-align: justify;
     }
 
 }

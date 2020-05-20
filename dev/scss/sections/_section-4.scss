@@ -3,6 +3,13 @@
 ============= */
 
 #section-4{
+
+    #section-4-container{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-areas: "g1 g2" "g3 g5" "g6 g7";
+        row-gap: 25px;
+    }
     
     #hero{
         background-image: url("../img/section-4/hero-4.jpg");
@@ -12,69 +19,120 @@
         height: 25vh;
     }
 
+
+
     #g1{
-        background-image: url("../img/section-4/g1.jpg");  
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: -130px 0px;
-        height: 43vh;
-    }
+        grid-area: g1;
 
-    #g2{
-        background-image: url("../img/section-4/g2.jpg");  
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: 0 -120px;
-        height: 43vh;
-    }
-
-    #g3{
-        background-image: url("../img/section-4/g3.jpg");  
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        height: 43vh;
+        #g1-img{
+            background-image: url("../img/section-4/g1.jpg");  
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: -75px 0px;
+            height: 178px;
+            margin-right: 9.5px;
+        }
     }
     
-    #g4{
-        background-image: url("../img/section-4/g4.jpg");  
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: -40px 0px;
-        height: 43vh;
+    #g2{
+        grid-area: g2;
+
+        #g2-img{
+            
+    
+            background-image: url("../img/section-4/g2.jpg");  
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 0 -40px;
+            height: 178px;
+            margin-left: 9.5px;
+        }
+    }
+    
+    #g3{
+        grid-area: g3;
+
+        #g3-img{
+            background-image: url("../img/section-4/g3.jpg");  
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            height: 178px;
+            margin-right: 9.5px;
+        }
     }
 
+    
+
     #g5{
-        background-image: url("../img/section-4/g5.jpg");  
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: -10px 0px;
-        height: 43vh;
+        grid-area: g5;
+
+        #g5-img{
+            background-image: url("../img/section-4/g5.jpg");  
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 0px 0px;
+            height: 178px;
+            margin-left: 9.5px;
+        }
     }
     
     #g6{
-        background-image: url("../img/section-4/g6.jpg");  
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: 0px -70px;
-        height: 43vh;
-    }
+        grid-area: g6;
 
+        #g6-img{
+            background-image: url("../img/section-4/g6.jpg");  
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 0px -20px;
+            height: 178px;
+            margin-right: 9.5px;
+        }
+    }
+    
     #g7{
-        background-image: url("../img/section-4/g7.jpg");  
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: 0px -200px;
-        height: 43vh;
-    }
+        grid-area: g7;
 
-    #g8{
-        background-image: url("../img/section-4/g8.jpg");  
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: -80px 0;
-        height: 43vh;
+        #g7-img{
+            background-image: url("../img/section-4/g7.jpg");  
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 0px -90px;
+            height: 178px;
+            margin-left: 9.5px;
+        }
     }
+    
+    @include lg{
+        #g4{
+            grid-area: g4;
+    
+            #g4-img{
+                background-image: url("../img/section-4/g4.jpg");  
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: -40px 0px;
+                height: 190px;
+                width: 190px;
+            }
+        }
+
+        
+        #g8{
+            grid-area: g8;
+            
+            #g8-img{
+                background-image: url("../img/section-4/g8.jpg");  
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: -80px 0;
+                height: 190px;
+                width: 190px;
+            }
+        }
+        
+    }
+    
 
 
     p{
@@ -83,5 +141,6 @@
         font-weight: 400;
         line-height: rem-calc(23);
         text-align: justify;
+        margin: 0 10px;
     }
 }
