@@ -8,15 +8,39 @@
         display: grid;
         grid-template-columns: 50% 50%;
         grid-template-areas: "g1 g2" "g3 g5" "g6 g7";
-        row-gap: 25px;
     }
     
     #hero{
         background-image: url("../img/section-4/hero-4.jpg");
         background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        height: 25vh;
+        background-size: 200%;
+        background-position: -150px -60px;
+        height: 30vh;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @include md{
+            background-size: 200%;
+            background-position: -250px -250px;
+            height: 35vh;
+        }
+
+        h2{
+            font-family: 'Playfair Display', serif;
+            font-size: rem-calc(30);
+            font-weight: 900;
+            color: $white;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            @include md{
+                font-size: rem-calc(45);
+            }
+        }
     }
 
 
@@ -30,7 +54,23 @@
             background-size: cover;
             background-position: -75px 0px;
             height: 178px;
-            margin-right: 9.5px;
+            margin: 0px 9.5px 25px 0px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            h3{
+            font-family: 'Playfair Display', serif;
+            font-size: rem-calc(22);
+            font-weight: 700;
+            color: $white;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+            }
         }
     }
     
@@ -45,7 +85,23 @@
             background-size: cover;
             background-position: 0 -40px;
             height: 178px;
-            margin-left: 9.5px;
+            margin: 0px 0px 25px 9.5px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            h3{
+            font-family: 'Playfair Display', serif;
+            font-size: rem-calc(22);
+            font-weight: 700;
+            color: $white;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+            }
         }
     }
     
@@ -58,7 +114,23 @@
             background-size: cover;
             background-position: center;
             height: 178px;
-            margin-right: 9.5px;
+            margin: 0px 9.5px 25px 0px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            h3{
+            font-family: 'Playfair Display', serif;
+            font-size: rem-calc(22);
+            font-weight: 700;
+            color: $white;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+            }
         }
     }
 
@@ -73,7 +145,23 @@
             background-size: cover;
             background-position: 0px 0px;
             height: 178px;
-            margin-left: 9.5px;
+            margin: 0px 0px 25px 9.5px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            h3{
+            font-family: 'Playfair Display', serif;
+            font-size: rem-calc(22);
+            font-weight: 700;
+            color: $white;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+            }
         }
     }
     
@@ -86,7 +174,27 @@
             background-size: cover;
             background-position: 0px -20px;
             height: 178px;
-            margin-right: 9.5px;
+            margin: 0px 9.5px 0px 0px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            h3{
+            font-family: 'Playfair Display', serif;
+            font-size: rem-calc(22);
+            font-weight: 700;
+            color: $white;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+            display: block;
+            text-align: center;
+            
+            }
+            
         }
     }
     
@@ -99,7 +207,23 @@
             background-size: cover;
             background-position: 0px -90px;
             height: 178px;
-            margin-left: 9.5px;
+            margin: 0px 0px 0px 9.5px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            h3{
+            font-family: 'Playfair Display', serif;
+            font-size: rem-calc(22);
+            font-weight: 700;
+            color: $white;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+            }
         }
     }
     
@@ -114,6 +238,22 @@
                 background-position: -40px 0px;
                 height: 190px;
                 width: 190px;
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+    
+                h3{
+                font-family: 'Playfair Display', serif;
+                font-size: rem-calc(22);
+                font-weight: 700;
+                color: $white;
+    
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                
+                }
             }
         }
 
@@ -128,12 +268,28 @@
                 background-position: -80px 0;
                 height: 190px;
                 width: 190px;
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+    
+                h3{
+                font-family: 'Playfair Display', serif;
+                font-size: rem-calc(22);
+                font-weight: 700;
+                color: $white;
+    
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                
+                }
             }
         }
         
     }
     
-
+    
 
     p{
         font-family: Helvetica, sans-serif;

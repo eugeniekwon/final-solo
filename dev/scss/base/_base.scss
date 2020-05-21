@@ -30,3 +30,20 @@ ul{
         display: block;
     }
 }
+
+.show-for-mobile{
+    display: show;
+    @include lg{
+        display: block;
+    }
+}
+
+
+
+
+
+
+a:link,
+a:visited{
+    text-decoration: none;
+        }

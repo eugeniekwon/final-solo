@@ -7,9 +7,34 @@
     #hero{
         background-image: url("../img/section-5/hero-5.jpg");
         background-repeat: no-repeat;
-        background-size: cover;
-        background-position: 0 -55px;
-        height: 25vh;
+        background-size: 300%;
+        background-position: -320px -350px;
+        height: 30vh;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @include md{
+            background-size: 210%;
+            background-position: -360px -500px;
+            height: 35vh;
+        }
+
+        h2{
+            font-family: 'Playfair Display', serif;
+            font-size: rem-calc(30);
+            font-weight: 900;
+            color: $white;
+            
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            @include md{
+                font-size: rem-calc(45);
+            }
+        }
     }
 
     #section-5a{

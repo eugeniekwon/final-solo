@@ -6,6 +6,7 @@ footer{
 
     background-color: $light-pink;
     width: 100%;
+    border-bottom: 1px solid $light-pink;
     
     #social-medias{
         ul{
@@ -24,6 +25,12 @@ footer{
                 a:hover{
                     color: $dark-pink;
                 } 
+
+                a:visited{
+                    color: $dark-pink;
+                } 
+
+
 
             }
         }
@@ -44,6 +51,7 @@ footer{
             font-family: 'Playfair Display', serif;
             font-size: rem-calc(23);
             font-weight: 400;
+            text-align: center;
         }
     }
 

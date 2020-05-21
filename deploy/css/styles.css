@@ -338,6 +338,15 @@ ul {
   @media (min-width: 992px) {
     .show-for-lg {
       display: block; } }
+.show-for-mobile {
+  display: show; }
+  @media (min-width: 992px) {
+    .show-for-mobile {
+      display: block; } }
+a:link,
+a:visited {
+  text-decoration: none; }
+
 /* =============
     Typography
 ============= */
@@ -399,7 +408,8 @@ textarea {
 ============= */
 footer {
   background-color: #F7E2DA;
-  width: 100%; }
+  width: 100%;
+  border-bottom: 1px solid #F7E2DA; }
   footer #social-medias ul {
     display: flex;
     align-items: center;
@@ -410,6 +420,8 @@ footer {
       footer #social-medias ul li a:link {
         color: #E9B6A3; }
       footer #social-medias ul li a:hover {
+        color: #BF8C78; }
+      footer #social-medias ul li a:visited {
         color: #BF8C78; }
   footer h2 {
     font-family: 'Playfair Display', serif;
@@ -422,7 +434,8 @@ footer {
     footer h3 {
       font-family: 'Playfair Display', serif;
       font-size: 1.4375rem;
-      font-weight: 400; } }
+      font-weight: 400;
+      text-align: center; } }
   footer p {
     font-family: Helvetica, sans-serif;
     font-size: 1.125rem;
@@ -433,31 +446,76 @@ footer {
 /* =============
     Section-1
 ============= */
-#section-1 > div #hero {
+#section-1 #hero {
   background-image: url("../img/section-1/main-hero.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 0 -150px;
+  background-size: 260%;
+  background-position: -280px -660px;
   height: 50vh;
-  position: relative; }
-
-#section-1 > div h1 {
-  font-family: 'Playfair Display', serif;
-  font-size: 2.3125rem;
-  line-height: 3.0625rem;
-  font-weight: 700;
-  color: #000; }
-
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  @media (min-width: 768px) {
+    #section-1 #hero {
+      background-size: 190%;
+      background-position: -400px -1000px;
+      height: 60vh; } }
+  #section-1 #hero > div h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.3125rem;
+    line-height: 3.0625rem;
+    font-weight: 900;
+    color: #fff;
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    @media (min-width: 768px) {
+      #section-1 #hero > div h1 {
+        font-size: 3.75rem;
+        line-height: 5rem; } }
+  #section-1 #hero > div h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.375rem;
+    line-height: 1.875rem;
+    font-weight: 700;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    @media (min-width: 768px) {
+      #section-1 #hero > div h3 {
+        font-size: 2.8125rem;
+        line-height: 3.75rem; } }
 /* =============
     Section-2
 ============= */
 #section-2 #hero-2 {
   background-image: url("../img/section-2/hero-2.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 0 -190px;
-  height: 25vh; }
-
+  background-size: 250%;
+  background-position: -280px -620px;
+  height: 30vh;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  @media (min-width: 768px) {
+    #section-2 #hero-2 {
+      background-size: 190%;
+      background-position: -300px -980px;
+      height: 35vh; } }
+  #section-2 #hero-2 h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.875rem;
+    font-weight: 900;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    @media (min-width: 768px) {
+      #section-2 #hero-2 h2 {
+        font-size: 2.8125rem; } }
 #section-2 #intro-type {
   font-family: 'Playfair Display', serif;
   font-size: 1.5625rem;
@@ -522,18 +580,18 @@ footer {
 #section-2 #general-hours-container > div {
   display: flex;
   align-items: center;
-  justify-content: space-evenly; }
+  justify-content: space-between; }
   #section-2 #general-hours-container > div #hours-content {
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-template-areas: "g1 g2 g3" "g4 g5 g6";
-    row-gap: 25px;
+    gap: 25px;
     margin: 0px; }
     #section-2 #general-hours-container > div #hours-content #g1 {
       grid-area: g1;
       background-color: #F2948A;
-      width: 93px;
       height: 71px;
       text-align: center;
       display: flex;
@@ -542,7 +600,6 @@ footer {
     #section-2 #general-hours-container > div #hours-content #g2 {
       grid-area: g2;
       background-color: #F2948A;
-      width: 93px;
       height: 71px;
       text-align: center;
       display: flex;
@@ -551,7 +608,6 @@ footer {
     #section-2 #general-hours-container > div #hours-content #g3 {
       grid-area: g3;
       background-color: #F2948A;
-      width: 93px;
       height: 71px;
       text-align: center;
       display: flex;
@@ -560,7 +616,6 @@ footer {
     #section-2 #general-hours-container > div #hours-content #g4 {
       grid-area: g4;
       background-color: #F2948A;
-      width: 93px;
       height: 71px;
       text-align: center;
       display: flex;
@@ -569,7 +624,6 @@ footer {
     #section-2 #general-hours-container > div #hours-content #g5 {
       grid-area: g5;
       background-color: #F2948A;
-      width: 93px;
       height: 71px;
       text-align: center;
       display: flex;
@@ -578,7 +632,6 @@ footer {
     #section-2 #general-hours-container > div #hours-content #g6 {
       grid-area: g6;
       background-color: #F2948A;
-      width: 93px;
       height: 71px;
       text-align: center;
       display: flex;
@@ -668,10 +721,28 @@ footer {
 #section-3 #hero {
   background-image: url("../img/section-3/hero-3.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 0 -350px;
-  height: 25vh; }
-
+  background-size: 230%;
+  background-position: -150px -1000px;
+  height: 30vh;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  @media (min-width: 768px) {
+    #section-3 #hero {
+      background-size: 220%;
+      background-position: -250px -2050px;
+      height: 35vh; } }
+  #section-3 #hero h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.875rem;
+    font-weight: 900;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    @media (min-width: 768px) {
+      #section-3 #hero h2 {
+        font-size: 2.8125rem; } }
 #section-3 #sale {
   display: flex;
   align-items: center;
@@ -821,16 +892,33 @@ footer {
 #section-4 #section-4-container {
   display: grid;
   grid-template-columns: 50% 50%;
-  grid-template-areas: "g1 g2" "g3 g5" "g6 g7";
-  row-gap: 25px; }
+  grid-template-areas: "g1 g2" "g3 g5" "g6 g7"; }
 
 #section-4 #hero {
   background-image: url("../img/section-4/hero-4.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 25vh; }
-
+  background-size: 200%;
+  background-position: -150px -60px;
+  height: 30vh;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  @media (min-width: 768px) {
+    #section-4 #hero {
+      background-size: 200%;
+      background-position: -250px -250px;
+      height: 35vh; } }
+  #section-4 #hero h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.875rem;
+    font-weight: 900;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    @media (min-width: 768px) {
+      #section-4 #hero h2 {
+        font-size: 2.8125rem; } }
 #section-4 #g1 {
   grid-area: g1; }
   #section-4 #g1 #g1-img {
@@ -839,7 +927,18 @@ footer {
     background-size: cover;
     background-position: -75px 0px;
     height: 178px;
-    margin-right: 9.5px; }
+    margin: 0px 9.5px 25px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    #section-4 #g1 #g1-img h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.375rem;
+      font-weight: 700;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
 
 #section-4 #g2 {
   grid-area: g2; }
@@ -849,7 +948,18 @@ footer {
     background-size: cover;
     background-position: 0 -40px;
     height: 178px;
-    margin-left: 9.5px; }
+    margin: 0px 0px 25px 9.5px;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    #section-4 #g2 #g2-img h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.375rem;
+      font-weight: 700;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
 
 #section-4 #g3 {
   grid-area: g3; }
@@ -859,7 +969,18 @@ footer {
     background-size: cover;
     background-position: center;
     height: 178px;
-    margin-right: 9.5px; }
+    margin: 0px 9.5px 25px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    #section-4 #g3 #g3-img h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.375rem;
+      font-weight: 700;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
 
 #section-4 #g5 {
   grid-area: g5; }
@@ -869,7 +990,18 @@ footer {
     background-size: cover;
     background-position: 0px 0px;
     height: 178px;
-    margin-left: 9.5px; }
+    margin: 0px 0px 25px 9.5px;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    #section-4 #g5 #g5-img h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.375rem;
+      font-weight: 700;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
 
 #section-4 #g6 {
   grid-area: g6; }
@@ -879,7 +1011,20 @@ footer {
     background-size: cover;
     background-position: 0px -20px;
     height: 178px;
-    margin-right: 9.5px; }
+    margin: 0px 9.5px 0px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    #section-4 #g6 #g6-img h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.375rem;
+      font-weight: 700;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      display: block;
+      text-align: center; }
 
 #section-4 #g7 {
   grid-area: g7; }
@@ -889,7 +1034,18 @@ footer {
     background-size: cover;
     background-position: 0px -90px;
     height: 178px;
-    margin-left: 9.5px; }
+    margin: 0px 0px 0px 9.5px;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    #section-4 #g7 #g7-img h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.375rem;
+      font-weight: 700;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
 
 @media (min-width: 992px) {
   #section-4 #g4 {
@@ -900,7 +1056,18 @@ footer {
       background-size: cover;
       background-position: -40px 0px;
       height: 190px;
-      width: 190px; }
+      width: 190px;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      #section-4 #g4 #g4-img h3 {
+        font-family: 'Playfair Display', serif;
+        font-size: 1.375rem;
+        font-weight: 700;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
   #section-4 #g8 {
     grid-area: g8; }
     #section-4 #g8 #g8-img {
@@ -909,7 +1076,18 @@ footer {
       background-size: cover;
       background-position: -80px 0;
       height: 190px;
-      width: 190px; } }
+      width: 190px;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      #section-4 #g8 #g8-img h3 {
+        font-family: 'Playfair Display', serif;
+        font-size: 1.375rem;
+        font-weight: 700;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center; } }
 
 #section-4 p {
   font-family: Helvetica, sans-serif;
@@ -925,10 +1103,28 @@ footer {
 #section-5 #hero {
   background-image: url("../img/section-5/hero-5.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 0 -55px;
-  height: 25vh; }
-
+  background-size: 300%;
+  background-position: -320px -350px;
+  height: 30vh;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  @media (min-width: 768px) {
+    #section-5 #hero {
+      background-size: 210%;
+      background-position: -360px -500px;
+      height: 35vh; } }
+  #section-5 #hero h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.875rem;
+    font-weight: 900;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    @media (min-width: 768px) {
+      #section-5 #hero h2 {
+        font-size: 2.8125rem; } }
 #section-5 #section-5a h2 {
   margin-left: 10px; }
 
@@ -1015,9 +1211,28 @@ footer {
   #section-6 #hero {
     background-image: url("../img/section-6/hero-6.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 0 -5px;
-    height: 25vh; }
+    background-size: 270%;
+    background-position: -350px -170px;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    @media (min-width: 768px) {
+      #section-6 #hero {
+        background-size: 200%;
+        background-position: -550px -200px;
+        height: 35vh; } }
+    #section-6 #hero h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.875rem;
+      font-weight: 900;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      @media (min-width: 768px) {
+        #section-6 #hero h2 {
+          font-size: 2.8125rem; } }
   #section-6 ul #address > div {
     font-size: 2.5rem;
     color: #E8B794; }
