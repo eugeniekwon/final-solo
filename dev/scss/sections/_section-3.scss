@@ -8,8 +8,8 @@
         background-image: url("../img/section-3/hero-3.jpg");
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: 0 -430px;
-        height: 15vh;
+        background-position: 0 -350px;
+        height: 25vh;
     }
 
 
@@ -61,6 +61,11 @@
                 color: $white;
                 width: 60px;
                 height: 45px;
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                
             }   
             #g2{
                 grid-area: g2;
@@ -68,6 +73,10 @@
                 color: $white;
                 width: 60px;
                 height: 45px;
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
             }   
             #g3{
                 grid-area: g3;
@@ -75,6 +84,10 @@
                 color: $white;
                 width: 60px;
                 height: 45px;
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
             }   
             #g4{
                 grid-area: g4;
@@ -82,6 +95,10 @@
                 color: $white;
                 width: 60px;
                 height: 45px;
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
             }   
             #g5{
                 grid-area: g5;
@@ -89,6 +106,10 @@
                 color: $white;
                 width: 60px;
                 height: 45px;
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
             }   
             #g6{
                 grid-area: g6;
@@ -96,6 +117,10 @@
                 color: $white;
                 width: 60px;
                 height: 45px;
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
             }   
             #g7{
                 grid-area: g7;
@@ -103,6 +128,10 @@
                 color: $white;
                 width: 60px;
                 height: 45px;
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
             }   
             #g8{
                 grid-area: g8;
@@ -110,6 +139,10 @@
                 color: $white;
                 width: 60px;
                 height: 45px;
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
             }   
             #g9{
                 grid-area: g9;
@@ -117,7 +150,12 @@
                 color: $white;
                 width: 60px;
                 height: 45px;
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
             }   
+
 
             #b1{
                 grid-area: b1;
@@ -133,14 +171,22 @@
 
 
 
+    #bottom-container{
 
-    #people-img{
-        background-image: url("../img/section-3/people-group.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        height: 30vh; 
+        #people-img{
+            background-image: url("../img/section-3/people-group.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            height: 30vh; 
+        }
+
+        article{
+            margin: 0 10px;
+        }
     }
+
+    
 
     h2{
         font-family: 'Playfair Display', serif;
@@ -165,5 +211,6 @@
         font-weight: 400;
         line-height: rem-calc(23);
         text-align: justify;
+        
     }
 }

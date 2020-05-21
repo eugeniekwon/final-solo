@@ -24,115 +24,184 @@
 
 
     #date-container{
-        display: grid;
-        grid-template-columns: 0px auto 0px;
-        grid-template-areas: ". date-content .";
-
-        #date-content{
-            grid-area: date-content;
-
-            display: grid;
-            grid-template-columns: repeat(2,1fr);
-            grid-template-rows: repeat(2,1fr);
-            grid-template-areas: "g1 g3" "g2 g4";
-            row-gap: 25px;
-            
-            #g1{
-                grid-area: g1;
-                text-align: center;
-            }
-
-            #g2{
-                grid-area: g2;
-                text-align: center;
-            }
-
-            #g3{
-                grid-area: g3;
-                background-color: $cream;
-                width: 60px;
-                height: 71px;
-                text-align: center;
-            }
-
-            #g4{
-                grid-area: g4;
-                background-color: $cream;
-                width: 60px;
-                height: 71px;
-                text-align: center;
-            }
-
+        // display: grid;
+        // grid-template-columns: 0px auto 0px;
+        // grid-template-areas: ". date-content .";
+        h2{
+            text-align: center;
         }
+
+        >div{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+
+            #date-content{
+                // grid-area: date-content;
+    
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+                grid-template-rows: repeat(2,1fr);
+                grid-template-areas: "g1 g3" "g2 g4";
+                row-gap: 25px;
+                margin: 0px;
+                
+                
+                #g1{
+                    grid-area: g1;
+                    text-align: center;
+                    margin: 0px 20px;
+
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+    
+                #g2{
+                    grid-area: g2;
+                    text-align: center;
+                    margin: 0px 20px;
+
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+    
+                #g3{
+                    grid-area: g3;
+                    background-color: $cream;
+                    width: 60px;
+                    height: 71px;
+                    text-align: center;
+                    margin: 0px 20px;
+
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+    
+                #g4{
+                    grid-area: g4;
+                    background-color: $cream;
+                    width: 60px;
+                    height: 71px;
+                    text-align: center;
+                    margin: 0px 20px;
+
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+    
+            }
+        }
+
+        
     }
 
     #general-hours-container{
-        display: grid;
-        grid-template-columns: 0px auto 0px;
-        grid-template-areas: ". hours-content .";
+        // display: grid;
+        // grid-template-columns: 0px auto 0px;
+        // grid-template-areas: ". hours-content .";
+        h2{
+            text-align: center;
+            
+        }
 
-        
+        >div{
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
 
-        #hours-content{
+            #hours-content{
 
-            grid-area: hours-content;
-
-            display: grid;
-            grid-template-columns: repeat(3,1fr);
-            grid-template-rows: repeat(2,1fr);
-            grid-template-areas: "g1 g2 g3" "g4 g5 g6";
-            row-gap: 25px;
-
-            #g1{
-                grid-area: g1;
-                background-color: $bright-pink;
-                width: 93px;
-                height: 71px;
-                text-align: center;
-
+                // grid-area: hours-content;
+    
+                display: grid;
+                grid-template-columns: repeat(3,1fr);
+                grid-template-rows: repeat(2,1fr);
+                grid-template-areas: "g1 g2 g3" "g4 g5 g6";
+                row-gap: 25px;
+                margin: 0px;
                 
-            }
+    
+                #g1{
+                    grid-area: g1;
+                    background-color: $bright-pink;
+                    width: 93px;
+                    height: 71px;
+                    text-align: center;
 
-            #g2{
-                grid-area: g2;
-                background-color: $bright-pink;
-                width: 93px;
-                height: 71px;
-                text-align: center;
-            }
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    
+                }
+    
+                #g2{
+                    grid-area: g2;
+                    background-color: $bright-pink;
+                    width: 93px;
+                    height: 71px;
+                    text-align: center;
 
-            #g3{
-                grid-area: g3;
-                background-color: $bright-pink;
-                width: 93px;
-                height: 71px;
-                text-align: center;
-            }
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+    
+                #g3{
+                    grid-area: g3;
+                    background-color: $bright-pink;
+                    width: 93px;
+                    height: 71px;
+                    text-align: center;
 
-            #g4{
-                grid-area: g4;
-                background-color: $bright-pink;
-                width: 93px;
-                height: 71px;
-                text-align: center;
-            }
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+    
+                #g4{
+                    grid-area: g4;
+                    background-color: $bright-pink;
+                    width: 93px;
+                    height: 71px;
+                    text-align: center;
 
-            #g5{
-                grid-area: g5;
-                background-color: $bright-pink;
-                width: 93px;
-                height: 71px;
-                text-align: center;
-            }
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+    
+                #g5{
+                    grid-area: g5;
+                    background-color: $bright-pink;
+                    width: 93px;
+                    height: 71px;
+                    text-align: center;
 
-            #g6{
-                grid-area: g6;
-                background-color: $bright-pink;
-                width: 93px;
-                height: 71px;
-                text-align: center;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+    
+                #g6{
+                    grid-area: g6;
+                    background-color: $bright-pink;
+                    width: 93px;
+                    height: 71px;
+                    text-align: center;
+
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
             }
         }
+
+        
             
 
 
@@ -165,21 +234,22 @@
 
         #quote{
             display: grid;
-            grid-template-areas: ". quote-text";
+            grid-template-areas: ". quote-text .";
             grid-template-columns: 10px auto 10px;
+            background-color: $cream;
+            width: 100%;
 
             #quote-text{
                 grid-area: quote-text;
+
+                padding: 70px 0px;
             }
         }
 
         #photography-container{
-            display: grid;
-            grid-template-areas: ". photography-content";
-            grid-template-columns: 10px auto 10px;
 
             #photography-content{
-                grid-area: photography-content;
+                margin: 0 10px;
             }
 
             #photo-img{

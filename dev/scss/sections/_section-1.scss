@@ -3,15 +3,32 @@
 ============= */
 #section-1{
 
-    #hero{
-        background-image: url("../img/section-1/main-hero.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: 0 -150px;
-        height: 50vh;
+    >div{
+
         
-       
+
+        #hero{
+            background-image: url("../img/section-1/main-hero.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 0 -150px;
+            height: 50vh;
+            position: relative;
+            
+        }
+    
+        h1{
+            font-family: 'Playfair Display', serif;
+            font-size: rem-calc(37);
+            line-height: rem-calc(49);
+            font-weight: 700;
+            color: $black;
+        }
+
+
     }
+
+    
     
     
 }
