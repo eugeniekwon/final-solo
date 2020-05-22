@@ -15,6 +15,11 @@ footer{
             justify-content: space-evenly;
             margin: 25px 120px;
 
+            @include md{
+                margin: 25px 300px;
+                font-size: rem-calc(30);
+            }
+
             li{
                 margin-bottom: 35px;
 
@@ -52,6 +57,7 @@ footer{
             font-size: rem-calc(23);
             font-weight: 400;
             text-align: center;
+            color: $dark-pink;
         }
     }
 
@@ -61,5 +67,6 @@ footer{
         font-weight: 400;
         line-height: rem-calc(25);
         text-align: center;
+        color: $dark-pink;
     }
 }

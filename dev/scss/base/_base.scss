@@ -11,11 +11,24 @@ ul{
 
 .big-spacing{
     margin-bottom: 70px;
+
+    @include md{
+        margin-bottom: 80px;
+    }
+
+    @include lg{
+        margin-bottom: 120px;
+    }
+
 }
 
 .spacing-h-content{
     margin-bottom: 25px;
+
 }
+
+
+
 
 .show-for-md{
     display: none;
@@ -37,9 +50,6 @@ ul{
         display: block;
     }
 }
-
-
-
 
 
 

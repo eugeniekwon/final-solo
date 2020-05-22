@@ -4,12 +4,6 @@
 
 #section-4{
 
-    #section-4-container{
-        display: grid;
-        grid-template-columns: 50% 50%;
-        grid-template-areas: "g1 g2" "g3 g5" "g6 g7";
-    }
-    
     #hero{
         background-image: url("../img/section-4/hero-4.jpg");
         background-repeat: no-repeat;
@@ -27,6 +21,14 @@
             height: 35vh;
         }
 
+        @include lg {
+            background-size: 140%;
+            background-position: -240px -350px;
+            height: 45vh;
+        }
+
+        
+
         h2{
             font-family: 'Playfair Display', serif;
             font-size: rem-calc(30);
@@ -40,254 +42,404 @@
             @include md{
                 font-size: rem-calc(45);
             }
-        }
-    }
 
-
-
-    #g1{
-        grid-area: g1;
-
-        #g1-img{
-            background-image: url("../img/section-4/g1.jpg");  
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: -75px 0px;
-            height: 178px;
-            margin: 0px 9.5px 25px 0px;
-
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-            h3{
-            font-family: 'Playfair Display', serif;
-            font-size: rem-calc(22);
-            font-weight: 700;
-            color: $white;
-
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            
-            }
-        }
-    }
-    
-    #g2{
-        grid-area: g2;
-
-        #g2-img{
-            
-    
-            background-image: url("../img/section-4/g2.jpg");  
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: 0 -40px;
-            height: 178px;
-            margin: 0px 0px 25px 9.5px;
-
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-            h3{
-            font-family: 'Playfair Display', serif;
-            font-size: rem-calc(22);
-            font-weight: 700;
-            color: $white;
-
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            
-            }
-        }
-    }
-    
-    #g3{
-        grid-area: g3;
-
-        #g3-img{
-            background-image: url("../img/section-4/g3.jpg");  
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center;
-            height: 178px;
-            margin: 0px 9.5px 25px 0px;
-
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-            h3{
-            font-family: 'Playfair Display', serif;
-            font-size: rem-calc(22);
-            font-weight: 700;
-            color: $white;
-
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            
+            @include lg {
+                font-size: rem-calc(50);
             }
         }
     }
 
-    
+    #section-4-container{
+        display: flex; 
+        align-items: center;
+        justify-content: center;
+        
 
-    #g5{
-        grid-area: g5;
+        #section-4-content{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-areas: "g1 g2" "g3 g5" "g6 g7";
+            gap: 25px;
 
-        #g5-img{
-            background-image: url("../img/section-4/g5.jpg");  
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: 0px 0px;
-            height: 178px;
-            margin: 0px 0px 25px 9.5px;
 
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-            h3{
-            font-family: 'Playfair Display', serif;
-            font-size: rem-calc(22);
-            font-weight: 700;
-            color: $white;
-
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            
+            @include md{
+            grid-template-columns: repeat(3,1fr);
+            grid-template-areas: "g1 g2 g3" "g5 g6 g7";
+            column-gap: 25px;
+            row-gap: 80px;
             }
-        }
-    }
-    
-    #g6{
-        grid-area: g6;
 
-        #g6-img{
-            background-image: url("../img/section-4/g6.jpg");  
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: 0px -20px;
-            height: 178px;
-            margin: 0px 9.5px 0px 0px;
-
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-            h3{
-            font-family: 'Playfair Display', serif;
-            font-size: rem-calc(22);
-            font-weight: 700;
-            color: $white;
-
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            
-            display: block;
-            text-align: center;
-            
+            @include lg{
+            grid-template-columns: repeat(4,1fr);
+            grid-template-areas: "g1 g2 g3 g4" "g5 g6 g7 g8";
+            column-gap: 20px;
+            row-gap: 120px;
+            margin: 0px 10px;
             }
-            
-        }
-    }
-    
-    #g7{
-        grid-area: g7;
 
-        #g7-img{
-            background-image: url("../img/section-4/g7.jpg");  
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: 0px -90px;
-            height: 178px;
-            margin: 0px 0px 0px 9.5px;
+            #g1{
+                grid-area: g1;
+        
+                #g1-img{
+                    background-image: url("../img/section-4/g1.jpg");  
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: -75px 0px;
+                    height: 175px;
+                    margin: 0px;
+        
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+        
+                    @include md{
+                        background-position: -90px 0px;
+                        height: 239.33px;
+                        margin: 0px 0px 25px 0px;
+                    }
 
-            display: flex;
-            align-items: center;
-            justify-content: center;
+                    @include lg{
+                        background-position: -90px 0px;
+                        height: 280px;
+                    }
+        
+                    h3{
+                    font-family: 'Playfair Display', serif;
+                    font-size: rem-calc(22);
+                    font-weight: 700;
+                    color: $white;
+        
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+        
+                    @include md{
+                        font-size: rem-calc(28);
+                    }
 
-            h3{
-            font-family: 'Playfair Display', serif;
-            font-size: rem-calc(22);
-            font-weight: 700;
-            color: $white;
-
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            
-            }
-        }
-    }
-    
-    @include lg{
-        #g4{
-            grid-area: g4;
-    
-            #g4-img{
-                background-image: url("../img/section-4/g4.jpg");  
-                background-repeat: no-repeat;
-                background-size: cover;
-                background-position: -40px 0px;
-                height: 190px;
-                width: 190px;
-
-                display: flex;
-                align-items: center;
-                justify-content: center;
-    
-                h3{
-                font-family: 'Playfair Display', serif;
-                font-size: rem-calc(22);
-                font-weight: 700;
-                color: $white;
-    
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                
+                    @include lg{
+                        font-size: rem-calc(30);
+                    }
+                    
+                    }
                 }
             }
-        }
-
-        
-        #g8{
-            grid-area: g8;
             
-            #g8-img{
-                background-image: url("../img/section-4/g8.jpg");  
-                background-repeat: no-repeat;
-                background-size: cover;
-                background-position: -80px 0;
-                height: 190px;
-                width: 190px;
+            #g2{
+                grid-area: g2;
+        
+                #g2-img{
+                    
+            
+                    background-image: url("../img/section-4/g2.jpg");  
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: 0 -45px;
+                    height: 175px;
+                    margin: 0px;
+        
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+        
+                    @include md{
+                        background-position: 0px -70px;
+                        height: 239.33px;
+                        margin: 0px 0px 25px 0px;
+                    }
 
-                display: flex;
-                align-items: center;
-                justify-content: center;
-    
-                h3{
-                font-family: 'Playfair Display', serif;
-                font-size: rem-calc(22);
-                font-weight: 700;
-                color: $white;
-    
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                
+                    @include lg{
+                        background-position: 0px -80px;
+                        height: 280px;
+                    }
+        
+                    h3{
+                    font-family: 'Playfair Display', serif;
+                    font-size: rem-calc(22);
+                    font-weight: 700;
+                    color: $white;
+        
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+        
+                    @include md{
+                        font-size: rem-calc(28);
+                    }
+
+                    @include lg{
+                        font-size: rem-calc(30);
+                    }
+                    
+                    }
                 }
             }
-        }
+            
+            #g3{
+                grid-area: g3;
         
+                #g3-img{
+                    background-image: url("../img/section-4/g3.jpg");  
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center;
+                    height: 178px;
+                    margin: 0px;
+        
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+        
+                    @include md{
+                        height: 239.33px;
+                        margin: 0px 0px 25px 0px;
+                    }
+
+                    @include lg{
+                        height: 280px;
+                    }
+        
+                    h3{
+                    font-family: 'Playfair Display', serif;
+                    font-size: rem-calc(22);
+                    font-weight: 700;
+                    color: $white;
+        
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+        
+                    @include md{
+                        font-size: rem-calc(28);
+                    }
+
+                    @include lg{
+                        font-size: rem-calc(30);
+                    }
+                    
+                    }
+                }
+            }
+        
+            
+        
+            #g5{
+                grid-area: g5;
+        
+                #g5-img{
+                    background-image: url("../img/section-4/g5.jpg");  
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: 0px 0px;
+                    height: 178px;
+                    margin: 0px;
+        
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+        
+                    @include md{
+                        height: 239.33px;
+                        margin: 0px 0px 25px 0px;
+                    }
+
+                    @include lg{
+                        height: 280px;
+                    }
+
+        
+                    h3{
+                    font-family: 'Playfair Display', serif;
+                    font-size: rem-calc(22);
+                    font-weight: 700;
+                    color: $white;
+        
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    
+                    @include md{
+                        font-size: rem-calc(28);
+                    }
+
+                    @include lg{
+                        font-size: rem-calc(30);
+                    }
+
+                    }
+                }
+            }
+            
+            #g6{
+                grid-area: g6;
+        
+                #g6-img{
+                    background-image: url("../img/section-4/g6.jpg");  
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: 0px -20px;
+                    height: 178px;
+                    margin: 0px;
+        
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+        
+                    @include md{
+                        background-position: 0px -30px;
+                        height: 239.33px;
+                        margin: 0px 0px 25px 0px;
+                    }
+
+                    @include lg{
+                        height: 280px;
+                    }
+        
+                    h3{
+                    font-family: 'Playfair Display', serif;
+                    font-size: rem-calc(22);
+                    font-weight: 700;
+                    color: $white;
+        
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    
+                    display: block;
+                    text-align: center;
+        
+                    @include md{
+                        font-size: rem-calc(28);
+                    }
+
+                    @include lg{
+                        font-size: rem-calc(30);
+                    }
+                    
+                    }
+                    
+                }
+            }
+            
+            #g7{
+                grid-area: g7;
+        
+                #g7-img{
+                    background-image: url("../img/section-4/g7.jpg");  
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: 0px -80px;
+                    height: 178px;
+                    margin: 0px;
+        
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+        
+                    @include md{
+                        background-position: 0px -120px;
+                        height: 239.33px;
+                        margin: 0px 0px 25px 0px;
+                    }
+
+                    @include lg{
+                        background-position: 0px -130px;
+                        height: 280px;
+                    }
+        
+                    h3{
+                    font-family: 'Playfair Display', serif;
+                    font-size: rem-calc(22);
+                    font-weight: 700;
+                    color: $white;
+        
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+        
+                    @include md{
+                        font-size: rem-calc(28);
+                    }
+
+                    @include lg{
+                        font-size: rem-calc(30);
+                    }
+                    
+                    }
+                }
+            }
+            
+            @include lg{
+                #g4{
+                    grid-area: g4;
+            
+                    #g4-img{
+                        background-image: url("../img/section-4/g4.jpg");  
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        background-position: -40px 0px;
+                        height: 280px;
+        
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        
+
+            
+                        h3{
+                        font-family: 'Playfair Display', serif;
+                        font-size: rem-calc(30);
+                        font-weight: 700;
+                        color: $white;
+            
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        
+                        }
+                    }
+                }
+        
+                
+                #g8{
+                    grid-area: g8;
+                    
+                    #g8-img{
+                        background-image: url("../img/section-4/g8.jpg");  
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        background-position: -80px 0;
+                        height: 280px;
+        
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+            
+                        h3{
+                        font-family: 'Playfair Display', serif;
+                        font-size: rem-calc(30);
+                        font-weight: 700;
+                        color: $white;
+            
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        
+                        }
+                    }
+                }
+                
+            }
+
+
+
+        }
     }
+    
+
+
+    
     
     
 
@@ -298,5 +450,10 @@
         line-height: rem-calc(23);
         text-align: justify;
         margin: 0 10px;
+
+        @include md{
+            font-size: rem-calc(18);
+            line-height: rem-calc(25);
+        }
     }
 }

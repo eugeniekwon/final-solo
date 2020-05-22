@@ -21,6 +21,13 @@
             height: 35vh;
         }
 
+        @include lg {
+            background-size: 160%;
+            background-position: -330px -600px;
+            height: 45vh;
+        }
+
+
         h2{
             font-family: 'Playfair Display', serif;
             font-size: rem-calc(30);
@@ -33,6 +40,10 @@
 
             @include md{
                 font-size: rem-calc(45);
+            }
+
+            @include lg {
+                font-size: rem-calc(50);
             }
         }
     }
@@ -48,8 +59,17 @@
             grid-template-columns: 90px auto 10px ;
             grid-template-areas: ". p .";
 
+            @include md{
+                grid-template-columns: 106px auto 298px;
+                grid-template-areas: ". p .";
+            }
+
             p{
                 grid-area: p;
+
+                @include md{
+                    grid-area: p;
+                }
             
                 }
             }
@@ -64,12 +84,27 @@
             background-size: cover;
             background-position: center;
             height: 60vh;
+
+            @include md{
+                height: 50vh;
+                margin-left: 200px;
+            }
+
+            @include lg{
+                height: 70vh;
+                margin-left: 400px;
+            }
         }
 
         >div{
             display: grid; 
             grid-template-columns: 10px auto 10px ;
             grid-template-areas: ". p .";
+
+            @include md{
+            grid-template-columns: 106px auto 10px ;
+            grid-template-areas: ". p .";
+            }
 
             p{
                 grid-area: p;
@@ -82,17 +117,46 @@
             background-size: cover;
             background-position: center;
             height: 40vh;
+
+            @include md{
+                background-size: 150%;
+                background-position: 0px -150px;
+                margin-right: 298px;
+                height: 50vh;
+            }
+
+            @include lg{
+                background-size: 110%;
+                background-position: 0px -100px;
+                margin-right: 400px;
+                height: 80vh;
+            }
         }
 
     }
+    
 
 
+
+
+    @include md{
+        #section-5c{
+            display: grid; 
+            grid-template-columns: 394px auto 10px ;
+            grid-template-areas: ". p .";
+    
+            article{
+                grid-area: p;
+    
+            }
+        }
+    }
+    
 
 
 
 
     #section-5d{
-
 
         #phs-1-img{
             background-image: url("../img/section-5/phs-1.jpg");
@@ -100,6 +164,18 @@
             background-size: cover;
             background-position: center;
             height: 60vh;
+
+            @include md{
+                background-size: 110%;
+                height: 60vh;
+                margin-left: 298px;
+            }
+
+            @include lg{
+                background-size: 100%;
+                height: 90vh;
+                margin-left: 500px;
+            }
         }
 
         >div{
@@ -107,8 +183,17 @@
             grid-template-columns: 10px auto 10px ;
             grid-template-areas: ". text .";
 
+            @include md{
+            grid-template-columns: 10px auto 395px ;
+            grid-template-areas: ". text .";
+            }
+
             article{
                 grid-area: text;
+
+                @include md{
+                    grid-area: text;
+                }
             }
 
         }
@@ -117,21 +202,69 @@
 
     #section-5e{
 
+        @include md{
+            display: grid;
+            grid-template-columns: 40% auto;
+            grid-template-areas: "image text";
+        }
+
         #phs-2-img{
             background-image: url("../img/section-5/phs-2.jpg");
             background-repeat: no-repeat;
             background-size: cover;
             background-position: 0px -90px;
             height: 40vh;
+
+            @include md{
+                grid-area: image;
+
+                background-size: 140%;
+                background-position: 0px -130px;
+                margin-left: 10px;
+                height: 25vh;
+            }
+
+            @include lg{
+                grid-area: image;
+
+                background-size: 120%;
+                background-position: 0px -130px;
+                margin-left: 0px;
+                height: 30vh;
+            }
+
+            
         }
 
         article{
             display: grid; 
-            grid-template-columns: 10px auto 85px ;
+            grid-template-columns: 10px auto 85px;
             grid-template-areas: ". text .";
+
+            @include md{
+                grid-area: text;
+
+                grid-template-columns: 107px auto 10px;
+                grid-template-areas: ". text .";
+            }
+
+            @include md{
+                grid-area: text;
+
+                grid-template-columns: 10px auto 10px;
+                grid-template-areas: ". text .";
+            }
 
             p{
                 grid-area: text;
+                
+                @include md{
+                    grid-area: text;
+                }
+
+                @include lg{
+                    grid-area: text;
+                }
             }
         }
     }
@@ -144,6 +277,10 @@
         font-size: rem-calc(22);
         font-weight: 700;
         color: $dark-brown;
+
+        @include md{
+            font-size: rem-calc(28);
+        }
     }
 
     h3{
@@ -159,6 +296,11 @@
         font-weight: 400;
         line-height: rem-calc(23);
         text-align: justify;
+
+        @include md{
+        font-size: rem-calc(18);
+        line-height: rem-calc(25);
+        }
     }
 
     
