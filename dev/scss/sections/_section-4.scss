@@ -310,6 +310,10 @@
         
                     @include md{
                         font-size: rem-calc(28);
+
+                        span{
+                            display: block;
+                        }
                     }
 
                     @include lg{
@@ -455,5 +459,11 @@
             font-size: rem-calc(18);
             line-height: rem-calc(25);
         }
+
+        @include lg{
+            font-size: rem-calc(19);
+            line-height: rem-calc(26);
+        }
+
     }
 }

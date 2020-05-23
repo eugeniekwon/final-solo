@@ -19,6 +19,17 @@
 		"oF": 0,
 		"oS": 3
 		},
+	"/deploy/img/header/logo.png": {
+		"ft": 32768,
+		"iS": 13014,
+		"oA": 0,
+		"oAP": "/deploy/img/header/logo.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"/deploy/img/section-1/main-hero.jpg": {
 		"ft": 16384,
 		"iS": 145455,
@@ -285,6 +296,14 @@
 		"oAP": "/dev/footer.html",
 		"oF": 1
 		},
+	"/dev/header.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/header.html",
+		"oF": 1
+		},
 	"/dev/index.kit": {
 		"cB": 0,
 		"ft": 2048,
@@ -299,8 +318,8 @@
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "/dev/js/scripts-min.js",
-		"oF": 0,
+		"oAP": "/deploy/js/scripts-min.js",
+		"oF": 2,
 		"sC": 3,
 		"tS": 0
 		},

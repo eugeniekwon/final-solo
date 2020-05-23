@@ -27,6 +27,19 @@ ul{
 
 }
 
+.medium-b-spacing{
+    margin-bottom: 25px;
+
+    @include md{
+        margin-bottom: 40px;
+    }
+
+    @include lg{
+        margin-bottom: 60px;
+    }
+
+}
+
 
 
 

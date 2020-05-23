@@ -106,7 +106,10 @@
                     grid-template-areas: "g1 g3""g2 g4";
                     row-gap: 25px;
                     margin: 0px;
-
+                    
+                    @include md{
+                        row-gap: 10px;
+                    }
 
                     #g1 {
                         grid-area: g1;
@@ -144,6 +147,11 @@
                             width: 107px;
                             height: 80px;
                         }
+
+                        @include lg {
+                            width: 127px;
+                            height: 95px;
+                        }
                     }
 
                     #g4 {
@@ -161,6 +169,11 @@
                         @include md {
                             width: 107px;
                             height: 80px;
+                        }
+
+                        @include lg {
+                            width: 127px;
+                            height: 95px;
                         }
                     }
 
@@ -197,6 +210,11 @@
                     gap: 25px;
                     margin: 0px;
 
+                    @include md{
+                        gap: 10px;
+                    }
+            
+
 
                     #g1 {
                         grid-area: g1;
@@ -211,6 +229,10 @@
 
                         @include md {
                             height: 80px;
+                        }
+
+                        @include lg {
+                            height: 95px;
                         }
 
                     }
@@ -229,6 +251,10 @@
                         @include md {
                             height: 80px;
                         }
+
+                        @include lg {
+                            height: 95px;
+                        }
                     }
 
                     #g3 {
@@ -244,6 +270,10 @@
 
                         @include md {
                             height: 80px;
+                        }
+
+                        @include lg {
+                            height: 95px;
                         }
                     }
 
@@ -261,6 +291,10 @@
                         @include md {
                             height: 80px;
                         }
+
+                        @include lg {
+                            height: 95px;
+                        }
                     }
 
                     #g5 {
@@ -276,6 +310,10 @@
 
                         @include md {
                             height: 80px;
+                        }
+
+                        @include lg {
+                            height: 95px;
                         }
                     }
 
@@ -293,6 +331,11 @@
                         @include md {
                             height: 80px;
                         }
+
+                        @include lg {
+                            height: 95px;
+                        }
+
                     }
                 }
             }
@@ -413,6 +456,10 @@
             @include md {
                 margin: 0px 288px 0px 106px;
             }
+
+            @include lg{
+                margin: 0px 20px 0px 10px;
+            }
         }
 
         #photo-img {
@@ -430,6 +477,7 @@
             @include lg{
                 grid-area: img;
                 margin: 0px;
+                margin-bottom: 60px;
             }
         }
 

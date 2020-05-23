@@ -64,9 +64,10 @@
         "a3 g7 g8 g9"
         ". b1 b2 b3";
         grid-template-columns: 100px 80px 80px 80px;
-        grid-template-rows: repeat(5,80px);
+        grid-template-rows: repeat(5,1fr);
         row-gap: 25px;
         text-align: center;
+        // column-gap: 30px;
 
         @include md{
             row-gap: 15px;
@@ -263,6 +264,12 @@
 
     #bottom-container{
 
+        @include lg{
+            display: grid;
+            grid-template-columns: 55% auto;
+            grid-template-areas: "aside article";
+        }
+
         #people-img{
             background-image: url("../img/section-3/people-group.jpg");
             background-repeat: no-repeat;
@@ -273,6 +280,11 @@
             @include md{
                 margin-right: 106px;
             }
+
+            @include lg{
+                grid-area: aside;
+                margin: 0px;
+            }
         }
 
         article{
@@ -281,7 +293,16 @@
             @include md{
                 margin-left: 298px;
             }
+
+            @include lg{
+                grid-area: article;
+                margin: 0px 10px 0px 20px;
+            }
         }
+    }
+
+    #additional-caption{
+        margin-left: 10px;
     }
 
     

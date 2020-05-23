@@ -64,10 +64,19 @@
                 grid-template-areas: ". p .";
             }
 
+            @include lg{
+                grid-template-columns: 15% auto 55%;
+                grid-template-areas: ". p .";
+            }
+
             p{
                 grid-area: p;
 
                 @include md{
+                    grid-area: p;
+                }
+
+                @include lg{
                     grid-area: p;
                 }
             
@@ -106,6 +115,11 @@
             grid-template-areas: ". p .";
             }
 
+            @include lg{
+                grid-template-columns: 400px auto 10px;
+                grid-template-areas: ". p .";
+                }
+
             p{
                 grid-area: p;
             }
@@ -134,10 +148,6 @@
         }
 
     }
-    
-
-
-
 
     @include md{
         #section-5c{
@@ -158,6 +168,12 @@
 
     #section-5d{
 
+        @include lg{
+            display: grid;
+            grid-template-columns: 40% 60%;
+            grid-template-areas: "article aside";
+        }
+
         #phs-1-img{
             background-image: url("../img/section-5/phs-1.jpg");
             background-repeat: no-repeat;
@@ -173,8 +189,10 @@
 
             @include lg{
                 background-size: 100%;
-                height: 90vh;
-                margin-left: 500px;
+                height: 85vh;
+                margin: 0px;
+
+                grid-area: aside;
             }
         }
 
@@ -188,11 +206,23 @@
             grid-template-areas: ". text .";
             }
 
+            @include lg{
+                grid-area: article;
+
+                grid-template-columns: 96px auto 20px ;
+                grid-template-areas: ". text .";
+            }
+
             article{
                 grid-area: text;
 
                 @include md{
                     grid-area: text;
+                }
+
+                @include lg{
+                    grid-area: text;
+
                 }
             }
 
@@ -206,6 +236,10 @@
             display: grid;
             grid-template-columns: 40% auto;
             grid-template-areas: "image text";
+        }
+
+        @include lg{
+            margin-top: 120px;
         }
 
         #phs-2-img{
@@ -230,7 +264,7 @@
                 background-size: 120%;
                 background-position: 0px -130px;
                 margin-left: 0px;
-                height: 30vh;
+                height: 35vh;
             }
 
             
@@ -281,6 +315,10 @@
         @include md{
             font-size: rem-calc(28);
         }
+
+        @include lg{
+            font-size: rem-calc(30);
+        }
     }
 
     h3{
@@ -288,6 +326,10 @@
         font-size: rem-calc(23);
         font-weight: 700;
         color: $dark-orange;
+
+        @include lg{
+            font-size: rem-calc(25);
+        }
     }
 
     p{
@@ -301,6 +343,11 @@
         font-size: rem-calc(18);
         line-height: rem-calc(25);
         }
+
+        @include lg{
+            font-size: rem-calc(19);
+            line-height: rem-calc(26);
+            }
     }
 
     

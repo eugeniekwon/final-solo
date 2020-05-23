@@ -8,16 +8,28 @@ footer{
     width: 100%;
     border-bottom: 1px solid $light-pink;
     
+    #address{
+        @include md{
+            margin-bottom: 40px;
+        }
+    }
+
     #social-medias{
         ul{
             display: flex;
             align-items: center;
             justify-content: space-evenly;
             margin: 25px 120px;
+            font-size: rem-calc(25);
 
             @include md{
                 margin: 25px 300px;
                 font-size: rem-calc(30);
+            }
+
+            @include lg{
+                margin: 25px 450px;
+                font-size: rem-calc(40);
             }
 
             li{
@@ -34,9 +46,6 @@ footer{
                 a:visited{
                     color: $dark-pink;
                 } 
-
-
-
             }
         }
         
@@ -49,6 +58,11 @@ footer{
         color: $dark-pink;
         text-align: center;
         padding: 35px 0px;
+
+        @include md{
+            font-size: rem-calc(28);
+            padding: 35px 0px 15px 0px;
+        }
     }
 
     h3{
@@ -58,6 +72,7 @@ footer{
             font-weight: 400;
             text-align: center;
             color: $dark-pink;
+            margin-bottom: 25px;
         }
     }
 
@@ -68,5 +83,9 @@ footer{
         line-height: rem-calc(25);
         text-align: center;
         color: $dark-pink;
+        
+        @include md{
+            margin-bottom: 15px;
+        }
     }
 }

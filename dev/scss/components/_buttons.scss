@@ -10,11 +10,23 @@
     background-color: $green;
     border-radius: 5px;
     height: 33px;
-    margin: 0px 100px;
+    margin: 0% 27%;
+    text-align: center;
 
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @include md{
+        margin: 0% 40%;
+    }
+
+    @include lg{
+        margin: 0% 40%;
+        text-align: center;
+    }
+
+
 }
 
 

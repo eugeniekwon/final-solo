@@ -11,6 +11,7 @@
         background-position: -280px -660px;
         height: 50vh;
         position: relative;
+        margin-top: 150px;
 
         display: flex;
         align-items: center;
@@ -20,12 +21,14 @@
             background-size: 190%;
             background-position: -450px -1000px;
             height: 70vh;
+            margin-top: 220px;
         }
 
         @include lg {
             background-size: 150%;
             background-position: -300px -1250px;
-            height: 90vh;
+            height: 100vh;
+            margin-top: 220px;
         }
 
         >div {
