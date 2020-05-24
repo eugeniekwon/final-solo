@@ -34,3 +34,17 @@
         }
     }
 }
+
+h1, #logo{
+    a:link,
+    a:visited{
+        color: $dark-pink;
+        text-decoration: none;
+        transition: 0.25s;
+        }
+
+    a:hover,
+    a:active{
+        color: $dark-brown;
+        }
+}

@@ -48,264 +48,282 @@
         }
     }
 
-    #section-5a{
 
-        h2{
-            margin-left: 10px;
-        }
-        
-        >div{
-            display: grid; 
-            grid-template-columns: 90px auto 10px ;
-            grid-template-areas: ". p .";
+    #section-5-xl{
 
-            @include md{
-                grid-template-columns: 106px auto 298px;
-                grid-template-areas: ". p .";
-            }
-
-            @include lg{
-                grid-template-columns: 15% auto 55%;
-                grid-template-areas: ". p .";
-            }
-
-            p{
-                grid-area: p;
-
-                @include md{
-                    grid-area: p;
-                }
-
-                @include lg{
-                    grid-area: p;
-                }
-            
-                }
-            }
-        
-        }
-
-    #section-5b{
-
-        #history-1-img{
-            background-image: url("../img/section-5/history-1.jpg");
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center;
-            height: 60vh;
-
-            @include md{
-                height: 50vh;
-                margin-left: 200px;
-            }
-
-            @include lg{
-                height: 70vh;
-                margin-left: 400px;
-            }
-        }
-
-        >div{
-            display: grid; 
-            grid-template-columns: 10px auto 10px ;
-            grid-template-areas: ". p .";
-
-            @include md{
-            grid-template-columns: 106px auto 10px ;
-            grid-template-areas: ". p .";
-            }
-
-            @include lg{
-                grid-template-columns: 400px auto 10px;
-                grid-template-areas: ". p .";
-                }
-
-            p{
-                grid-area: p;
-            }
-        }
-
-        #history-2-img{
-            background-image: url("../img/section-5/history-2.jpg");
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center;
-            height: 40vh;
-
-            @include md{
-                background-size: 150%;
-                background-position: 0px -150px;
-                margin-right: 298px;
-                height: 50vh;
-            }
-
-            @include lg{
-                background-size: 110%;
-                background-position: 0px -100px;
-                margin-right: 400px;
-                height: 80vh;
-            }
-        }
-
-    }
-
-    @include md{
-        #section-5c{
-            display: grid; 
-            grid-template-columns: 394px auto 10px ;
-            grid-template-areas: ". p .";
-    
-            article{
-                grid-area: p;
-    
-            }
-        }
-    }
-    
-
-
-
-
-    #section-5d{
-
-        @include lg{
+        @include xl{
             display: grid;
-            grid-template-columns: 40% 60%;
-            grid-template-areas: "article aside";
+            grid-template-areas: ". section-5-xl .";
+            grid-template-columns: auto 1200px auto;
         }
+    
+        #section-5-container{
 
-        #phs-1-img{
-            background-image: url("../img/section-5/phs-1.jpg");
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center;
-            height: 60vh;
-
-            @include md{
-                background-size: 110%;
-                height: 60vh;
-                margin-left: 298px;
+            @include xl{
+                grid-area: section-5-xl;
             }
 
-            @include lg{
-                background-size: 100%;
-                height: 85vh;
-                margin: 0px;
-
-                grid-area: aside;
-            }
-        }
-
-        >div{
-            display: grid; 
-            grid-template-columns: 10px auto 10px ;
-            grid-template-areas: ". text .";
-
-            @include md{
-            grid-template-columns: 10px auto 395px ;
-            grid-template-areas: ". text .";
-            }
-
-            @include lg{
-                grid-area: article;
-
-                grid-template-columns: 96px auto 20px ;
-                grid-template-areas: ". text .";
-            }
-
-            article{
-                grid-area: text;
-
-                @include md{
-                    grid-area: text;
+            #section-5a{
+    
+                h2{
+                    margin-left: 10px;
                 }
-
-                @include lg{
-                    grid-area: text;
-
-                }
-            }
-
-        }
-        
-    }
-
-    #section-5e{
-
-        @include md{
-            display: grid;
-            grid-template-columns: 40% auto;
-            grid-template-areas: "image text";
-        }
-
-        @include lg{
-            margin-top: 120px;
-        }
-
-        #phs-2-img{
-            background-image: url("../img/section-5/phs-2.jpg");
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: 0px -90px;
-            height: 40vh;
-
-            @include md{
-                grid-area: image;
-
-                background-size: 140%;
-                background-position: 0px -130px;
-                margin-left: 10px;
-                height: 25vh;
-            }
-
-            @include lg{
-                grid-area: image;
-
-                background-size: 120%;
-                background-position: 0px -130px;
-                margin-left: 0px;
-                height: 35vh;
-            }
-
-            
-        }
-
-        article{
-            display: grid; 
-            grid-template-columns: 10px auto 85px;
-            grid-template-areas: ". text .";
-
-            @include md{
-                grid-area: text;
-
-                grid-template-columns: 107px auto 10px;
-                grid-template-areas: ". text .";
-            }
-
-            @include md{
-                grid-area: text;
-
-                grid-template-columns: 10px auto 10px;
-                grid-template-areas: ". text .";
-            }
-
-            p{
-                grid-area: text;
                 
-                @include md{
-                    grid-area: text;
+                >div{
+                    display: grid; 
+                    grid-template-columns: 90px auto 10px ;
+                    grid-template-areas: ". p .";
+        
+                    @include md{
+                        grid-template-columns: 106px auto 298px;
+                        grid-template-areas: ". p .";
+                    }
+        
+                    @include lg{
+                        grid-template-columns: 15% auto 55%;
+                        grid-template-areas: ". p .";
+                    }
+        
+                    p{
+                        grid-area: p;
+        
+                        @include md{
+                            grid-area: p;
+                        }
+        
+                        @include lg{
+                            grid-area: p;
+                        }
+                    
+                        }
+                    }
+                
                 }
-
-                @include lg{
-                    grid-area: text;
+        
+            #section-5b{
+        
+                #history-1-img{
+                    background-image: url("../img/section-5/history-1.jpg");
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center;
+                    height: 60vh;
+        
+                    @include md{
+                        height: 50vh;
+                        margin-left: 200px;
+                    }
+        
+                    @include lg{
+                        height: 70vh;
+                        margin-left: 400px;
+                    }
+                }
+        
+                >div{
+                    display: grid; 
+                    grid-template-columns: 10px auto 10px ;
+                    grid-template-areas: ". p .";
+        
+                    @include md{
+                    grid-template-columns: 106px auto 10px ;
+                    grid-template-areas: ". p .";
+                    }
+        
+                    @include lg{
+                        grid-template-columns: 400px auto 10px;
+                        grid-template-areas: ". p .";
+                        }
+        
+                    p{
+                        grid-area: p;
+                    }
+                }
+        
+                #history-2-img{
+                    background-image: url("../img/section-5/history-2.jpg");
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center;
+                    height: 40vh;
+        
+                    @include md{
+                        background-size: 150%;
+                        background-position: 0px -150px;
+                        margin-right: 298px;
+                        height: 50vh;
+                    }
+        
+                    @include lg{
+                        background-size: 110%;
+                        background-position: 0px -100px;
+                        margin-right: 400px;
+                        height: 80vh;
+                    }
+                }
+        
+            }
+        
+            @include md{
+                #section-5c{
+                    display: grid; 
+                    grid-template-columns: 394px auto 10px ;
+                    grid-template-areas: ". p .";
+            
+                    article{
+                        grid-area: p;
+            
+                    }
                 }
             }
+            
+        
+        
+        
+        
+            #section-5d{
+        
+                @include lg{
+                    display: grid;
+                    grid-template-columns: 40% 60%;
+                    grid-template-areas: "article aside";
+                }
+        
+                #phs-1-img{
+                    background-image: url("../img/section-5/phs-1.jpg");
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center;
+                    height: 60vh;
+        
+                    @include md{
+                        background-size: 110%;
+                        height: 60vh;
+                        margin-left: 298px;
+                    }
+        
+                    @include lg{
+                        background-size: 100%;
+                        height: 85vh;
+                        margin: 0px;
+        
+                        grid-area: aside;
+                    }
+                }
+        
+                >div{
+                    display: grid; 
+                    grid-template-columns: 10px auto 10px ;
+                    grid-template-areas: ". text .";
+        
+                    @include md{
+                    grid-template-columns: 10px auto 395px ;
+                    grid-template-areas: ". text .";
+                    }
+        
+                    @include lg{
+                        grid-area: article;
+        
+                        grid-template-columns: 96px auto 20px ;
+                        grid-template-areas: ". text .";
+                    }
+        
+                    article{
+                        grid-area: text;
+        
+                        @include md{
+                            grid-area: text;
+                        }
+        
+                        @include lg{
+                            grid-area: text;
+        
+                        }
+                    }
+        
+                }
+                
+            }
+        
+            #section-5e{
+        
+                @include md{
+                    display: grid;
+                    grid-template-columns: 40% auto;
+                    grid-template-areas: "image text";
+                }
+        
+                @include lg{
+                    margin-top: 120px;
+                }
+        
+                #phs-2-img{
+                    background-image: url("../img/section-5/phs-2.jpg");
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: 0px -90px;
+                    height: 40vh;
+        
+                    @include md{
+                        grid-area: image;
+        
+                        background-size: 140%;
+                        background-position: 0px -130px;
+                        margin-left: 10px;
+                        height: 25vh;
+                    }
+        
+                    @include lg{
+                        grid-area: image;
+        
+                        background-size: 120%;
+                        background-position: 0px -130px;
+                        margin-left: 0px;
+                        height: 35vh;
+                    }
+        
+                    
+                }
+        
+                article{
+                    display: grid; 
+                    grid-template-columns: 10px auto 85px;
+                    grid-template-areas: ". text .";
+        
+                    @include md{
+                        grid-area: text;
+        
+                        grid-template-columns: 107px auto 10px;
+                        grid-template-areas: ". text .";
+                    }
+        
+                    @include md{
+                        grid-area: text;
+        
+                        grid-template-columns: 10px auto 10px;
+                        grid-template-areas: ". text .";
+                    }
+        
+                    p{
+                        grid-area: text;
+                        
+                        @include md{
+                            grid-area: text;
+                        }
+        
+                        @include lg{
+                            grid-area: text;
+                        }
+                    }
+                }
+            }
+
+
         }
+
     }
 
-
     
-
     h2{
         font-family: 'Playfair Display', serif;
         font-size: rem-calc(22);

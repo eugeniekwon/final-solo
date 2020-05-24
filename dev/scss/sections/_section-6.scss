@@ -59,9 +59,19 @@
             grid-template-columns: 15% auto 15%;
         }
 
+        @include xl{
+            display: grid;
+            grid-template-areas: ". desktop-xl .";
+            grid-template-columns: auto 1200px auto;
+        }
+
         ul {
             @include lg {
                 grid-area: desktop;
+            }
+
+            @include xl{
+                grid-area: desktop-xl;
             }
 
             @include md {
