@@ -352,10 +352,15 @@ ul {
     .show-for-lg {
       display: block; } }
 .show-for-mobile {
-  display: show; }
-  @media (min-width: 992px) {
+  display: flex !important; }
+  @media (min-width: 768px) {
     .show-for-mobile {
-      display: block; } }
+      display: none !important; } }
+.show-for-tablet {
+  display: none !important; }
+  @media (min-width: 768px) {
+    .show-for-tablet {
+      display: flex !important; } }
 a:link,
 a:visited {
   text-decoration: none; }
@@ -463,7 +468,8 @@ header {
   left: 0;
   position: fixed;
   top: 0;
-  width: 100%; }
+  width: 100%;
+  z-index: 1000; }
   header > div {
     display: grid;
     grid-template-areas: "logo burger" "nav nav";
@@ -573,7 +579,7 @@ footer {
   width: 100%;
   border-bottom: 1px solid #F7E2DA; }
   @media (min-width: 768px) {
-    footer #address {
+    footer #address-footer {
       margin-bottom: 40px; } }
   footer #social-medias ul {
     display: flex;
@@ -629,7 +635,7 @@ footer {
 /* =============
     Section-1
 ============= */
-#section-1 #hero {
+#section-1 #hero-1 {
   background-image: url("../img/section-1/main-hero.jpg");
   background-repeat: no-repeat;
   background-size: 260%;
@@ -641,18 +647,18 @@ footer {
   align-items: center;
   justify-content: center; }
   @media (min-width: 768px) {
-    #section-1 #hero {
+    #section-1 #hero-1 {
       background-size: 190%;
       background-position: -450px -1000px;
       height: 70vh;
       margin-top: 220px; } }
   @media (min-width: 992px) {
-    #section-1 #hero {
+    #section-1 #hero-1 {
       background-size: 150%;
       background-position: -300px -1250px;
       height: 100vh;
       margin-top: 220px; } }
-  #section-1 #hero > div h1 {
+  #section-1 #hero-1 > div h1 {
     font-family: 'Playfair Display', serif;
     font-size: 2.3125rem;
     line-height: 3.0625rem;
@@ -663,14 +669,14 @@ footer {
     align-items: center;
     justify-content: center; }
     @media (min-width: 768px) {
-      #section-1 #hero > div h1 {
+      #section-1 #hero-1 > div h1 {
         font-size: 3.75rem;
         line-height: 5rem; } }
     @media (min-width: 992px) {
-      #section-1 #hero > div h1 {
+      #section-1 #hero-1 > div h1 {
         font-size: 4.0625rem;
         line-height: 5.375rem; } }
-  #section-1 #hero > div h3 {
+  #section-1 #hero-1 > div h3 {
     font-family: 'Playfair Display', serif;
     font-size: 1.375rem;
     line-height: 1.875rem;
@@ -680,11 +686,11 @@ footer {
     align-items: center;
     justify-content: center; }
     @media (min-width: 768px) {
-      #section-1 #hero > div h3 {
+      #section-1 #hero-1 > div h3 {
         font-size: 2.8125rem;
         line-height: 3.75rem; } }
     @media (min-width: 992px) {
-      #section-1 #hero > div h3 {
+      #section-1 #hero-1 > div h3 {
         font-size: 3.125rem;
         line-height: 4.1875rem; } }
 /* =============
@@ -779,28 +785,28 @@ footer {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    grid-template-areas: "g1 g3" "g2 g4";
+    grid-template-areas: "d1 d3" "d2 d4";
     row-gap: 25px;
     margin: 0px; }
     @media (min-width: 768px) {
       #section-2 #grid-xl > div #date-container > div #date-content {
         row-gap: 10px; } }
-    #section-2 #grid-xl > div #date-container > div #date-content #g1 {
-      grid-area: g1;
+    #section-2 #grid-xl > div #date-container > div #date-content #d1 {
+      grid-area: d1;
       text-align: center;
       margin: 0px 20px;
       display: flex;
       align-items: center;
       justify-content: center; }
-    #section-2 #grid-xl > div #date-container > div #date-content #g2 {
-      grid-area: g2;
+    #section-2 #grid-xl > div #date-container > div #date-content #d2 {
+      grid-area: d2;
       text-align: center;
       margin: 0px 20px;
       display: flex;
       align-items: center;
       justify-content: center; }
-    #section-2 #grid-xl > div #date-container > div #date-content #g3 {
-      grid-area: g3;
+    #section-2 #grid-xl > div #date-container > div #date-content #d3 {
+      grid-area: d3;
       background-color: #F8E5D6;
       width: 60px;
       height: 71px;
@@ -810,15 +816,15 @@ footer {
       align-items: center;
       justify-content: center; }
       @media (min-width: 768px) {
-        #section-2 #grid-xl > div #date-container > div #date-content #g3 {
+        #section-2 #grid-xl > div #date-container > div #date-content #d3 {
           width: 107px;
           height: 80px; } }
       @media (min-width: 992px) {
-        #section-2 #grid-xl > div #date-container > div #date-content #g3 {
+        #section-2 #grid-xl > div #date-container > div #date-content #d3 {
           width: 127px;
           height: 95px; } }
-    #section-2 #grid-xl > div #date-container > div #date-content #g4 {
-      grid-area: g4;
+    #section-2 #grid-xl > div #date-container > div #date-content #d4 {
+      grid-area: d4;
       background-color: #F8E5D6;
       width: 60px;
       height: 71px;
@@ -828,11 +834,11 @@ footer {
       align-items: center;
       justify-content: center; }
       @media (min-width: 768px) {
-        #section-2 #grid-xl > div #date-container > div #date-content #g4 {
+        #section-2 #grid-xl > div #date-container > div #date-content #d4 {
           width: 107px;
           height: 80px; } }
       @media (min-width: 992px) {
-        #section-2 #grid-xl > div #date-container > div #date-content #g4 {
+        #section-2 #grid-xl > div #date-container > div #date-content #d4 {
           width: 127px;
           height: 95px; } }
 #section-2 #grid-xl > div #general-hours-container h2 {
@@ -847,14 +853,14 @@ footer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    grid-template-areas: "g1 g2 g3" "g4 g5 g6";
+    grid-template-areas: "hc1 hc2 hc3" "hc4 hc5 hc6";
     gap: 25px;
     margin: 0px; }
     @media (min-width: 768px) {
       #section-2 #grid-xl > div #general-hours-container > div #hours-content {
         gap: 10px; } }
-    #section-2 #grid-xl > div #general-hours-container > div #hours-content #g1 {
-      grid-area: g1;
+    #section-2 #grid-xl > div #general-hours-container > div #hours-content #hc1 {
+      grid-area: hc1;
       background-color: #F2948A;
       height: 71px;
       text-align: center;
@@ -862,13 +868,13 @@ footer {
       align-items: center;
       justify-content: center; }
       @media (min-width: 768px) {
-        #section-2 #grid-xl > div #general-hours-container > div #hours-content #g1 {
+        #section-2 #grid-xl > div #general-hours-container > div #hours-content #hc1 {
           height: 80px; } }
       @media (min-width: 992px) {
-        #section-2 #grid-xl > div #general-hours-container > div #hours-content #g1 {
+        #section-2 #grid-xl > div #general-hours-container > div #hours-content #hc1 {
           height: 95px; } }
-    #section-2 #grid-xl > div #general-hours-container > div #hours-content #g2 {
-      grid-area: g2;
+    #section-2 #grid-xl > div #general-hours-container > div #hours-content #hc2 {
+      grid-area: hc2;
       background-color: #F2948A;
       height: 71px;
       text-align: center;
@@ -876,13 +882,13 @@ footer {
       align-items: center;
       justify-content: center; }
       @media (min-width: 768px) {
-        #section-2 #grid-xl > div #general-hours-container > div #hours-content #g2 {
+        #section-2 #grid-xl > div #general-hours-container > div #hours-content #hc2 {
           height: 80px; } }
       @media (min-width: 992px) {
-        #section-2 #grid-xl > div #general-hours-container > div #hours-content #g2 {
+        #section-2 #grid-xl > div #general-hours-container > div #hours-content #hc2 {
           height: 95px; } }
-    #section-2 #grid-xl > div #general-hours-container > div #hours-content #g3 {
-      grid-area: g3;
+    #section-2 #grid-xl > div #general-hours-container > div #hours-content #hc3 {
+      grid-area: hc3;
       background-color: #F2948A;
       height: 71px;
       text-align: center;
@@ -890,13 +896,13 @@ footer {
       align-items: center;
       justify-content: center; }
       @media (min-width: 768px) {
-        #section-2 #grid-xl > div #general-hours-container > div #hours-content #g3 {
+        #section-2 #grid-xl > div #general-hours-container > div #hours-content #hc3 {
           height: 80px; } }
       @media (min-width: 992px) {
-        #section-2 #grid-xl > div #general-hours-container > div #hours-content #g3 {
+        #section-2 #grid-xl > div #general-hours-container > div #hours-content #hc3 {
           height: 95px; } }
-    #section-2 #grid-xl > div #general-hours-container > div #hours-content #g4 {
-      grid-area: g4;
+    #section-2 #grid-xl > div #general-hours-container > div #hours-content #hc4 {
+      grid-area: hc4;
       background-color: #F2948A;
       height: 71px;
       text-align: center;
@@ -904,13 +910,13 @@ footer {
       align-items: center;
       justify-content: center; }
       @media (min-width: 768px) {
-        #section-2 #grid-xl > div #general-hours-container > div #hours-content #g4 {
+        #section-2 #grid-xl > div #general-hours-container > div #hours-content #hc4 {
           height: 80px; } }
       @media (min-width: 992px) {
-        #section-2 #grid-xl > div #general-hours-container > div #hours-content #g4 {
+        #section-2 #grid-xl > div #general-hours-container > div #hours-content #hc4 {
           height: 95px; } }
-    #section-2 #grid-xl > div #general-hours-container > div #hours-content #g5 {
-      grid-area: g5;
+    #section-2 #grid-xl > div #general-hours-container > div #hours-content #hc5 {
+      grid-area: hc5;
       background-color: #F2948A;
       height: 71px;
       text-align: center;
@@ -918,13 +924,13 @@ footer {
       align-items: center;
       justify-content: center; }
       @media (min-width: 768px) {
-        #section-2 #grid-xl > div #general-hours-container > div #hours-content #g5 {
+        #section-2 #grid-xl > div #general-hours-container > div #hours-content #hc5 {
           height: 80px; } }
       @media (min-width: 992px) {
-        #section-2 #grid-xl > div #general-hours-container > div #hours-content #g5 {
+        #section-2 #grid-xl > div #general-hours-container > div #hours-content #hc5 {
           height: 95px; } }
-    #section-2 #grid-xl > div #general-hours-container > div #hours-content #g6 {
-      grid-area: g6;
+    #section-2 #grid-xl > div #general-hours-container > div #hours-content #hc6 {
+      grid-area: hc6;
       background-color: #F2948A;
       height: 71px;
       text-align: center;
@@ -932,10 +938,10 @@ footer {
       align-items: center;
       justify-content: center; }
       @media (min-width: 768px) {
-        #section-2 #grid-xl > div #general-hours-container > div #hours-content #g6 {
+        #section-2 #grid-xl > div #general-hours-container > div #hours-content #hc6 {
           height: 80px; } }
       @media (min-width: 992px) {
-        #section-2 #grid-xl > div #general-hours-container > div #hours-content #g6 {
+        #section-2 #grid-xl > div #general-hours-container > div #hours-content #hc6 {
           height: 95px; } }
 @media (min-width: 1200px) {
   #section-2 #tree-xl {
@@ -1109,18 +1115,32 @@ footer {
   #section-2 h4 span {
     display: block; }
 
-#section-2 #date-type {
+#section-2 #feb-date {
   font-family: Helvetica, sans-serif;
   font-size: 1rem;
   line-height: 1.4375rem;
   font-weight: 400;
   color: #A07C63; }
   @media (min-width: 768px) {
-    #section-2 #date-type {
+    #section-2 #feb-date {
       font-size: 1.125rem;
       line-height: 1.5625rem; } }
   @media (min-width: 992px) {
-    #section-2 #date-type {
+    #section-2 #feb-date {
+      font-size: 1.1875rem;
+      line-height: 1.625rem; } }
+#section-2 #mar-date {
+  font-family: Helvetica, sans-serif;
+  font-size: 1rem;
+  line-height: 1.4375rem;
+  font-weight: 400;
+  color: #A07C63; }
+  @media (min-width: 768px) {
+    #section-2 #mar-date {
+      font-size: 1.125rem;
+      line-height: 1.5625rem; } }
+  @media (min-width: 992px) {
+    #section-2 #mar-date {
       font-size: 1.1875rem;
       line-height: 1.625rem; } }
 #section-2 p {
@@ -1140,7 +1160,7 @@ footer {
 /* =============
     Section-3
 ============= */
-#section-3 #hero {
+#section-3 #hero-3 {
   background-image: url("../img/section-3/hero-3.jpg");
   background-repeat: no-repeat;
   background-size: 230%;
@@ -1150,16 +1170,16 @@ footer {
   align-items: center;
   justify-content: center; }
   @media (min-width: 768px) {
-    #section-3 #hero {
+    #section-3 #hero-3 {
       background-size: 220%;
       background-position: -250px -2050px;
       height: 35vh; } }
   @media (min-width: 992px) {
-    #section-3 #hero {
+    #section-3 #hero-3 {
       background-size: 120%;
       background-position: -50px -1700px;
       height: 45vh; } }
-  #section-3 #hero h2 {
+  #section-3 #hero-3 h2 {
     font-family: 'Playfair Display', serif;
     font-size: 1.875rem;
     font-weight: 900;
@@ -1168,10 +1188,10 @@ footer {
     align-items: center;
     justify-content: center; }
     @media (min-width: 768px) {
-      #section-3 #hero h2 {
+      #section-3 #hero-3 h2 {
         font-size: 2.8125rem; } }
     @media (min-width: 992px) {
-      #section-3 #hero h2 {
+      #section-3 #hero-3 h2 {
         font-size: 3.125rem; } }
 @media (min-width: 1200px) {
   #section-3 #sale-xl {
@@ -1189,13 +1209,14 @@ footer {
   #section-3 #sale-xl #sale ul {
     margin: 0px;
     display: grid;
-    grid-template-areas: ". s1 s2 s3" "a1 g1 g2 g3" "a2 g4 g5 g6" "a3 g7 g8 g9" ". b1 b2 b3";
+    grid-template-areas: ". s1 s2 s3" "a1 p1 p2 p3" "a2 p4 p5 p6" "a3 p7 p8 p9" ". b1-s b2-s b3-s";
     grid-template-columns: 100px 80px 80px 80px;
     grid-template-rows: repeat(5, 1fr);
     row-gap: 25px;
     text-align: center; }
     @media (min-width: 768px) {
       #section-3 #sale-xl #sale ul {
+        grid-template-areas: ". s1 s2 s3" "a1 p1 p2 p3" "a2 p4 p5 p6" "a3 p7 p8 p9" ". b1 b2 b3";
         row-gap: 15px;
         grid-template-columns: 160px 183px 183px 174px;
         grid-template-rows: repeat(5, 100px); } }
@@ -1211,130 +1232,145 @@ footer {
       grid-area: a2; }
     #section-3 #sale-xl #sale ul #a3 {
       grid-area: a3; }
-    #section-3 #sale-xl #sale ul #g1 {
-      grid-area: g1;
+    #section-3 #sale-xl #sale ul #p1 {
+      grid-area: p1;
       background-color: #E8B794;
       color: #fff;
       width: 60px;
       height: 45px;
+      margin: 0 auto;
       display: flex;
       align-items: center;
       justify-content: center; }
       @media (min-width: 768px) {
-        #section-3 #sale-xl #sale ul #g1 {
+        #section-3 #sale-xl #sale ul #p1 {
           width: 127px;
           height: 95px; } }
-    #section-3 #sale-xl #sale ul #g2 {
-      grid-area: g2;
+    #section-3 #sale-xl #sale ul #p2 {
+      grid-area: p2;
       background-color: #E8B794;
       color: #fff;
       width: 60px;
       height: 45px;
+      margin: 0 auto;
       display: flex;
       align-items: center;
       justify-content: center; }
       @media (min-width: 768px) {
-        #section-3 #sale-xl #sale ul #g2 {
+        #section-3 #sale-xl #sale ul #p2 {
           width: 127px;
           height: 95px; } }
-    #section-3 #sale-xl #sale ul #g3 {
-      grid-area: g3;
+    #section-3 #sale-xl #sale ul #p3 {
+      grid-area: p3;
       background-color: #E8B794;
       color: #fff;
       width: 60px;
       height: 45px;
+      margin: 0 auto;
       display: flex;
       align-items: center;
       justify-content: center; }
       @media (min-width: 768px) {
-        #section-3 #sale-xl #sale ul #g3 {
+        #section-3 #sale-xl #sale ul #p3 {
           width: 127px;
           height: 95px; } }
-    #section-3 #sale-xl #sale ul #g4 {
-      grid-area: g4;
+    #section-3 #sale-xl #sale ul #p4 {
+      grid-area: p4;
       background-color: #E8B794;
       color: #fff;
       width: 60px;
       height: 45px;
+      margin: 0 auto;
       display: flex;
       align-items: center;
       justify-content: center; }
       @media (min-width: 768px) {
-        #section-3 #sale-xl #sale ul #g4 {
+        #section-3 #sale-xl #sale ul #p4 {
           width: 127px;
           height: 95px; } }
-    #section-3 #sale-xl #sale ul #g5 {
-      grid-area: g5;
+    #section-3 #sale-xl #sale ul #p5 {
+      grid-area: p5;
       background-color: #E8B794;
       color: #fff;
       width: 60px;
       height: 45px;
+      margin: 0 auto;
       display: flex;
       align-items: center;
       justify-content: center; }
       @media (min-width: 768px) {
-        #section-3 #sale-xl #sale ul #g5 {
+        #section-3 #sale-xl #sale ul #p5 {
           width: 127px;
           height: 95px; } }
-    #section-3 #sale-xl #sale ul #g6 {
-      grid-area: g6;
+    #section-3 #sale-xl #sale ul #p6 {
+      grid-area: p6;
       background-color: #E8B794;
       color: #fff;
       width: 60px;
       height: 45px;
+      margin: 0 auto;
       display: flex;
       align-items: center;
       justify-content: center; }
       @media (min-width: 768px) {
-        #section-3 #sale-xl #sale ul #g6 {
+        #section-3 #sale-xl #sale ul #p6 {
           width: 127px;
           height: 95px; } }
-    #section-3 #sale-xl #sale ul #g7 {
-      grid-area: g7;
+    #section-3 #sale-xl #sale ul #p7 {
+      grid-area: p7;
       background-color: #E8B794;
       color: #fff;
       width: 60px;
       height: 45px;
+      margin: 0 auto;
       display: flex;
       align-items: center;
       justify-content: center; }
       @media (min-width: 768px) {
-        #section-3 #sale-xl #sale ul #g7 {
+        #section-3 #sale-xl #sale ul #p7 {
           width: 127px;
           height: 95px; } }
-    #section-3 #sale-xl #sale ul #g8 {
-      grid-area: g8;
+    #section-3 #sale-xl #sale ul #p8 {
+      grid-area: p8;
       background-color: #E8B794;
       color: #fff;
       width: 60px;
       height: 45px;
+      margin: 0 auto;
       display: flex;
       align-items: center;
       justify-content: center; }
       @media (min-width: 768px) {
-        #section-3 #sale-xl #sale ul #g8 {
+        #section-3 #sale-xl #sale ul #p8 {
           width: 127px;
           height: 95px; } }
-    #section-3 #sale-xl #sale ul #g9 {
-      grid-area: g9;
+    #section-3 #sale-xl #sale ul #p9 {
+      grid-area: p9;
       background-color: #E8B794;
       color: #fff;
       width: 60px;
       height: 45px;
+      margin: 0 auto;
       display: flex;
       align-items: center;
       justify-content: center; }
       @media (min-width: 768px) {
-        #section-3 #sale-xl #sale ul #g9 {
+        #section-3 #sale-xl #sale ul #p9 {
           width: 127px;
           height: 95px; } }
-    #section-3 #sale-xl #sale ul #b1 {
-      grid-area: b1; }
-    #section-3 #sale-xl #sale ul #b2 {
-      grid-area: b2; }
-    #section-3 #sale-xl #sale ul #b3 {
-      grid-area: b3; }
-
+    #section-3 #sale-xl #sale ul #b1-s {
+      grid-area: b1-s; }
+    #section-3 #sale-xl #sale ul #b2-s {
+      grid-area: b2-s; }
+    #section-3 #sale-xl #sale ul #b3-s {
+      grid-area: b3-s; }
+    @media (min-width: 768px) {
+      #section-3 #sale-xl #sale ul #b1 {
+        grid-area: b1; }
+      #section-3 #sale-xl #sale ul #b2 {
+        grid-area: b2; }
+      #section-3 #sale-xl #sale ul #b3 {
+        grid-area: b3; } }
 @media (min-width: 1200px) {
   #section-3 #bottom-xl {
     display: grid;
@@ -1417,7 +1453,7 @@ footer {
 /* =============
     Section-4
 ============= */
-#section-4 #hero {
+#section-4 #hero-4 {
   background-image: url("../img/section-4/hero-4.jpg");
   background-repeat: no-repeat;
   background-size: 200%;
@@ -1427,16 +1463,16 @@ footer {
   align-items: center;
   justify-content: center; }
   @media (min-width: 768px) {
-    #section-4 #hero {
+    #section-4 #hero-4 {
       background-size: 200%;
       background-position: -250px -250px;
       height: 35vh; } }
   @media (min-width: 992px) {
-    #section-4 #hero {
+    #section-4 #hero-4 {
       background-size: 140%;
       background-position: -240px -350px;
       height: 45vh; } }
-  #section-4 #hero h2 {
+  #section-4 #hero-4 h2 {
     font-family: 'Playfair Display', serif;
     font-size: 1.875rem;
     font-weight: 900;
@@ -1445,10 +1481,10 @@ footer {
     align-items: center;
     justify-content: center; }
     @media (min-width: 768px) {
-      #section-4 #hero h2 {
+      #section-4 #hero-4 h2 {
         font-size: 2.8125rem; } }
     @media (min-width: 992px) {
-      #section-4 #hero h2 {
+      #section-4 #hero-4 h2 {
         font-size: 3.125rem; } }
 @media (min-width: 1200px) {
   #section-4 #gallery-xl {
@@ -1535,7 +1571,7 @@ footer {
             margin: 0px 0px 25px 0px; } }
         @media (min-width: 992px) {
           #section-4 #gallery-xl #section-4-container #section-4-content #g2 #g2-img {
-            background-position: 0px -80px;
+            background-position: 0px -60px;
             height: 280px; } }
         #section-4 #gallery-xl #section-4-container #section-4-content #g2 #g2-img h3 {
           font-family: 'Playfair Display', serif;
@@ -1674,7 +1710,7 @@ footer {
             margin: 0px 0px 25px 0px; } }
         @media (min-width: 992px) {
           #section-4 #gallery-xl #section-4-container #section-4-content #g7 #g7-img {
-            background-position: 0px -130px;
+            background-position: 0px -100px;
             height: 280px; } }
         #section-4 #gallery-xl #section-4-container #section-4-content #g7 #g7-img h3 {
           font-family: 'Playfair Display', serif;
@@ -1747,7 +1783,7 @@ footer {
 /* =============
     Section-5
 ============= */
-#section-5 #hero {
+#section-5 #hero-5 {
   background-image: url("../img/section-5/hero-5.jpg");
   background-repeat: no-repeat;
   background-size: 300%;
@@ -1757,16 +1793,16 @@ footer {
   align-items: center;
   justify-content: center; }
   @media (min-width: 768px) {
-    #section-5 #hero {
+    #section-5 #hero-5 {
       background-size: 210%;
       background-position: -360px -500px;
       height: 35vh; } }
   @media (min-width: 992px) {
-    #section-5 #hero {
+    #section-5 #hero-5 {
       background-size: 160%;
       background-position: -330px -600px;
       height: 45vh; } }
-  #section-5 #hero h2 {
+  #section-5 #hero-5 h2 {
     font-family: 'Playfair Display', serif;
     font-size: 1.875rem;
     font-weight: 900;
@@ -1775,10 +1811,10 @@ footer {
     align-items: center;
     justify-content: center; }
     @media (min-width: 768px) {
-      #section-5 #hero h2 {
+      #section-5 #hero-5 h2 {
         font-size: 2.8125rem; } }
     @media (min-width: 992px) {
-      #section-5 #hero h2 {
+      #section-5 #hero-5 h2 {
         font-size: 3.125rem; } }
 @media (min-width: 1200px) {
   #section-5 #section-5-xl {
@@ -2002,7 +2038,7 @@ footer {
 ============= */
 #section-6 {
   text-align: center; }
-  #section-6 #hero {
+  #section-6 #hero-6 {
     background-image: url("../img/section-6/hero-6.jpg");
     background-repeat: no-repeat;
     background-size: 270%;
@@ -2012,16 +2048,16 @@ footer {
     align-items: center;
     justify-content: center; }
     @media (min-width: 768px) {
-      #section-6 #hero {
+      #section-6 #hero-6 {
         background-size: 200%;
         background-position: -550px -200px;
         height: 35vh; } }
     @media (min-width: 992px) {
-      #section-6 #hero {
+      #section-6 #hero-6 {
         background-size: 145%;
         background-position: -290px -180px;
         height: 45vh; } }
-    #section-6 #hero h2 {
+    #section-6 #hero-6 h2 {
       font-family: 'Playfair Display', serif;
       font-size: 1.875rem;
       font-weight: 900;
@@ -2030,10 +2066,10 @@ footer {
       align-items: center;
       justify-content: center; }
       @media (min-width: 768px) {
-        #section-6 #hero h2 {
+        #section-6 #hero-6 h2 {
           font-size: 2.8125rem; } }
       @media (min-width: 992px) {
-        #section-6 #hero h2 {
+        #section-6 #hero-6 h2 {
           font-size: 3.125rem; } }
   @media (min-width: 992px) {
     #section-6 #total {
@@ -2046,49 +2082,49 @@ footer {
       grid-template-areas: ". desktop-xl .";
       grid-template-columns: auto 1200px auto; } }
   @media (min-width: 992px) {
-    #section-6 #total ul {
+    #section-6 #total > ul {
       grid-area: desktop; } }
   @media (min-width: 1200px) {
-    #section-6 #total ul {
+    #section-6 #total > ul {
       grid-area: desktop-xl; } }
   @media (min-width: 768px) {
-    #section-6 #total ul {
+    #section-6 #total > ul {
       display: grid;
       grid-template-areas: "address phone email";
       grid-template-columns: repeat(3, 1fr);
       margin: 0px 10px; } }
-  #section-6 #total ul #address {
+  #section-6 #total > ul #address {
     margin-bottom: 70px; }
     @media (min-width: 768px) {
-      #section-6 #total ul #address {
+      #section-6 #total > ul #address {
         grid-area: address;
         margin: 0px; } }
-    #section-6 #total ul #address > div {
+    #section-6 #total > ul #address #icon-1 {
       font-size: 2.5rem;
       color: #E8B794; }
       @media (min-width: 992px) {
-        #section-6 #total ul #address > div {
+        #section-6 #total > ul #address #icon-1 {
           font-size: 3.125rem; } }
-  #section-6 #total ul #phone {
+  #section-6 #total > ul #phone {
     margin-bottom: 70px; }
     @media (min-width: 768px) {
-      #section-6 #total ul #phone {
+      #section-6 #total > ul #phone {
         grid-area: phone;
         margin: 0px; } }
-    #section-6 #total ul #phone > div {
+    #section-6 #total > ul #phone #icon-2 {
       font-size: 2.5rem;
       color: #E8B794; }
       @media (min-width: 992px) {
-        #section-6 #total ul #phone > div {
+        #section-6 #total > ul #phone #icon-2 {
           font-size: 3.125rem; } }
   @media (min-width: 768px) {
-    #section-6 #total ul #email {
+    #section-6 #total > ul #email {
       grid-area: email; } }
-  #section-6 #total ul #email > div {
+  #section-6 #total > ul #email #icon-3 {
     font-size: 2.5rem;
     color: #E8B794; }
     @media (min-width: 992px) {
-      #section-6 #total ul #email > div {
+      #section-6 #total > ul #email #icon-3 {
         font-size: 3.125rem; } }
   #section-6 h2 {
     font-family: 'Playfair Display', serif;

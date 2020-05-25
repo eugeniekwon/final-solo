@@ -4,7 +4,7 @@
 
 #section-4{
 
-    #hero{
+    #hero-4{
         background-image: url("../img/section-4/hero-4.jpg");
         background-repeat: no-repeat;
         background-size: 200%;
@@ -161,7 +161,7 @@
                         }
     
                         @include lg{
-                            background-position: 0px -80px;
+                            background-position: 0px -60px;
                             height: 280px;
                         }
             
@@ -359,7 +359,7 @@
                         }
     
                         @include lg{
-                            background-position: 0px -130px;
+                            background-position: 0px -100px;
                             height: 280px;
                         }
             

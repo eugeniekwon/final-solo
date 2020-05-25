@@ -5,7 +5,7 @@
 #section-3{
 
     
-    #hero{ 
+    #hero-3{ 
         background-image: url("../img/section-3/hero-3.jpg");
         background-repeat: no-repeat;
         background-size: 230%;
@@ -72,10 +72,10 @@
             display: grid;
             grid-template-areas: 
             ". s1 s2 s3"
-            "a1 g1 g2 g3"
-            "a2 g4 g5 g6"
-            "a3 g7 g8 g9"
-            ". b1 b2 b3";
+            "a1 p1 p2 p3"
+            "a2 p4 p5 p6"
+            "a3 p7 p8 p9"
+            ". b1-s b2-s b3-s";
             grid-template-columns: 100px 80px 80px 80px;
             grid-template-rows: repeat(5,1fr);
             row-gap: 25px;
@@ -83,6 +83,12 @@
             // column-gap: 30px;
     
             @include md{
+                grid-template-areas: 
+                ". s1 s2 s3"
+                "a1 p1 p2 p3"
+                "a2 p4 p5 p6"
+                "a3 p7 p8 p9"
+                ". b1 b2 b3";
                 row-gap: 15px;
                 grid-template-columns: 160px 183px 183px 174px;
                 grid-template-rows: repeat(5,100px);
@@ -112,12 +118,13 @@
                 }   
     
     
-                #g1{
-                    grid-area: g1;
+                #p1{
+                    grid-area: p1;
                     background-color: $light-orange;
                     color: $white;
                     width: 60px;
                     height: 45px;
+                    margin: 0 auto;
     
                     display: flex;
                     align-items: center;
@@ -131,12 +138,13 @@
     
                     
                 }   
-                #g2{
-                    grid-area: g2;
+                #p2{
+                    grid-area: p2;
                     background-color: $light-orange;
                     color: $white;
                     width: 60px;
                     height: 45px;
+                    margin: 0 auto;
     
                     display: flex;
                     align-items: center;
@@ -147,12 +155,13 @@
                         height: 95px;
                     }
                 }   
-                #g3{
-                    grid-area: g3;
+                #p3{
+                    grid-area: p3;
                     background-color: $light-orange;
                     color: $white;
                     width: 60px;
                     height: 45px;
+                    margin: 0 auto;
     
                     display: flex;
                     align-items: center;
@@ -163,12 +172,13 @@
                         height: 95px;
                     }
                 }   
-                #g4{
-                    grid-area: g4;
+                #p4{
+                    grid-area: p4;
                     background-color: $light-orange;
                     color: $white;
                     width: 60px;
                     height: 45px;
+                    margin: 0 auto;
     
                     display: flex;
                     align-items: center;
@@ -179,12 +189,13 @@
                         height: 95px;
                     }
                 }   
-                #g5{
-                    grid-area: g5;
+                #p5{
+                    grid-area: p5;
                     background-color: $light-orange;
                     color: $white;
                     width: 60px;
                     height: 45px;
+                    margin: 0 auto;
     
                     display: flex;
                     align-items: center;
@@ -195,12 +206,13 @@
                         height: 95px;
                     }
                 }   
-                #g6{
-                    grid-area: g6;
+                #p6{
+                    grid-area: p6;
                     background-color: $light-orange;
                     color: $white;
                     width: 60px;
                     height: 45px;
+                    margin: 0 auto;
     
                     display: flex;
                     align-items: center;
@@ -211,12 +223,13 @@
                         height: 95px;
                     }
                 }   
-                #g7{
-                    grid-area: g7;
+                #p7{
+                    grid-area: p7;
                     background-color: $light-orange;
                     color: $white;
                     width: 60px;
                     height: 45px;
+                    margin: 0 auto;
     
                     display: flex;
                     align-items: center;
@@ -227,12 +240,13 @@
                         height: 95px;
                     }
                 }   
-                #g8{
-                    grid-area: g8;
+                #p8{
+                    grid-area: p8;
                     background-color: $light-orange;
                     color: $white;
                     width: 60px;
                     height: 45px;
+                    margin: 0 auto;
     
                     display: flex;
                     align-items: center;
@@ -243,12 +257,13 @@
                         height: 95px;
                     }
                 }   
-                #g9{
-                    grid-area: g9;
+                #p9{
+                    grid-area: p9;
                     background-color: $light-orange;
                     color: $white;
                     width: 60px;
                     height: 45px;
+                    margin: 0 auto;
     
                     display: flex;
                     align-items: center;
@@ -261,15 +276,28 @@
                 }   
     
     
-                #b1{
-                    grid-area: b1;
+                #b1-s{
+                    grid-area: b1-s;
                 }   
-                #b2{
-                    grid-area: b2;
+                #b2-s{
+                    grid-area: b2-s;
                 }  
-                #b3{
-                    grid-area: b3;
+                #b3-s{
+                    grid-area: b3-s;
                 }  
+
+                @include md{
+                    #b1{
+                        grid-area: b1;
+                    }   
+                    #b2{
+                        grid-area: b2;
+                    }  
+                    #b3{
+                        grid-area: b3;
+                    }  
+                }
+                
             }
         }
     }

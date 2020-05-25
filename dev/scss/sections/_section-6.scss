@@ -6,7 +6,7 @@
 
     text-align: center;
 
-    #hero {
+    #hero-6 {
         background-image: url("../img/section-6/hero-6.jpg");
         background-repeat: no-repeat;
         background-size: 270%;
@@ -65,7 +65,7 @@
             grid-template-columns: auto 1200px auto;
         }
 
-        ul {
+        >ul {
             @include lg {
                 grid-area: desktop;
             }
@@ -93,7 +93,7 @@
                 }
 
 
-                >div {
+                #icon-1{
                     font-size: rem-calc(40);
                     color: $light-orange;
 
@@ -113,7 +113,7 @@
                     margin: 0px;
                 }
 
-                >div {
+                #icon-2 {
                     font-size: rem-calc(40);
                     color: $light-orange;
 
@@ -131,7 +131,7 @@
 
                 }
 
-                >div {
+                #icon-3 {
                     font-size: rem-calc(40);
                     color: $light-orange;
 

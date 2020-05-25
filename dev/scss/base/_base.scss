@@ -58,12 +58,18 @@ ul{
 }
 
 .show-for-mobile{
-    display: show;
-    @include lg{
-        display: block;
+    display: flex !important;
+    @include md{
+        display: none !important;
     }
 }
 
+.show-for-tablet{
+    display: none !important;
+    @include md{
+        display: flex !important;
+    }
+}
 
 
 a:link,

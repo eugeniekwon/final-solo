@@ -131,7 +131,7 @@
                         display: grid;
                         grid-template-columns: repeat(2, 1fr);
                         grid-template-rows: repeat(2, 1fr);
-                        grid-template-areas: "g1 g3""g2 g4";
+                        grid-template-areas: "d1 d3""d2 d4";
                         row-gap: 25px;
                         margin: 0px;
                         
@@ -139,8 +139,8 @@
                             row-gap: 10px;
                         }
     
-                        #g1 {
-                            grid-area: g1;
+                        #d1 {
+                            grid-area: d1;
                             text-align: center;
                             margin: 0px 20px;
     
@@ -149,8 +149,8 @@
                             justify-content: center;
                         }
     
-                        #g2 {
-                            grid-area: g2;
+                        #d2 {
+                            grid-area: d2;
                             text-align: center;
                             margin: 0px 20px;
     
@@ -159,8 +159,8 @@
                             justify-content: center;
                         }
     
-                        #g3 {
-                            grid-area: g3;
+                        #d3 {
+                            grid-area: d3;
                             background-color: $cream;
                             width: 60px;
                             height: 71px;
@@ -182,8 +182,8 @@
                             }
                         }
     
-                        #g4 {
-                            grid-area: g4;
+                        #d4 {
+                            grid-area: d4;
                             background-color: $cream;
                             width: 60px;
                             height: 71px;
@@ -234,7 +234,7 @@
                         display: grid;
                         grid-template-columns: repeat(3, 1fr);
                         grid-template-rows: repeat(2, 1fr);
-                        grid-template-areas: "g1 g2 g3""g4 g5 g6";
+                        grid-template-areas: "hc1 hc2 hc3""hc4 hc5 hc6";
                         gap: 25px;
                         margin: 0px;
     
@@ -244,8 +244,8 @@
                 
     
     
-                        #g1 {
-                            grid-area: g1;
+                        #hc1 {
+                            grid-area: hc1;
     
                             background-color: $bright-pink;
                             height: 71px;
@@ -265,8 +265,8 @@
     
                         }
     
-                        #g2 {
-                            grid-area: g2;
+                        #hc2 {
+                            grid-area: hc2;
     
                             background-color: $bright-pink;
                             height: 71px;
@@ -285,8 +285,8 @@
                             }
                         }
     
-                        #g3 {
-                            grid-area: g3;
+                        #hc3 {
+                            grid-area: hc3;
     
                             background-color: $bright-pink;
                             height: 71px;
@@ -305,8 +305,8 @@
                             }
                         }
     
-                        #g4 {
-                            grid-area: g4;
+                        #hc4 {
+                            grid-area: hc4;
     
                             background-color: $bright-pink;
                             height: 71px;
@@ -325,8 +325,8 @@
                             }
                         }
     
-                        #g5 {
-                            grid-area: g5;
+                        #hc5 {
+                            grid-area: hc5;
     
                             background-color: $bright-pink;
                             height: 71px;
@@ -345,8 +345,8 @@
                             }
                         }
     
-                        #g6 {
-                            grid-area: g6;
+                        #hc6 {
+                            grid-area: hc6;
     
                             background-color: $bright-pink;
                             height: 71px;
@@ -636,7 +636,25 @@
         }
     }
 
-    #date-type {
+    #feb-date {
+        font-family: Helvetica, sans-serif;
+        font-size: rem-calc(16);
+        line-height: rem-calc(23);
+        font-weight: 400;
+        color: $middle-brown;
+
+        @include md {
+            font-size: rem-calc(18);
+            line-height: rem-calc(25);
+        }
+
+        @include lg {
+            font-size: rem-calc(19);
+            line-height: rem-calc(26);
+        }
+    }
+
+    #mar-date {
         font-family: Helvetica, sans-serif;
         font-size: rem-calc(16);
         line-height: rem-calc(23);
