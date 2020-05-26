@@ -25,7 +25,19 @@
 
         @include lg {
             background-size: 145%;
-            background-position: -290px -180px;
+            background-position: -290px -130px;
+            height: 45vh;
+        }
+
+        @include xl {
+            background-size: 145%;
+            background-position: -290px -200px;
+            height: 45vh;
+        }
+
+        @include xxl {
+            background-size: 140%;
+            background-position: -500px -400px;
             height: 45vh;
         }
 

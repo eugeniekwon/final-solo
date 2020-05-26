@@ -23,9 +23,23 @@
 
         @include lg {
             background-size: 140%;
-            background-position: -240px -350px;
+            background-position: -240px -250px;
             height: 45vh;
         }
+
+        @include xl {
+            background-size: 140%;
+            background-position: -240px -300px;
+            height: 45vh;
+        }
+
+        @include xxl {
+            background-size: 130%;
+            background-position: -240px -400px;
+            height: 45vh;
+        }
+
+
 
         
 
@@ -112,7 +126,7 @@
     
                         @include lg{
                             background-position: -90px 0px;
-                            height: 280px;
+                            height: 228px;
                         }
             
                         h3{
@@ -161,8 +175,8 @@
                         }
     
                         @include lg{
-                            background-position: 0px -60px;
-                            height: 280px;
+                            background-position: 0px -50px;
+                            height: 228px;
                         }
             
                         h3{
@@ -208,7 +222,7 @@
                         }
     
                         @include lg{
-                            height: 280px;
+                            height: 228px;
                         }
             
                         h3{
@@ -256,7 +270,7 @@
                         }
     
                         @include lg{
-                            height: 280px;
+                            height: 228px;
                         }
     
             
@@ -304,7 +318,7 @@
                         }
     
                         @include lg{
-                            height: 280px;
+                            height: 228px;
                         }
             
                         h3{
@@ -360,7 +374,7 @@
     
                         @include lg{
                             background-position: 0px -100px;
-                            height: 280px;
+                            height: 228px;
                         }
             
                         h3{
@@ -394,7 +408,7 @@
                             background-repeat: no-repeat;
                             background-size: cover;
                             background-position: -40px 0px;
-                            height: 280px;
+                            height: 228px;
             
                             display: flex;
                             align-items: center;
@@ -426,7 +440,7 @@
                             background-repeat: no-repeat;
                             background-size: cover;
                             background-position: -80px 0;
-                            height: 280px;
+                            height: 228px;
             
                             display: flex;
                             align-items: center;

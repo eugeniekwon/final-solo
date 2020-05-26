@@ -669,7 +669,19 @@ footer p {
   @media (min-width: 992px) {
     #section-1 #hero-1 {
       background-size: 150%;
-      background-position: -300px -1250px;
+      background-position: -300px -1000px;
+      height: 100vh;
+      margin-top: 220px; } }
+  @media (min-width: 1200px) {
+    #section-1 #hero-1 {
+      background-size: 130%;
+      background-position: -300px -1050px;
+      height: 100vh;
+      margin-top: 220px; } }
+  @media (min-width: 1600px) {
+    #section-1 #hero-1 {
+      background-size: 130%;
+      background-position: -300px -1450px;
       height: 100vh;
       margin-top: 220px; } }
   #section-1 #hero-1 > div h1 {
@@ -728,7 +740,17 @@ footer p {
   @media (min-width: 992px) {
     #section-2 #hero-2 {
       background-size: 120%;
-      background-position: -120px -1000px;
+      background-position: -120px -750px;
+      height: 45vh; } }
+  @media (min-width: 1200px) {
+    #section-2 #hero-2 {
+      background-size: 120%;
+      background-position: -120px -900px;
+      height: 45vh; } }
+  @media (min-width: 1600px) {
+    #section-2 #hero-2 {
+      background-size: 120%;
+      background-position: -120px -1300px;
       height: 45vh; } }
   #section-2 #hero-2 h2 {
     font-family: 'Playfair Display', serif;
@@ -1194,8 +1216,18 @@ footer p {
       height: 35vh; } }
   @media (min-width: 992px) {
     #section-3 #hero-3 {
-      background-size: 120%;
+      background-size: 150%;
       background-position: -50px -1700px;
+      height: 45vh; } }
+  @media (min-width: 1200px) {
+    #section-3 #hero-3 {
+      background-size: 130%;
+      background-position: -50px -1900px;
+      height: 45vh; } }
+  @media (min-width: 1600px) {
+    #section-3 #hero-3 {
+      background-size: 130%;
+      background-position: -50px -2550px;
       height: 45vh; } }
   #section-3 #hero-3 h2 {
     font-family: 'Playfair Display', serif;
@@ -1488,7 +1520,17 @@ footer p {
   @media (min-width: 992px) {
     #section-4 #hero-4 {
       background-size: 140%;
-      background-position: -240px -350px;
+      background-position: -240px -250px;
+      height: 45vh; } }
+  @media (min-width: 1200px) {
+    #section-4 #hero-4 {
+      background-size: 140%;
+      background-position: -240px -300px;
+      height: 45vh; } }
+  @media (min-width: 1600px) {
+    #section-4 #hero-4 {
+      background-size: 130%;
+      background-position: -240px -400px;
       height: 45vh; } }
   #section-4 #hero-4 h2 {
     font-family: 'Playfair Display', serif;
@@ -1555,7 +1597,7 @@ footer p {
         @media (min-width: 992px) {
           #section-4 #gallery-xl #section-4-container #section-4-content #g1 #g1-img {
             background-position: -90px 0px;
-            height: 280px; } }
+            height: 228px; } }
         #section-4 #gallery-xl #section-4-container #section-4-content #g1 #g1-img h3 {
           font-family: 'Playfair Display', serif;
           font-size: 1.375rem;
@@ -1589,8 +1631,8 @@ footer p {
             margin: 0px 0px 25px 0px; } }
         @media (min-width: 992px) {
           #section-4 #gallery-xl #section-4-container #section-4-content #g2 #g2-img {
-            background-position: 0px -60px;
-            height: 280px; } }
+            background-position: 0px -50px;
+            height: 228px; } }
         #section-4 #gallery-xl #section-4-container #section-4-content #g2 #g2-img h3 {
           font-family: 'Playfair Display', serif;
           font-size: 1.375rem;
@@ -1623,7 +1665,7 @@ footer p {
             margin: 0px 0px 25px 0px; } }
         @media (min-width: 992px) {
           #section-4 #gallery-xl #section-4-container #section-4-content #g3 #g3-img {
-            height: 280px; } }
+            height: 228px; } }
         #section-4 #gallery-xl #section-4-container #section-4-content #g3 #g3-img h3 {
           font-family: 'Playfair Display', serif;
           font-size: 1.375rem;
@@ -1656,7 +1698,7 @@ footer p {
             margin: 0px 0px 25px 0px; } }
         @media (min-width: 992px) {
           #section-4 #gallery-xl #section-4-container #section-4-content #g5 #g5-img {
-            height: 280px; } }
+            height: 228px; } }
         #section-4 #gallery-xl #section-4-container #section-4-content #g5 #g5-img h3 {
           font-family: 'Playfair Display', serif;
           font-size: 1.375rem;
@@ -1690,7 +1732,7 @@ footer p {
             margin: 0px 0px 25px 0px; } }
         @media (min-width: 992px) {
           #section-4 #gallery-xl #section-4-container #section-4-content #g6 #g6-img {
-            height: 280px; } }
+            height: 228px; } }
         #section-4 #gallery-xl #section-4-container #section-4-content #g6 #g6-img h3 {
           font-family: 'Playfair Display', serif;
           font-size: 1.375rem;
@@ -1729,7 +1771,7 @@ footer p {
         @media (min-width: 992px) {
           #section-4 #gallery-xl #section-4-container #section-4-content #g7 #g7-img {
             background-position: 0px -100px;
-            height: 280px; } }
+            height: 228px; } }
         #section-4 #gallery-xl #section-4-container #section-4-content #g7 #g7-img h3 {
           font-family: 'Playfair Display', serif;
           font-size: 1.375rem;
@@ -1752,7 +1794,7 @@ footer p {
           background-repeat: no-repeat;
           background-size: cover;
           background-position: -40px 0px;
-          height: 280px;
+          height: 228px;
           display: flex;
           align-items: center;
           justify-content: center; }
@@ -1771,7 +1813,7 @@ footer p {
           background-repeat: no-repeat;
           background-size: cover;
           background-position: -80px 0;
-          height: 280px;
+          height: 228px;
           display: flex;
           align-items: center;
           justify-content: center; }
@@ -1818,7 +1860,17 @@ footer p {
   @media (min-width: 992px) {
     #section-5 #hero-5 {
       background-size: 160%;
+      background-position: -330px -400px;
+      height: 45vh; } }
+  @media (min-width: 1200px) {
+    #section-5 #hero-5 {
+      background-size: 160%;
       background-position: -330px -600px;
+      height: 45vh; } }
+  @media (min-width: 1600px) {
+    #section-5 #hero-5 {
+      background-size: 150%;
+      background-position: -330px -850px;
       height: 45vh; } }
   #section-5 #hero-5 h2 {
     font-family: 'Playfair Display', serif;
@@ -2091,7 +2143,17 @@ footer p {
     @media (min-width: 992px) {
       #section-6 #hero-6 {
         background-size: 145%;
-        background-position: -290px -180px;
+        background-position: -290px -130px;
+        height: 45vh; } }
+    @media (min-width: 1200px) {
+      #section-6 #hero-6 {
+        background-size: 145%;
+        background-position: -290px -200px;
+        height: 45vh; } }
+    @media (min-width: 1600px) {
+      #section-6 #hero-6 {
+        background-size: 140%;
+        background-position: -500px -400px;
         height: 45vh; } }
     #section-6 #hero-6 h2 {
       font-family: 'Playfair Display', serif;

@@ -26,10 +26,25 @@
 
         @include lg {
             background-size: 150%;
-            background-position: -300px -1250px;
+            background-position: -300px -1000px;
             height: 100vh;
             margin-top: 220px;
         }
+
+        @include xl{
+            background-size: 130%;
+            background-position: -300px -1050px;
+            height: 100vh;
+            margin-top: 220px;
+        }
+
+        @include xxl{
+            background-size: 130%;
+            background-position: -300px -1450px;
+            height: 100vh;
+            margin-top: 220px;
+        }
+
 
         >div {
         
