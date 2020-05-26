@@ -139,6 +139,29 @@
                         grid-area: p;
                     }
                 }
+
+                #for-tablet-desktop{
+                    @include md{
+                        display: grid; 
+                        grid-template-columns: 105px auto 10px;
+                        grid-template-areas: ". p .";
+                    }
+
+                    @include lg{
+                        grid-template-columns: 400px auto 10px;
+                    }
+
+                    p{
+                        @include md{
+                            grid-area: p;
+                        }
+
+                        @include lg{
+                            grid-area: p;
+                        }
+                    }
+                    
+                }
         
                 #history-2-img{
                     background-image: url("../img/section-5/history-2.jpg");

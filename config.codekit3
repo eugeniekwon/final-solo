@@ -38,8 +38,16 @@
 		"oAP": "/deploy/img/section-1/main-hero.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
+		},
+	"/deploy/img/section-1/main-hero_tmp589042819": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/section-1/main-hero_tmp589042819",
+		"oF": 0
 		},
 	"/deploy/img/section-2/hero-2.jpg": {
 		"ft": 16384,
@@ -49,7 +57,7 @@
 		"oAP": "/deploy/img/section-2/hero-2.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/deploy/img/section-2/lemons.jpg": {
@@ -82,7 +90,7 @@
 		"oAP": "/deploy/img/section-3/hero-3.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/deploy/img/section-3/people-group.jpg": {
@@ -192,7 +200,7 @@
 		"oAP": "/deploy/img/section-4/hero-4.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/deploy/img/section-5/hero-5.jpg": {
@@ -203,7 +211,7 @@
 		"oAP": "/deploy/img/section-5/hero-5.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/deploy/img/section-5/history-1.jpg": {
@@ -258,7 +266,7 @@
 		"oAP": "/deploy/img/section-6/hero-6.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/deploy/index.html": {

@@ -11,6 +11,7 @@
         background-size: 250%;
         background-position: -280px -620px;
         height: 30vh;
+        margin-top: 150px;
 
         display: flex;
         align-items: center;
@@ -104,12 +105,18 @@
         >div {
             @include md {
                 display: grid;
-                grid-template-columns: 50% 50%;
+                grid-template-columns: 40% 60%;
                 grid-template-areas: "date general-hours";
+                margin: 0px 25px;
+            }
+
+            @include lg{
+                margin: 0px 90px;
             }
 
             @include xl{
                 grid-area: grid-xl;
+                
             }
 
     
@@ -142,21 +149,21 @@
                         #d1 {
                             grid-area: d1;
                             text-align: center;
-                            margin: 0px 20px;
+                            // margin: 0px 20px;
     
                             display: flex;
                             align-items: center;
-                            justify-content: center;
+                            justify-content: left;
                         }
     
                         #d2 {
                             grid-area: d2;
                             text-align: center;
-                            margin: 0px 20px;
+                            // margin: 0px 20px;
     
                             display: flex;
                             align-items: center;
-                            justify-content: center;
+                            justify-content: left;
                         }
     
                         #d3 {
@@ -616,7 +623,7 @@
         font-family: Helvetica, sans-serif;
         font-size: rem-calc(16);
         line-height: rem-calc(23);
-        font-weight: 700;
+        font-weight: 400;
         color: $white;
 
         @include md {

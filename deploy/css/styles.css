@@ -574,64 +574,78 @@ header {
 /* =============
     Footer
 ============= */
-footer {
+@media (min-width: 1200px) {
+  footer {
+    display: grid;
+    grid-template-columns: auto 1200px auto;
+    grid-template-areas: ". footer-xl .";
+    background-color: #F7E2DA;
+    width: 100%;
+    border-bottom: 1px solid #F7E2DA; } }
+
+footer #footer-xl {
   background-color: #F7E2DA;
   width: 100%;
   border-bottom: 1px solid #F7E2DA; }
+  @media (min-width: 1200px) {
+    footer #footer-xl {
+      grid-area: footer-xl; } }
   @media (min-width: 768px) {
-    footer #address-footer {
+    footer #footer-xl #address-footer {
       margin-bottom: 40px; } }
-  footer #social-medias ul {
+  footer #footer-xl #social-medias ul {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     margin: 25px 120px;
     font-size: 1.5625rem; }
     @media (min-width: 768px) {
-      footer #social-medias ul {
+      footer #footer-xl #social-medias ul {
         margin: 25px 300px;
         font-size: 1.875rem; } }
     @media (min-width: 992px) {
-      footer #social-medias ul {
+      footer #footer-xl #social-medias ul {
         margin: 25px 450px;
         font-size: 2.5rem; } }
-    footer #social-medias ul li {
+    footer #footer-xl #social-medias ul li {
       margin-bottom: 35px; }
-      footer #social-medias ul li a:link {
+      footer #footer-xl #social-medias ul li a:link {
         color: #E9B6A3; }
-      footer #social-medias ul li a:hover {
+      footer #footer-xl #social-medias ul li a:hover {
         color: #BF8C78; }
-      footer #social-medias ul li a:visited {
+      footer #footer-xl #social-medias ul li a:visited {
         color: #BF8C78; }
-  footer h2 {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.125rem;
-    font-weight: 700;
-    color: #BF8C78;
-    text-align: center;
-    padding: 35px 0px; }
-    @media (min-width: 768px) {
-      footer h2 {
-        font-size: 1.75rem;
-        padding: 35px 0px 15px 0px; } }
+
+footer h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #BF8C78;
+  text-align: center;
+  padding: 35px 0px; }
   @media (min-width: 768px) {
-    footer h3 {
-      font-family: 'Playfair Display', serif;
-      font-size: 1.4375rem;
-      font-weight: 400;
-      text-align: center;
-      color: #BF8C78;
-      margin-bottom: 25px; } }
-  footer p {
-    font-family: Helvetica, sans-serif;
-    font-size: 1.125rem;
+    footer h2 {
+      font-size: 1.75rem;
+      padding: 35px 0px 15px 0px; } }
+@media (min-width: 768px) {
+  footer h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4375rem;
     font-weight: 400;
-    line-height: 1.5625rem;
     text-align: center;
-    color: #BF8C78; }
-    @media (min-width: 768px) {
-      footer p {
-        margin-bottom: 15px; } }
+    color: #BF8C78;
+    margin-bottom: 25px; } }
+
+footer p {
+  font-family: Helvetica, sans-serif;
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.5625rem;
+  text-align: center;
+  color: #BF8C78; }
+  @media (min-width: 768px) {
+    footer p {
+      margin-bottom: 15px; } }
 /* =============
     Section-1
 ============= */
@@ -702,6 +716,7 @@ footer {
   background-size: 250%;
   background-position: -280px -620px;
   height: 30vh;
+  margin-top: 150px;
   display: flex;
   align-items: center;
   justify-content: center; }
@@ -767,8 +782,13 @@ footer {
 @media (min-width: 768px) {
   #section-2 #grid-xl > div {
     display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-areas: "date general-hours"; } }
+    grid-template-columns: 40% 60%;
+    grid-template-areas: "date general-hours";
+    margin: 0px 25px; } }
+
+@media (min-width: 992px) {
+  #section-2 #grid-xl > div {
+    margin: 0px 90px; } }
 
 @media (min-width: 1200px) {
   #section-2 #grid-xl > div {
@@ -794,17 +814,15 @@ footer {
     #section-2 #grid-xl > div #date-container > div #date-content #d1 {
       grid-area: d1;
       text-align: center;
-      margin: 0px 20px;
       display: flex;
       align-items: center;
-      justify-content: center; }
+      justify-content: left; }
     #section-2 #grid-xl > div #date-container > div #date-content #d2 {
       grid-area: d2;
       text-align: center;
-      margin: 0px 20px;
       display: flex;
       align-items: center;
-      justify-content: center; }
+      justify-content: left; }
     #section-2 #grid-xl > div #date-container > div #date-content #d3 {
       grid-area: d3;
       background-color: #F8E5D6;
@@ -1102,7 +1120,7 @@ footer {
   font-family: Helvetica, sans-serif;
   font-size: 1rem;
   line-height: 1.4375rem;
-  font-weight: 700;
+  font-weight: 400;
   color: #fff; }
   @media (min-width: 768px) {
     #section-2 h4 {
@@ -1877,6 +1895,24 @@ footer {
       grid-template-areas: ". p ."; } }
   #section-5 #section-5-xl #section-5-container #section-5b > div p {
     grid-area: p; }
+
+@media (min-width: 768px) {
+  #section-5 #section-5-xl #section-5-container #section-5b #for-tablet-desktop {
+    display: grid;
+    grid-template-columns: 105px auto 10px;
+    grid-template-areas: ". p ."; } }
+
+@media (min-width: 992px) {
+  #section-5 #section-5-xl #section-5-container #section-5b #for-tablet-desktop {
+    grid-template-columns: 400px auto 10px; } }
+
+@media (min-width: 768px) {
+  #section-5 #section-5-xl #section-5-container #section-5b #for-tablet-desktop p {
+    grid-area: p; } }
+
+@media (min-width: 992px) {
+  #section-5 #section-5-xl #section-5-container #section-5b #for-tablet-desktop p {
+    grid-area: p; } }
 
 #section-5 #section-5-xl #section-5-container #section-5b #history-2-img {
   background-image: url("../img/section-5/history-2.jpg");

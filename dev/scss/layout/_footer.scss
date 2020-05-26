@@ -2,56 +2,80 @@
     Footer
 ============= */
 
-footer{
+footer {
 
-    background-color: $light-pink;
-    width: 100%;
-    border-bottom: 1px solid $light-pink;
-    
-    #address-footer{
-        @include md{
-            margin-bottom: 40px;
-        }
+    @include xl {
+        display: grid;
+        grid-template-columns: auto 1200px auto;
+        grid-template-areas: ". footer-xl .";
+        background-color: $light-pink;
+        width: 100%;
+        border-bottom: 1px solid $light-pink;
     }
 
-    #social-medias{
-        ul{
-            display: flex;
-            align-items: center;
-            justify-content: space-evenly;
-            margin: 25px 120px;
-            font-size: rem-calc(25);
+    #footer-xl {
 
-            @include md{
-                margin: 25px 300px;
-                font-size: rem-calc(30);
-            }
+        @include xl {
+            grid-area: footer-xl;
 
-            @include lg{
-                margin: 25px 450px;
-                font-size: rem-calc(40);
-            }
+        }
 
-            li{
-                margin-bottom: 35px;
+        background-color: $light-pink;
+        width: 100%;
+        border-bottom: 1px solid $light-pink;
 
-                a:link{
-                    color: $middle-pink;
-                } 
-
-                a:hover{
-                    color: $dark-pink;
-                } 
-
-                a:visited{
-                    color: $dark-pink;
-                } 
+        #address-footer {
+            @include md {
+                margin-bottom: 40px;
             }
         }
-        
+
+        #social-medias {
+            ul {
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                margin: 25px 120px;
+                font-size: rem-calc(25);
+
+                @include md {
+                    margin: 25px 300px;
+                    font-size: rem-calc(30);
+                }
+
+                @include lg {
+                    margin: 25px 450px;
+                    font-size: rem-calc(40);
+                }
+
+                li {
+                    margin-bottom: 35px;
+
+                    a:link {
+                        color: $middle-pink;
+                    }
+
+                    a:hover {
+                        color: $dark-pink;
+                    }
+
+                    a:visited {
+                        color: $dark-pink;
+                    }
+                }
+            }
+
+        }
+
+
+
     }
 
-    h2{
+
+
+
+
+    h2 {
         font-family: 'Playfair Display', serif;
         font-size: rem-calc(18);
         font-weight: 700;
@@ -59,14 +83,14 @@ footer{
         text-align: center;
         padding: 35px 0px;
 
-        @include md{
+        @include md {
             font-size: rem-calc(28);
             padding: 35px 0px 15px 0px;
         }
     }
 
-    h3{
-        @include md{
+    h3 {
+        @include md {
             font-family: 'Playfair Display', serif;
             font-size: rem-calc(23);
             font-weight: 400;
@@ -76,15 +100,15 @@ footer{
         }
     }
 
-    p{
+    p {
         font-family: Helvetica, sans-serif;
         font-size: rem-calc(18);
         font-weight: 400;
         line-height: rem-calc(25);
         text-align: center;
         color: $dark-pink;
-        
-        @include md{
+
+        @include md {
             margin-bottom: 15px;
         }
     }
