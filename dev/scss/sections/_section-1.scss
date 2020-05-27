@@ -11,57 +11,42 @@
         background-position: -280px -660px;
         height: 50vh;
         position: relative;
-        margin-top: 150px;
+        margin-top: 90px;
 
         display: flex;
         align-items: center;
         justify-content: center;
 
         @include md {
-            background-size: 190%;
-            background-position: -450px -1000px;
+            background-size: 150%;
+            background-position: -280px -750px;
             height: 70vh;
-            margin-top: 220px;
         }
 
         @include lg {
-            background-size: 150%;
             background-position: -300px -1000px;
             height: 100vh;
-            margin-top: 220px;
         }
 
         @include xl{
             background-size: 130%;
-            background-position: -300px -1050px;
-            height: 100vh;
-            margin-top: 220px;
         }
 
         @include xxl{
-            background-size: 130%;
             background-position: -300px -1450px;
-            height: 100vh;
-            margin-top: 220px;
         }
 
 
         >div {
-        
-            
 
+            font-family: 'Playfair Display', serif;
+            color: $white;
+        
             h1 {
-                
-                font-family: 'Playfair Display', serif;
                 font-size: rem-calc(37);
                 line-height: rem-calc(49);
                 font-weight: 900;
-                color: $white;
                 margin-bottom: 25px;
-
-                display: flex;
-                align-items: center;
-                justify-content: center;
 
                 @include md {
                     font-size: rem-calc(60);
@@ -75,11 +60,9 @@
             }
 
             h3 {
-                font-family: 'Playfair Display', serif;
                 font-size: rem-calc(22);
                 line-height: rem-calc(30);
                 font-weight: 700;
-                color: $white;
 
                 display: flex;
                 align-items: center;

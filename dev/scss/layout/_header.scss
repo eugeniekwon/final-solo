@@ -26,14 +26,14 @@ header{
 
         #logo-container{
             grid-area: logo;
-            padding: 50px 10px;
+            padding: 20px 10px;
 
             @include md{
-                padding: 65px 40px;
+                padding: 20px 40px;
             }
 
             @include lg{
-                padding: 20px 45px;
+                padding: 10px 45px 0px 45px;
             }
 
             #logo-area{
@@ -64,8 +64,8 @@ header{
 
                     @include md{
                         grid-area: logo;
-                        height: 90px;
-                        width: 90px;
+                        height: 55px;
+                        width: 55px;
                     }
 
                     @include lg{
@@ -133,8 +133,7 @@ header{
             background-color: $light-pink;
             display: none;
             grid-area: nav;
-            padding: 20px;
-
+            margin: 0px 10px;
 
             @include lg{
                 background-color: $light-pink;
@@ -142,6 +141,7 @@ header{
                 display: flex;
                 align-items: center;
                 justify-content: center;
+                margin: 0px auto;
 
             }
 
@@ -156,11 +156,6 @@ header{
     
                 }
             }
-
-            
         }
-
     }
-
-
 }

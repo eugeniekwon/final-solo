@@ -1,40 +1,40 @@
 /* =============
     Base
 ============= */
-ul{
+ul {
     padding: 0;
 
-    li{
+    li {
         list-style: none;
     }
 }
 
-.big-spacing{
+.big-spacing {
     margin-bottom: 70px;
 
-    @include md{
+    @include md {
         margin-bottom: 80px;
     }
 
-    @include lg{
+    @include lg {
         margin-bottom: 120px;
     }
 
 }
 
-.spacing-h-content{
+.spacing-h-content {
     margin-bottom: 25px;
 
 }
 
-.medium-b-spacing{
+.medium-b-spacing {
     margin-bottom: 25px;
 
-    @include md{
+    @include md {
         margin-bottom: 40px;
     }
 
-    @include lg{
+    @include lg {
         margin-bottom: 60px;
     }
 
@@ -43,36 +43,59 @@ ul{
 
 
 
-.show-for-md{
+.show-for-md {
     display: none;
-    @include md{
+
+    @include md {
         display: block;
     }
 }
 
-.show-for-lg{
+.show-for-lg {
     display: none;
-    @include lg{
+
+    @include lg {
         display: block;
     }
 }
 
-.show-for-mobile{
+.show-for-mobile {
     display: flex !important;
-    @include md{
+
+    @include md {
         display: none !important;
     }
 }
 
-.show-for-tablet{
+.show-for-tablet {
     display: none !important;
-    @include md{
+
+    @include md {
+        display: flex !important;
+    }
+}
+
+.show-for-desktop {
+    display: none !important;
+
+    @include lg {
         display: flex !important;
     }
 }
 
 
+
+
+.icon {
+    font-size: rem-calc(40);
+    color: $light-orange;
+
+    @include lg {
+        font-size: rem-calc(50);
+    }
+}
+
 a:link,
-a:visited{
+a:visited {
     text-decoration: none;
-        }
+}

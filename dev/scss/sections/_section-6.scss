@@ -30,59 +30,36 @@
         }
 
         @include xl {
-            background-size: 145%;
             background-position: -290px -200px;
-            height: 45vh;
         }
 
         @include xxl {
-            background-size: 140%;
             background-position: -500px -400px;
-            height: 45vh;
         }
 
-
-        h2 {
-            font-family: 'Playfair Display', serif;
-            font-size: rem-calc(30);
-            font-weight: 900;
-            color: $white;
-
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-            @include md {
-                font-size: rem-calc(45);
-            }
-
-            @include lg {
-                font-size: rem-calc(50);
-            }
-        }
     }
 
 
-    #total{
-
+    #section-6-container {
         @include lg {
             display: grid;
             grid-template-areas: ". desktop .";
             grid-template-columns: 15% auto 15%;
         }
 
-        @include xl{
+        @include xl {
             display: grid;
             grid-template-areas: ". desktop-xl .";
             grid-template-columns: auto 1200px auto;
         }
 
-        >ul {
+        #total {
+
             @include lg {
                 grid-area: desktop;
             }
 
-            @include xl{
+            @include xl {
                 grid-area: desktop-xl;
             }
 
@@ -91,106 +68,41 @@
                 grid-template-areas: "address phone email";
                 grid-template-columns: repeat(3, 1fr);
                 margin: 0px 10px;
+                
             }
 
-
             #address {
-
                 margin-bottom: 70px;
 
                 @include md {
                     grid-area: address;
                     margin: 0px;
-
                 }
-
-
-                #icon-1{
-                    font-size: rem-calc(40);
-                    color: $light-orange;
-
-                    @include lg {
-                        font-size: rem-calc(50);
-                    }
-                }
-
             }
 
             #phone {
-
                 margin-bottom: 70px;
 
                 @include md {
                     grid-area: phone;
                     margin: 0px;
                 }
-
-                #icon-2 {
-                    font-size: rem-calc(40);
-                    color: $light-orange;
-
-                    @include lg {
-                        font-size: rem-calc(50);
-                    }
-                }
-
             }
 
             #email {
-
                 @include md {
                     grid-area: email;
-
+                    margin: 0px;
                 }
-
-                #icon-3 {
-                    font-size: rem-calc(40);
-                    color: $light-orange;
-
-                    @include lg {
-                        font-size: rem-calc(50);
-                    }
-                }
-
             }
-
-
         }
-
     }
 
 
-
-
-
-
-    h2 {
-        font-family: 'Playfair Display', serif;
-        font-size: rem-calc(22);
-        font-weight: 700;
-        color: $dark-brown;
-
-        @include md {
-            font-size: rem-calc(28);
-        }
-
-        @include lg {
-            font-size: rem-calc(30);
-        }
-
-    }
 
     p {
-        font-family: Helvetica, sans-serif;
-        font-size: rem-calc(16);
-        font-weight: 400;
-        line-height: rem-calc(23);
-
-        @include md {
-            font-size: rem-calc(18);
-            line-height: rem-calc(25);
-        }
-
+        text-align: center;
+        
         @include lg {
             font-size: rem-calc(19);
             line-height: rem-calc(26);
