@@ -58,12 +58,14 @@
             #section-4-content{
                 display: grid;
                 grid-template-columns: repeat(2,1fr);
+                grid-template-rows: repeat(3,1fr);
                 grid-template-areas: "g1 g2" "g3 g5" "g6 g7";
                 gap: 25px;
     
     
                 @include md{
                 grid-template-columns: repeat(3,1fr);
+                grid-template-rows: repeat(2,1fr);
                 grid-template-areas: "g1 g2 g3" "g5 g6 g7";
                 column-gap: 25px;
                 row-gap: 80px;
@@ -71,10 +73,10 @@
     
                 @include lg{
                 grid-template-columns: repeat(4,1fr);
-                grid-template-rows: repeat(2,300px);
+                grid-template-rows: repeat(2,250px);
                 grid-template-areas: "g1 g2 g3 g4" "g5 g6 g7 g8";
                 column-gap: 20px;
-                row-gap: 120px;
+                row-gap: 180px;
                 margin: 0px 10px;
                 }
     

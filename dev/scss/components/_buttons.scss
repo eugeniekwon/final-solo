@@ -17,14 +17,22 @@
     align-items: center;
     justify-content: center;
 
+
     @include md{
         margin: 0% 40%;
     }
 
     @include lg{
         margin: 0% 42%;
-        text-align: center;
     }
+
+    a:link,
+    a:visited{
+        color: $white;
+    }
+
+    
+
 }
 
 .button-sg{
@@ -40,4 +48,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    a:link,
+    a:visited{
+        color: $white;
+    }
 }

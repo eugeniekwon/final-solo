@@ -440,8 +440,11 @@ p {
       margin: 0% 40%; } }
   @media (min-width: 992px) {
     .button {
-      margin: 0% 42%;
-      text-align: center; } }
+      margin: 0% 42%; } }
+  .button a:link,
+  .button a:visited {
+    color: #fff; }
+
 .button-sg {
   font-family: Helvetica, sans-serif;
   font-size: 1rem;
@@ -454,6 +457,9 @@ p {
   display: flex;
   align-items: center;
   justify-content: center; }
+  .button-sg a:link,
+  .button-sg a:visited {
+    color: #fff; }
 
 /* =============
     Forms
@@ -1515,21 +1521,23 @@ footer p {
   #section-4 #gallery-xl #section-4-container #section-4-content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     grid-template-areas: "g1 g2" "g3 g5" "g6 g7";
     gap: 25px; }
     @media (min-width: 768px) {
       #section-4 #gallery-xl #section-4-container #section-4-content {
         grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
         grid-template-areas: "g1 g2 g3" "g5 g6 g7";
         column-gap: 25px;
         row-gap: 80px; } }
     @media (min-width: 992px) {
       #section-4 #gallery-xl #section-4-container #section-4-content {
         grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(2, 300px);
+        grid-template-rows: repeat(2, 250px);
         grid-template-areas: "g1 g2 g3 g4" "g5 g6 g7 g8";
         column-gap: 20px;
-        row-gap: 120px;
+        row-gap: 180px;
         margin: 0px 10px; } }
     #section-4 #gallery-xl #section-4-container #section-4-content #g1 {
       grid-area: g1; }
