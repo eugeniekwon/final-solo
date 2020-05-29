@@ -61,7 +61,7 @@
             margin: 0px;
             display: grid;
             grid-template-areas: 
-            ". s1 s2 s3"
+            ". s1-m s2-m s3-m"
             "a1 p1 p2 p3"
             "a2 p4 p5 p6"
             "a3 p7 p8 p9"
@@ -83,7 +83,18 @@
                 grid-template-rows: repeat(5,100px);
             }
             
+
+            #s1-m{
+                grid-area: s1;
+                }
+            #s2-m{
+                grid-area: s2;
+                }
+            #s3-m{
+                grid-area: s3;
+                }
     
+                
                 #s1{
                     grid-area: s1;
                     }
