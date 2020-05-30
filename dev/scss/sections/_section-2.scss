@@ -477,6 +477,8 @@
     }
 
 
+
+
     #photography-xl{
 
         @include xl{
@@ -532,12 +534,56 @@
                     margin-bottom: 60px;
                 }
             }
-    
-    
+
+
     
         }
 
     }
+
+
+    #youtube-xl{
+        @include xl{
+            height: 30vh;
+            display: grid;
+            grid-template-columns: auto 1200px auto;
+            grid-template-areas: ". video-xl .";
+            
+        }
+
+        #youtube-video{
+            height: 30vh;
+            display: grid;
+            grid-template-columns: 10px auto 10px;
+            grid-template-areas: ". video .";
+    
+            @include md{
+                height: 50vh;
+            }
+    
+            @include lg{
+                height: 100vh;
+                margin-bottom: 100px;
+            }
+
+            @include xl{
+                grid-area: video-xl;
+            }
+    
+            >div{
+                grid-area: video;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+        
+                section{
+                    width: 100%;
+                    
+                }
+            }
+        }
+    }
+    
 
 
     h1 {
@@ -647,3 +693,4 @@
     
 
 }
+
