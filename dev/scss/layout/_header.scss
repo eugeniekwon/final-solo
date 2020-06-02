@@ -133,29 +133,47 @@ header{
             background-color: $light-pink;
             display: none;
             grid-area: nav;
-            margin: 0px 10px;
+            
+            // margin: 0px 10px;
 
             @include lg{
                 background-color: $light-pink;
-                // display: block !important;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                margin: 0 auto;
+                display: grid;
+                grid-template-columns: 10% auto;
+                grid-template-areas: ". nav-container ";
+                padding: 0 45px;
+                // margin: 0px 180px;
 
             }
 
-            ul{
-                li{
-                    font-family: Helvetica, sans-serif;
-                    font-size: rem-calc(16);
-    
-                    @include md{
-                        font-size: rem-calc(18);
+            >div{
+                display: flex;
+                //align-items: flex-end;
+                justify-content: flex-end;
+                padding-right: 15px;
+
+                @include lg{
+                    align-items: flex-start;
+                    justify-content: flex-start;
+                    padding-right: 0px;
+                    padding-left: 2%;
+                    grid-area: nav-container;
+                }
+
+                ul{
+                    li{
+                        font-family: Helvetica, sans-serif;
+                        font-size: rem-calc(16);
+        
+                        @include md{
+                            font-size: rem-calc(18);
+                        }
+        
                     }
-    
                 }
             }
+
+            
         }
     }
 }

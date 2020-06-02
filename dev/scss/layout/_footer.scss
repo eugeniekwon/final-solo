@@ -44,23 +44,20 @@ footer {
                 }
 
                 @include lg {
-                    margin: 25px 450px;
+                    margin: 25px 400px;
                     font-size: rem-calc(40);
                 }
 
                 li {
                     margin-bottom: 35px;
 
-                    a:link {
-                        color: $middle-pink;
+                    a:link,
+                    a:visited {
+                        color: $dark-pink;
                     }
 
                     a:hover {
-                        color: $dark-pink;
-                    }
-
-                    a:visited {
-                        color: $dark-pink;
+                        color: $middle-brown;
                     }
                 }
             }

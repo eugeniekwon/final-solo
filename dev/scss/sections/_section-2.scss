@@ -232,13 +232,14 @@
                         @include md{
                             gap: 10px;
                         }
-                
+
 
                         #hc1 {
                             grid-area: hc1;
     
                             background-color: $bright-pink;
                             height: 71px;
+                            
                             text-align: center;
     
                             display: flex;
@@ -252,8 +253,27 @@
                             @include lg {
                                 height: 95px;
                             }
+
+                            div{
+                                width: 100%;
+                                height: 100%;
+
+                                a:link,
+                                a:visited{
+                                    display: inline-block;
+                                    height: 100%;
+                                    width: 100%;
+
+                                    >div{
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                    }
+                                }
+                            }
     
                         }
+                        
     
                         #hc2 {
                             grid-area: hc2;
@@ -554,13 +574,20 @@
             display: grid;
             grid-template-columns: 10px auto 10px;
             grid-template-areas: ". video .";
+            margin: 70px 0px;
+
+            @include md{
+                margin: 80px 0px;
+            }
     
             @include lg{
-                margin-bottom: 100px;
+                margin: 120px 0px;
             }
 
             @include xl{
                 grid-area: video-xl;
+                
+
             }
     
             >div{
