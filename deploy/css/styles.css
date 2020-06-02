@@ -426,40 +426,35 @@ p {
   font-family: Helvetica, sans-serif;
   font-size: 1rem;
   font-weight: 700;
-  color: #fff;
-  background-color: #819B6C;
-  border-radius: 5px;
-  height: 33px;
-  margin: 0% 27%;
-  text-align: center;
   display: flex;
   align-items: center;
   justify-content: center; }
-  @media (min-width: 768px) {
-    .button {
-      margin: 0% 40%; } }
-  @media (min-width: 992px) {
-    .button {
-      margin: 0% 42%; } }
   .button a:link,
   .button a:visited {
-    color: #fff; }
+    color: #fff;
+    background-color: #819B6C;
+    border-radius: 5px;
+    padding: 10px 20px;
+    transition: 0.25s; }
+  .button a:hover, .button a:active {
+    background-color: #546645; }
 
 .button-sg {
   font-family: Helvetica, sans-serif;
   font-size: 1rem;
   font-weight: 700;
-  color: #fff;
-  background-color: #819B6C;
-  border-radius: 5px;
-  height: 30px;
-  margin: 0px 10px;
   display: flex;
   align-items: center;
   justify-content: center; }
   .button-sg a:link,
   .button-sg a:visited {
-    color: #fff; }
+    color: #fff;
+    background-color: #819B6C;
+    border-radius: 5px;
+    padding: 10px 20px;
+    transition: 0.25s; }
+  .button-sg a:hover, .button-sg a:active {
+    background-color: #546645; }
 
 /* =============
     Forms
@@ -1154,22 +1149,16 @@ footer p {
       margin-bottom: 60px; } }
 @media (min-width: 1200px) {
   #section-2 #youtube-xl {
-    height: 30vh;
     display: grid;
     grid-template-columns: auto 1200px auto;
     grid-template-areas: ". video-xl ."; } }
 
 #section-2 #youtube-xl #youtube-video {
-  height: 30vh;
   display: grid;
   grid-template-columns: 10px auto 10px;
   grid-template-areas: ". video ."; }
-  @media (min-width: 768px) {
-    #section-2 #youtube-xl #youtube-video {
-      height: 50vh; } }
   @media (min-width: 992px) {
     #section-2 #youtube-xl #youtube-video {
-      height: 100vh;
       margin-bottom: 100px; } }
   @media (min-width: 1200px) {
     #section-2 #youtube-xl #youtube-video {
@@ -1608,19 +1597,26 @@ footer p {
         @media (min-width: 1200px) {
           #section-4 #gallery > div ul li div {
             height: 280px; } }
-      #section-4 #gallery > div ul li h3 {
-        font-family: 'Playfair Display', serif;
-        font-size: 1.375rem;
-        font-weight: 700;
-        color: #fff; }
-        #section-4 #gallery > div ul li h3 span {
-          display: block; }
-        @media (min-width: 768px) {
-          #section-4 #gallery > div ul li h3 {
-            font-size: 1.75rem; } }
-        @media (min-width: 992px) {
-          #section-4 #gallery > div ul li h3 {
-            font-size: 1.875rem; } }
+        #section-4 #gallery > div ul li div a:link,
+        #section-4 #gallery > div ul li div a:visited {
+          width: 100%; }
+          #section-4 #gallery > div ul li div a:link h3,
+          #section-4 #gallery > div ul li div a:visited h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.375rem;
+            font-weight: 700;
+            color: #fff; }
+            #section-4 #gallery > div ul li div a:link h3 span,
+            #section-4 #gallery > div ul li div a:visited h3 span {
+              display: block; }
+            @media (min-width: 768px) {
+              #section-4 #gallery > div ul li div a:link h3,
+              #section-4 #gallery > div ul li div a:visited h3 {
+                font-size: 1.75rem; } }
+            @media (min-width: 992px) {
+              #section-4 #gallery > div ul li div a:link h3,
+              #section-4 #gallery > div ul li div a:visited h3 {
+                font-size: 1.875rem; } }
       @media (min-width: 768px) {
         #section-4 #gallery > div ul li article p {
           margin: 0px 10px; } }
@@ -1646,12 +1642,12 @@ footer p {
       @media (min-width: 992px) {
         #section-4 #gallery > div li:nth-child(2) > div {
           background-position: 0px -50px; } }
-    #section-4 #gallery > div li:nth-child(3) div {
+    #section-4 #gallery > div li:nth-child(3) > div {
       background-image: url("../img/section-4/g3.jpg");
       background-position: center;
       margin: 0px; }
       @media (min-width: 768px) {
-        #section-4 #gallery > div li:nth-child(3) div {
+        #section-4 #gallery > div li:nth-child(3) > div {
           margin: 0px 0px 25px 0px; } }
     #section-4 #gallery > div li:nth-child(4) > div {
       background-image: url("../img/section-4/g4.jpg");

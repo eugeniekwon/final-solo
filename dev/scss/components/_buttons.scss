@@ -5,30 +5,23 @@
 .button{
     font-family: Helvetica, sans-serif;
     font-size: rem-calc(16);
-    font-weight: 700;
-    color: $white;
-    background-color: $green;
-    border-radius: 5px;
-    height: 33px;
-    margin: 0% 27%;
-    text-align: center;
+    font-weight: 700; 
 
     display: flex;
     align-items: center;
     justify-content: center;
 
-
-    @include md{
-        margin: 0% 40%;
-    }
-
-    @include lg{
-        margin: 0% 42%;
-    }
-
     a:link,
     a:visited{
         color: $white;
+        background-color: $green;
+        border-radius: 5px;
+        padding: 10px 20px;
+        transition: 0.25s;
+    }
+
+    a:hover, a:active{
+        background-color: $dark-green;
     }
 
     
@@ -38,13 +31,8 @@
 .button-sg{
     font-family: Helvetica, sans-serif;
     font-size: rem-calc(16);
-    font-weight: 700;
-    color: $white;
-    background-color: $green;
-    border-radius: 5px;
-    height: 30px;
-    margin: 0px 10px;
-    
+    font-weight: 700; 
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -52,5 +40,13 @@
     a:link,
     a:visited{
         color: $white;
+        background-color: $green;
+        border-radius: 5px;
+        padding: 10px 20px;
+        transition: 0.25s;
+    }
+
+    a:hover, a:active{
+        background-color: $dark-green;
     }
 }
