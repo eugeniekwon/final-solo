@@ -39,7 +39,6 @@
     }
 
 
-
     #sale-xl {
 
         @include xl {
@@ -138,10 +137,7 @@
                     @include md {
                         width: 127px;
                         height: 95px;
-
                     }
-
-
                 }
 
                 #p2 {
@@ -371,9 +367,6 @@
                 }
             }
         }
-
-
-
     }
 
 
@@ -384,12 +377,24 @@
             grid-template-areas: ". additional-xl .";
         }
 
-        #additional-caption {
+        >div {
             margin-left: 10px;
+
+            @include md{
+                margin-left: 210px;
+            }
+
+            @include lg{
+                margin-left: 420px;
+            }
 
             @include xl {
                 grid-area: additional-xl;
             }
+        }
+    
+        #short-info-2{
+            margin: 0px 10px;
         }
     }
 
@@ -414,4 +419,8 @@
             line-height: rem-calc(31);
         }
     }
+
+    
+
+
 }

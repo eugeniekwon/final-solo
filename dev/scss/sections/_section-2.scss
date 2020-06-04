@@ -28,19 +28,19 @@
             height: 45vh;
         }
 
-        @include xl{
+        @include xl {
             background-position: -120px -900px;
         }
 
-        @include xxl{
+        @include xxl {
             background-position: -120px -1300px;
         }
 
     }
 
-    #intro-xl{
+    #intro-xl {
 
-        @include xl{
+        @include xl {
             display: grid;
             grid-template-areas: ". intro-xl .";
             grid-template-columns: auto 1200px auto;
@@ -55,37 +55,34 @@
             color: $middle-brown;
             text-align: justify;
             margin: 70px 10px;
-    
+
             @include md {
                 font-size: rem-calc(40);
                 line-height: rem-calc(65);
                 text-align: center;
                 margin: 80px 10px;
             }
-    
+
             @include lg {
                 font-size: rem-calc(45);
                 line-height: rem-calc(70);
                 margin: 120px 65px;
             }
 
-            @include xl{
+            @include xl {
                 grid-area: intro-xl;
             }
-    
-            
         }
     }
-    
 
-    #grid-xl{
 
-        @include xl{
+    #grid-xl {
+
+        @include xl {
             display: grid;
             grid-template-columns: auto 1200px auto;
             grid-template-areas: ". grid-xl .";
         }
-
 
         >div {
             @include md {
@@ -95,68 +92,64 @@
                 margin: 0px 25px;
             }
 
-            @include lg{
+            @include lg {
                 margin: 0px 90px;
             }
 
-            @include xl{
+            @include xl {
                 grid-area: grid-xl;
-                
             }
 
-    
             #date-container {
-    
+
                 h2 {
                     text-align: center;
 
-                    @include md{
+                    @include md {
                         margin-left: 140px;
                     }
 
-                    @include lg{
+                    @include lg {
                         margin-left: 170px;
                     }
-
                 }
-    
+
                 >div {
                     display: flex;
                     align-items: center;
                     justify-content: center;
-    
-    
+
                     #date-content {
-    
+
                         display: grid;
                         grid-template-columns: 50% auto;
                         grid-template-rows: repeat(2, 1fr);
                         grid-template-areas: "d1 d3""d2 d4";
                         row-gap: 25px;
                         margin: 0px;
-                        
-                        @include md{
+
+                        @include md {
                             row-gap: 10px;
                         }
-    
+
                         #d1 {
                             grid-area: d1;
                             text-align: center;
-    
+
                             display: flex;
                             align-items: center;
                             justify-content: left;
                         }
-    
+
                         #d2 {
                             grid-area: d2;
                             text-align: center;
-    
+
                             display: flex;
                             align-items: center;
                             justify-content: left;
                         }
-    
+
                         #d3 {
                             grid-area: d3;
                             background-color: $cream;
@@ -164,22 +157,22 @@
                             height: 71px;
                             text-align: center;
                             margin: 0px 20px;
-    
+
                             display: flex;
                             align-items: center;
                             justify-content: center;
-    
+
                             @include md {
                                 width: 107px;
                                 height: 80px;
                             }
-    
+
                             @include lg {
                                 width: 127px;
                                 height: 95px;
                             }
                         }
-    
+
                         #d4 {
                             grid-area: d4;
                             background-color: $cream;
@@ -187,274 +180,179 @@
                             height: 71px;
                             text-align: center;
                             margin: 0px 20px;
-    
+
                             display: flex;
                             align-items: center;
                             justify-content: center;
-    
+
                             @include md {
                                 width: 107px;
                                 height: 80px;
                             }
-    
+
                             @include lg {
                                 width: 127px;
                                 height: 95px;
                             }
                         }
-    
+
                     }
                 }
-    
+
             }
-    
+
             #general-hours-container {
-    
+
                 h2 {
                     text-align: center;
                 }
-    
+
                 >div {
                     display: flex;
                     align-items: center;
                     justify-content: space-between;
-    
+
                     #hours-content {
                         width: 100%;
-    
+
                         display: grid;
                         grid-template-columns: repeat(3, 1fr);
-                        grid-template-rows: repeat(2, 1fr);
-                        grid-template-areas: "hc1 hc2 hc3""hc4 hc5 hc6";
                         gap: 25px;
                         margin: 0px;
-    
-                        @include md{
+
+                        @include md {
                             gap: 10px;
                         }
 
 
-                        #hc1 {
-                            grid-area: hc1;
-    
-                            background-color: $bright-pink;
+                        li {
                             height: 71px;
-                            
-                            text-align: center;
-    
                             display: flex;
                             align-items: center;
                             justify-content: center;
-    
+                            text-align: center;
+                            background-color: $bright-pink;
+
                             @include md {
                                 height: 80px;
                             }
-    
+
                             @include lg {
                                 height: 95px;
                             }
 
-                            div{
-                                width: 100%;
+                            >div {
                                 height: 100%;
+                                width: 100%;
 
                                 a:link,
-                                a:visited{
+                                a:visited {
                                     display: inline-block;
                                     height: 100%;
                                     width: 100%;
 
-                                    >div{
-                                        display: flex;
-                                        align-items: center;
-                                        justify-content: center;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                }
+
+                                h4 {
+                                    font-family: Helvetica, sans-serif;
+                                    font-size: rem-calc(16);
+                                    line-height: rem-calc(23);
+                                    font-weight: 400;
+                                    color: $white;
+
+                                    @include md {
+                                        font-size: rem-calc(18);
+                                        line-height: rem-calc(25);
+                                    }
+
+                                    @include lg {
+                                        font-size: rem-calc(19);
+                                        line-height: rem-calc(26);
+                                    }
+
+                                    span {
+                                        display: block;
                                     }
                                 }
-                            }
-    
-                        }
-                        
-    
-                        #hc2 {
-                            grid-area: hc2;
-    
-                            background-color: $bright-pink;
-                            height: 71px;
-                            text-align: center;
-    
-                            display: flex;
-                            align-items: center;
-                            justify-content: center;
-    
-                            @include md {
-                                height: 80px;
-                            }
-    
-                            @include lg {
-                                height: 95px;
+
                             }
                         }
-    
-                        #hc3 {
-                            grid-area: hc3;
-    
-                            background-color: $bright-pink;
-                            height: 71px;
-                            text-align: center;
-    
-                            display: flex;
-                            align-items: center;
-                            justify-content: center;
-    
-                            @include md {
-                                height: 80px;
-                            }
-    
-                            @include lg {
-                                height: 95px;
-                            }
-                        }
-    
-                        #hc4 {
-                            grid-area: hc4;
-    
-                            background-color: $bright-pink;
-                            height: 71px;
-                            text-align: center;
-    
-                            display: flex;
-                            align-items: center;
-                            justify-content: center;
-    
-                            @include md {
-                                height: 80px;
-                            }
-    
-                            @include lg {
-                                height: 95px;
-                            }
-                        }
-    
-                        #hc5 {
-                            grid-area: hc5;
-    
-                            background-color: $bright-pink;
-                            height: 71px;
-                            text-align: center;
-    
-                            display: flex;
-                            align-items: center;
-                            justify-content: center;
-    
-                            @include md {
-                                height: 80px;
-                            }
-    
-                            @include lg {
-                                height: 95px;
-                            }
-                        }
-    
-                        #hc6 {
-                            grid-area: hc6;
-    
-                            background-color: $bright-pink;
-                            height: 71px;
-                            text-align: center;
-    
-                            display: flex;
-                            align-items: center;
-                            justify-content: center;
-    
-                            @include md {
-                                height: 80px;
-                            }
-    
-                            @include lg {
-                                height: 95px;
-                            }
-    
-                        }
+
                     }
                 }
             }
         }
     }
-    
 
 
-    #tree-xl{
-        
-        @include xl{
+
+    #tree-xl {
+
+        @include xl {
             display: grid;
             grid-template-areas: ". tree-xl .";
             grid-template-columns: auto 1200px auto;
         }
-        
 
         #tree-container {
 
-            @include xl{
+            @include xl {
                 grid-area: tree-xl;
             }
 
-            @include lg{
+            @include lg {
                 display: grid;
                 grid-template-columns: 50% 50%;
                 grid-template-areas: "img text";
             }
-    
+
             #lemon-img {
                 background-image: url("../img/section-2/lemons.jpg");
                 background-repeat: no-repeat;
                 background-size: cover;
                 background-position: center;
                 height: 60vh;
-    
-                @include md{
+
+                @include md {
                     height: 80vh;
                     background-position: -330px;
                     margin-right: 200px;
                 }
-    
-                @include lg{
+
+                @include lg {
                     height: 90vh;
                     background-position: center;
                     margin: 0px;
                 }
-    
-    
             }
-    
+
             #tree-content {
-    
-                @include lg{
+
+                @include lg {
                     grid-area: text;
                 }
-    
+
                 display: grid;
                 grid-template-areas: ". tree-text .";
                 grid-template-columns: 10px auto 10px;
-    
-            
+
                 #tree-text {
                     grid-area: tree-text;
-    
+
                     @include md {
                         margin-left: 180px;
                     }
-    
-                    @include lg{
+
+                    @include lg {
                         margin: 0px 100px;
                     }
                 }
             }
-    
-    
         }
     }
-    
-
 
     #quote {
         display: grid;
@@ -463,11 +361,11 @@
         background-color: $cream;
         width: 100%;
 
-        @include lg{
+        @include lg {
             grid-template-columns: 10% auto 10%;
         }
 
-        @include xl{
+        @include xl {
             display: grid;
             grid-template-areas: ". quote-text .";
             grid-template-columns: auto 1200px auto;
@@ -499,133 +397,104 @@
 
 
 
-    #photography-xl{
+    #photography-xl {
 
-        @include xl{
+        @include xl {
             display: grid;
             grid-template-columns: auto 1200px auto;
             grid-template-areas: ". photography-xl .";
         }
+
         #photography-container {
 
-            @include xl{
+            @include xl {
                 grid-area: photography-xl;
             }
 
-            @include lg{
+            @include lg {
                 display: grid;
                 grid-template-columns: 45% 55%;
                 grid-template-areas: "text img";
             }
-            
-    
+
+
             #photography-content {
                 margin: 0px 10px;
-    
-                @include lg{
+
+                @include lg {
                     grid-area: text;
                     margin: 0px 10px;
                 }
-    
+
                 @include md {
                     margin: 0px 288px 0px 106px;
                 }
-    
-                @include lg{
+
+                @include lg {
                     margin: 0px 20px 0px 10px;
                 }
             }
-    
+
             #photo-img {
                 background-image: url("../img/section-2/photo.jpg");
                 background-repeat: no-repeat;
                 background-size: cover;
                 background-position: center;
                 height: 45vh;
-    
+
                 @include md {
                     height: 40vh;
                     margin-left: 106px;
                 }
-    
-                @include lg{
+
+                @include lg {
                     grid-area: img;
                     margin: 0px;
                     margin-bottom: 60px;
                 }
             }
-
-
-    
         }
 
     }
 
 
-    #youtube-xl{
-        @include xl{
+    #youtube-xl {
+        @include xl {
             display: grid;
             grid-template-columns: auto 1200px auto;
             grid-template-areas: ". video-xl .";
-            
         }
 
-        #youtube-video{
+        #youtube-video {
             display: grid;
             grid-template-columns: 10px auto 10px;
             grid-template-areas: ". video .";
             margin: 70px 0px;
 
-            @include md{
+            @include md {
                 margin: 80px 0px;
             }
-    
-            @include lg{
+
+            @include lg {
                 margin: 120px 0px;
             }
 
-            @include xl{
+            @include xl {
                 grid-area: video-xl;
-                
-
             }
-    
-            >div{
+
+            >div {
                 grid-area: video;
                 display: flex;
                 justify-content: center;
                 align-items: center;
-        
-                section{
+
+                section {
                     width: 100%;
-                    
                 }
             }
         }
     }
-    
-
-
-    h1 {
-        font-family: 'Playfair Display', serif;
-        font-size: rem-calc(30);
-        line-height: rem-calc(42);
-        font-weight: 700;
-        color: $middle-brown;
-        text-align: center;
-
-        @include md {
-            font-size: rem-calc(50);
-            line-height: rem-calc(75);
-        }
-
-        @include lg {
-            font-size: rem-calc(60);
-            line-height: rem-calc(85);
-        }
-    }
-
-    
 
     h3 {
         font-family: 'Playfair Display', serif;
@@ -642,68 +511,6 @@
         }
     }
 
-    h4 {
-        font-family: Helvetica, sans-serif;
-        font-size: rem-calc(16);
-        line-height: rem-calc(23);
-        font-weight: 400;
-        color: $white;
-
-        @include md {
-            font-size: rem-calc(18);
-            line-height: rem-calc(25);
-        }
-
-        @include lg {
-            font-size: rem-calc(19);
-            line-height: rem-calc(26);
-        }
-
-
-
-        span {
-            display: block;
-        }
-    }
-
-
-
-    #feb-date {
-        font-family: Helvetica, sans-serif;
-        font-size: rem-calc(16);
-        line-height: rem-calc(23);
-        font-weight: 400;
-        color: $middle-brown;
-
-        @include md {
-            font-size: rem-calc(18);
-            line-height: rem-calc(25);
-        }
-
-        @include lg {
-            font-size: rem-calc(19);
-            line-height: rem-calc(26);
-        }
-    }
-
-    #mar-date {
-        font-family: Helvetica, sans-serif;
-        font-size: rem-calc(16);
-        line-height: rem-calc(23);
-        font-weight: 400;
-        color: $middle-brown;
-
-        @include md {
-            font-size: rem-calc(18);
-            line-height: rem-calc(25);
-        }
-
-        @include lg {
-            font-size: rem-calc(19);
-            line-height: rem-calc(26);
-        }
-    }
-
     p {
         @include lg {
             font-size: rem-calc(19);
@@ -711,6 +518,4 @@
         }
     }
     
-
 }
-

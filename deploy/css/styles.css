@@ -379,7 +379,13 @@ a:visited {
 /* =============
     Typography
 ============= */
-h1, h2, h3, h4, h5, h6, p {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
   padding: 0;
   margin: 0; }
 
@@ -419,6 +425,38 @@ p {
     p {
       font-size: 1.125rem;
       line-height: 1.5625rem; } }
+.sec2-date-type {
+  font-family: Helvetica, sans-serif;
+  font-size: 1rem;
+  line-height: 1.4375rem;
+  font-weight: 400;
+  color: #A07C63; }
+  @media (min-width: 768px) {
+    .sec2-date-type {
+      font-size: 1.125rem;
+      line-height: 1.5625rem; } }
+  @media (min-width: 992px) {
+    .sec2-date-type {
+      font-size: 1.1875rem;
+      line-height: 1.625rem; } }
+  .sec2-date-type span {
+    display: block; }
+
+.pullout-quote {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.875rem;
+  line-height: 2.625rem;
+  font-weight: 700;
+  color: #A07C63;
+  text-align: center; }
+  @media (min-width: 768px) {
+    .pullout-quote {
+      font-size: 3.125rem;
+      line-height: 4.6875rem; } }
+  @media (min-width: 992px) {
+    .pullout-quote {
+      font-size: 3.75rem;
+      line-height: 5.3125rem; } }
 /* =============
     Buttons
 ============= */
@@ -498,15 +536,13 @@ textarea {
       color: #BF8C78; }
 
 h1 a:link,
-h1 a:visited, #logo a:link,
-#logo a:visited {
+h1 a:visited {
   color: #BF8C78;
   text-decoration: none;
   transition: 0.25s; }
 
 h1 a:hover,
-h1 a:active, #logo a:hover,
-#logo a:active {
+h1 a:active {
   color: #776555; }
 
 /* ===================
@@ -647,8 +683,14 @@ header {
             align-items: flex-start;
             justify-content: flex-start;
             padding-right: 0px;
-            padding-left: 2%;
+            padding-left: 2.3%;
             grid-area: nav-container; } }
+        @media (min-width: 1200px) {
+          header > div #nav-container > div {
+            padding-left: 2%; } }
+        @media (min-width: 1600px) {
+          header > div #nav-container > div {
+            padding-left: 1.5%; } }
         header > div #nav-container > div ul li {
           font-family: Helvetica, sans-serif;
           font-size: 1rem; }
@@ -947,110 +989,52 @@ footer p {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-areas: "hc1 hc2 hc3" "hc4 hc5 hc6";
     gap: 25px;
     margin: 0px; }
     @media (min-width: 768px) {
       #section-2 #grid-xl > div #general-hours-container > div #hours-content {
         gap: 10px; } }
-    #section-2 #grid-xl > div #general-hours-container > div #hours-content #hc1 {
-      grid-area: hc1;
-      background-color: #F2948A;
+    #section-2 #grid-xl > div #general-hours-container > div #hours-content li {
       height: 71px;
-      text-align: center;
       display: flex;
       align-items: center;
-      justify-content: center; }
+      justify-content: center;
+      text-align: center;
+      background-color: #F2948A; }
       @media (min-width: 768px) {
-        #section-2 #grid-xl > div #general-hours-container > div #hours-content #hc1 {
+        #section-2 #grid-xl > div #general-hours-container > div #hours-content li {
           height: 80px; } }
       @media (min-width: 992px) {
-        #section-2 #grid-xl > div #general-hours-container > div #hours-content #hc1 {
+        #section-2 #grid-xl > div #general-hours-container > div #hours-content li {
           height: 95px; } }
-      #section-2 #grid-xl > div #general-hours-container > div #hours-content #hc1 div {
-        width: 100%;
-        height: 100%; }
-        #section-2 #grid-xl > div #general-hours-container > div #hours-content #hc1 div a:link,
-        #section-2 #grid-xl > div #general-hours-container > div #hours-content #hc1 div a:visited {
+      #section-2 #grid-xl > div #general-hours-container > div #hours-content li > div {
+        height: 100%;
+        width: 100%; }
+        #section-2 #grid-xl > div #general-hours-container > div #hours-content li > div a:link,
+        #section-2 #grid-xl > div #general-hours-container > div #hours-content li > div a:visited {
           display: inline-block;
           height: 100%;
-          width: 100%; }
-          #section-2 #grid-xl > div #general-hours-container > div #hours-content #hc1 div a:link > div,
-          #section-2 #grid-xl > div #general-hours-container > div #hours-content #hc1 div a:visited > div {
-            display: flex;
-            align-items: center;
-            justify-content: center; }
-    #section-2 #grid-xl > div #general-hours-container > div #hours-content #hc2 {
-      grid-area: hc2;
-      background-color: #F2948A;
-      height: 71px;
-      text-align: center;
-      display: flex;
-      align-items: center;
-      justify-content: center; }
-      @media (min-width: 768px) {
-        #section-2 #grid-xl > div #general-hours-container > div #hours-content #hc2 {
-          height: 80px; } }
-      @media (min-width: 992px) {
-        #section-2 #grid-xl > div #general-hours-container > div #hours-content #hc2 {
-          height: 95px; } }
-    #section-2 #grid-xl > div #general-hours-container > div #hours-content #hc3 {
-      grid-area: hc3;
-      background-color: #F2948A;
-      height: 71px;
-      text-align: center;
-      display: flex;
-      align-items: center;
-      justify-content: center; }
-      @media (min-width: 768px) {
-        #section-2 #grid-xl > div #general-hours-container > div #hours-content #hc3 {
-          height: 80px; } }
-      @media (min-width: 992px) {
-        #section-2 #grid-xl > div #general-hours-container > div #hours-content #hc3 {
-          height: 95px; } }
-    #section-2 #grid-xl > div #general-hours-container > div #hours-content #hc4 {
-      grid-area: hc4;
-      background-color: #F2948A;
-      height: 71px;
-      text-align: center;
-      display: flex;
-      align-items: center;
-      justify-content: center; }
-      @media (min-width: 768px) {
-        #section-2 #grid-xl > div #general-hours-container > div #hours-content #hc4 {
-          height: 80px; } }
-      @media (min-width: 992px) {
-        #section-2 #grid-xl > div #general-hours-container > div #hours-content #hc4 {
-          height: 95px; } }
-    #section-2 #grid-xl > div #general-hours-container > div #hours-content #hc5 {
-      grid-area: hc5;
-      background-color: #F2948A;
-      height: 71px;
-      text-align: center;
-      display: flex;
-      align-items: center;
-      justify-content: center; }
-      @media (min-width: 768px) {
-        #section-2 #grid-xl > div #general-hours-container > div #hours-content #hc5 {
-          height: 80px; } }
-      @media (min-width: 992px) {
-        #section-2 #grid-xl > div #general-hours-container > div #hours-content #hc5 {
-          height: 95px; } }
-    #section-2 #grid-xl > div #general-hours-container > div #hours-content #hc6 {
-      grid-area: hc6;
-      background-color: #F2948A;
-      height: 71px;
-      text-align: center;
-      display: flex;
-      align-items: center;
-      justify-content: center; }
-      @media (min-width: 768px) {
-        #section-2 #grid-xl > div #general-hours-container > div #hours-content #hc6 {
-          height: 80px; } }
-      @media (min-width: 992px) {
-        #section-2 #grid-xl > div #general-hours-container > div #hours-content #hc6 {
-          height: 95px; } }
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center; }
+        #section-2 #grid-xl > div #general-hours-container > div #hours-content li > div h4 {
+          font-family: Helvetica, sans-serif;
+          font-size: 1rem;
+          line-height: 1.4375rem;
+          font-weight: 400;
+          color: #fff; }
+          @media (min-width: 768px) {
+            #section-2 #grid-xl > div #general-hours-container > div #hours-content li > div h4 {
+              font-size: 1.125rem;
+              line-height: 1.5625rem; } }
+          @media (min-width: 992px) {
+            #section-2 #grid-xl > div #general-hours-container > div #hours-content li > div h4 {
+              font-size: 1.1875rem;
+              line-height: 1.625rem; } }
+          #section-2 #grid-xl > div #general-hours-container > div #hours-content li > div h4 span {
+            display: block; }
+
 @media (min-width: 1200px) {
   #section-2 #tree-xl {
     display: grid;
@@ -1197,21 +1181,6 @@ footer p {
     #section-2 #youtube-xl #youtube-video > div section {
       width: 100%; }
 
-#section-2 h1 {
-  font-family: 'Playfair Display', serif;
-  font-size: 1.875rem;
-  line-height: 2.625rem;
-  font-weight: 700;
-  color: #A07C63;
-  text-align: center; }
-  @media (min-width: 768px) {
-    #section-2 h1 {
-      font-size: 3.125rem;
-      line-height: 4.6875rem; } }
-  @media (min-width: 992px) {
-    #section-2 h1 {
-      font-size: 3.75rem;
-      line-height: 5.3125rem; } }
 #section-2 h3 {
   font-family: 'Playfair Display', serif;
   font-size: 1.125rem;
@@ -1223,51 +1192,6 @@ footer p {
   @media (min-width: 992px) {
     #section-2 h3 {
       font-size: 1.5625rem; } }
-#section-2 h4 {
-  font-family: Helvetica, sans-serif;
-  font-size: 1rem;
-  line-height: 1.4375rem;
-  font-weight: 400;
-  color: #fff; }
-  @media (min-width: 768px) {
-    #section-2 h4 {
-      font-size: 1.125rem;
-      line-height: 1.5625rem; } }
-  @media (min-width: 992px) {
-    #section-2 h4 {
-      font-size: 1.1875rem;
-      line-height: 1.625rem; } }
-  #section-2 h4 span {
-    display: block; }
-
-#section-2 #feb-date {
-  font-family: Helvetica, sans-serif;
-  font-size: 1rem;
-  line-height: 1.4375rem;
-  font-weight: 400;
-  color: #A07C63; }
-  @media (min-width: 768px) {
-    #section-2 #feb-date {
-      font-size: 1.125rem;
-      line-height: 1.5625rem; } }
-  @media (min-width: 992px) {
-    #section-2 #feb-date {
-      font-size: 1.1875rem;
-      line-height: 1.625rem; } }
-#section-2 #mar-date {
-  font-family: Helvetica, sans-serif;
-  font-size: 1rem;
-  line-height: 1.4375rem;
-  font-weight: 400;
-  color: #A07C63; }
-  @media (min-width: 768px) {
-    #section-2 #mar-date {
-      font-size: 1.125rem;
-      line-height: 1.5625rem; } }
-  @media (min-width: 992px) {
-    #section-2 #mar-date {
-      font-size: 1.1875rem;
-      line-height: 1.625rem; } }
 @media (min-width: 992px) {
   #section-2 p {
     font-size: 1.1875rem;
@@ -1530,11 +1454,20 @@ footer p {
     grid-template-columns: auto 1200px auto;
     grid-template-areas: ". additional-xl ."; } }
 
-#section-3 #additional-xl #additional-caption {
+#section-3 #additional-xl > div {
   margin-left: 10px; }
+  @media (min-width: 768px) {
+    #section-3 #additional-xl > div {
+      margin-left: 210px; } }
+  @media (min-width: 992px) {
+    #section-3 #additional-xl > div {
+      margin-left: 420px; } }
   @media (min-width: 1200px) {
-    #section-3 #additional-xl #additional-caption {
+    #section-3 #additional-xl > div {
       grid-area: additional-xl; } }
+#section-3 #additional-xl #short-info-2 {
+  margin: 0px 10px; }
+
 #section-3 h2 {
   display: flex;
   align-items: center;
@@ -1689,7 +1622,8 @@ footer p {
     #section-4 #gallery > div li:nth-child(6) > div {
       background-image: url("../img/section-4/g6.jpg");
       background-position: 0px -20px;
-      margin: 0px; }
+      margin: 0px;
+      text-align: center; }
       @media (min-width: 768px) {
         #section-4 #gallery > div li:nth-child(6) > div {
           background-position: 0px -30px;

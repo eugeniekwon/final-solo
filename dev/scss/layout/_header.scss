@@ -10,7 +10,6 @@ header{
     width: 100%;
     z-index: 1000;
 
-
     >div{
 
         display: grid;
@@ -133,8 +132,6 @@ header{
             background-color: $light-pink;
             display: none;
             grid-area: nav;
-            
-            // margin: 0px 10px;
 
             @include lg{
                 background-color: $light-pink;
@@ -142,13 +139,10 @@ header{
                 grid-template-columns: 10% auto;
                 grid-template-areas: ". nav-container ";
                 padding: 0 45px;
-                // margin: 0px 180px;
-
             }
 
             >div{
                 display: flex;
-                //align-items: flex-end;
                 justify-content: flex-end;
                 padding-right: 15px;
 
@@ -156,9 +150,18 @@ header{
                     align-items: flex-start;
                     justify-content: flex-start;
                     padding-right: 0px;
-                    padding-left: 2%;
+                    padding-left: 2.3%;
                     grid-area: nav-container;
                 }
+
+                @include xl{
+                    padding-left: 2%;
+                }
+
+                @include xxl{
+                    padding-left: 1.5%;
+                }
+
 
                 ul{
                     li{
