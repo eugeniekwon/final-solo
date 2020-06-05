@@ -420,11 +420,12 @@ p {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.4375rem;
-  text-align: justify; }
+  text-align: justify;
+  color: #343434; }
   @media (min-width: 768px) {
     p {
-      font-size: 1.125rem;
-      line-height: 1.5625rem; } }
+      font-size: 1.0625rem;
+      line-height: 1.5rem; } }
 .sec2-date-type {
   font-family: Helvetica, sans-serif;
   font-size: 1rem;
@@ -520,7 +521,7 @@ textarea {
       display: flex;
       justify-content: flex-end; } }
   #nav-container ul li {
-    margin-bottom: 20px; }
+    margin-bottom: 30px; }
     @media (min-width: 992px) {
       #nav-container ul li {
         align-items: center;
@@ -652,7 +653,7 @@ header {
       display: flex;
       grid-area: burger;
       justify-content: flex-end;
-      padding: 15px; }
+      padding: 25px; }
       @media (min-width: 992px) {
         header > div #burger-container {
           display: none !important; } }
@@ -677,7 +678,7 @@ header {
       header > div #nav-container > div {
         display: flex;
         justify-content: flex-end;
-        padding-right: 15px; }
+        padding-right: 25px; }
         @media (min-width: 992px) {
           header > div #nav-container > div {
             align-items: flex-start;
@@ -739,7 +740,8 @@ footer #footer-xl {
       footer #footer-xl #social-medias ul li a:visited {
         color: #BF8C78; }
       footer #footer-xl #social-medias ul li a:hover {
-        color: #A07C63; }
+        color: #A07C63;
+        transition: 0.25s; }
 
 footer h2 {
   font-family: 'Playfair Display', serif;
@@ -755,17 +757,13 @@ footer h2 {
 @media (min-width: 768px) {
   footer h3 {
     font-family: 'Playfair Display', serif;
-    font-size: 1.4375rem;
+    font-size: 1.375rem;
     font-weight: 400;
     text-align: center;
     color: #BF8C78;
     margin-bottom: 25px; } }
 
 footer p {
-  font-family: Helvetica, sans-serif;
-  font-size: 1.125rem;
-  font-weight: 400;
-  line-height: 1.5625rem;
   text-align: center;
   color: #BF8C78; }
   @media (min-width: 768px) {
@@ -1015,9 +1013,12 @@ footer p {
           display: inline-block;
           height: 100%;
           width: 100%;
+          transition: 0.25s;
           display: flex;
           align-items: center;
           justify-content: center; }
+        #section-2 #grid-xl > div #general-hours-container > div #hours-content li > div a:hover, #section-2 #grid-xl > div #general-hours-container > div #hours-content li > div a:active {
+          background-color: #BF8C78; }
         #section-2 #grid-xl > div #general-hours-container > div #hours-content li > div h4 {
           font-family: Helvetica, sans-serif;
           font-size: 1rem;
@@ -1059,12 +1060,12 @@ footer p {
   height: 60vh; }
   @media (min-width: 768px) {
     #section-2 #tree-xl #tree-container #lemon-img {
-      height: 80vh;
+      height: 70vh;
       background-position: -330px;
       margin-right: 200px; } }
   @media (min-width: 992px) {
     #section-2 #tree-xl #tree-container #lemon-img {
-      height: 90vh;
+      height: 75vh;
       background-position: center;
       margin: 0px; } }
 #section-2 #tree-xl #tree-container #tree-content {
@@ -1081,7 +1082,9 @@ footer p {
         margin-left: 180px; } }
     @media (min-width: 992px) {
       #section-2 #tree-xl #tree-container #tree-content #tree-text {
-        margin: 0px 100px; } }
+        margin: 0px 100px; }
+        #section-2 #tree-xl #tree-container #tree-content #tree-text p {
+          margin-bottom: 25px; } }
 #section-2 #quote {
   display: grid;
   grid-template-areas: ". quote-text .";
@@ -1146,11 +1149,12 @@ footer p {
   height: 45vh; }
   @media (min-width: 768px) {
     #section-2 #photography-xl #photography-container #photo-img {
-      height: 40vh;
+      height: 35vh;
       margin-left: 106px; } }
   @media (min-width: 992px) {
     #section-2 #photography-xl #photography-container #photo-img {
       grid-area: img;
+      height: 30vh;
       margin: 0px;
       margin-bottom: 60px; } }
 @media (min-width: 1200px) {
@@ -1192,11 +1196,6 @@ footer p {
   @media (min-width: 992px) {
     #section-2 h3 {
       font-size: 1.5625rem; } }
-@media (min-width: 992px) {
-  #section-2 p {
-    font-size: 1.1875rem;
-    line-height: 1.625rem; } }
-
 /* =============
     Section-3
 ============= */
@@ -1236,6 +1235,8 @@ footer p {
   display: flex;
   align-items: center;
   justify-content: center; }
+  #section-3 #sale-xl #sale p {
+    color: #fff; }
   @media (min-width: 1200px) {
     #section-3 #sale-xl #sale {
       grid-area: sale-xl; } }
@@ -1461,7 +1462,7 @@ footer p {
       margin-left: 210px; } }
   @media (min-width: 992px) {
     #section-3 #additional-xl > div {
-      margin-left: 420px; } }
+      margin-left: 320px; } }
   @media (min-width: 1200px) {
     #section-3 #additional-xl > div {
       grid-area: additional-xl; } }
@@ -1529,12 +1530,12 @@ footer p {
       @media (min-width: 768px) {
         #section-4 #gallery > div ul {
           column-gap: 25px;
-          row-gap: 80px;
+          row-gap: 40px;
           grid-template-columns: repeat(3, 1fr); } }
       @media (min-width: 992px) {
         #section-4 #gallery > div ul {
           column-gap: 20px;
-          row-gap: 120px;
+          row-gap: 60px;
           grid-template-columns: repeat(4, 1fr);
           margin: 0px 10px; } }
       @media (min-width: 1200px) {
@@ -1712,7 +1713,7 @@ footer p {
       margin-left: 200px; } }
   @media (min-width: 992px) {
     #section-5 #section-5-xl #section-5-container #section-5b #history-1-img {
-      height: 70vh;
+      height: 65vh;
       margin-left: 400px; } }
 #section-5 #section-5-xl #section-5-container #section-5b #h-mobile-text {
   margin-left: 10px;
@@ -1786,7 +1787,7 @@ footer p {
       margin-left: 298px; } }
   @media (min-width: 992px) {
     #section-5 #section-5-xl #section-5-container #section-5d #phs-1-img {
-      height: 70vh;
+      height: 60vh;
       margin: 0px;
       grid-area: aside; } }
 @media (min-width: 992px) {
@@ -1867,11 +1868,6 @@ footer p {
   @media (min-width: 992px) {
     #section-5 h3 {
       font-size: 1.5625rem; } }
-@media (min-width: 992px) {
-  #section-5 p {
-    font-size: 1.1875rem;
-    line-height: 1.625rem; } }
-
 /* =============
     Section-6
 ============= */
@@ -1942,7 +1938,3 @@ footer p {
       margin: 0px; } }
   #section-6 p {
     text-align: center; }
-    @media (min-width: 992px) {
-      #section-6 p {
-        font-size: 1.1875rem;
-        line-height: 1.625rem; } }

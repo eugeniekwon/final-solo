@@ -60,13 +60,13 @@
 
                 @include md {
                     column-gap: 25px;
-                    row-gap: 80px;
+                    row-gap: 40px;
                     grid-template-columns: repeat(3, 1fr);
                 }
 
                 @include lg {
                     column-gap: 20px;
-                    row-gap: 120px;
+                    row-gap: 60px;
                     grid-template-columns: repeat(4, 1fr);
                     margin: 0px 10px;
                 }

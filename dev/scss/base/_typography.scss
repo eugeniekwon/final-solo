@@ -58,11 +58,13 @@ p {
     font-weight: 400;
     line-height: rem-calc(23);
     text-align: justify;
+    color: $gray;
 
     @include md {
-        font-size: rem-calc(18);
-        line-height: rem-calc(25);
+        font-size: rem-calc(17);
+        line-height: rem-calc(24);
     }
+
 }
 
 .sec2-date-type {

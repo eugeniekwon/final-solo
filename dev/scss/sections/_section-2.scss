@@ -250,10 +250,15 @@
                                     display: inline-block;
                                     height: 100%;
                                     width: 100%;
+                                    transition: 0.25s;
 
                                     display: flex;
                                     align-items: center;
                                     justify-content: center;
+                                }
+
+                                a:hover, a:active{
+                                    background-color: $dark-pink;
                                 }
 
                                 h4 {
@@ -317,13 +322,13 @@
                 height: 60vh;
 
                 @include md {
-                    height: 80vh;
+                    height: 70vh;
                     background-position: -330px;
                     margin-right: 200px;
                 }
 
                 @include lg {
-                    height: 90vh;
+                    height: 75vh;
                     background-position: center;
                     margin: 0px;
                 }
@@ -348,7 +353,12 @@
 
                     @include lg {
                         margin: 0px 100px;
+                        p{
+                           margin-bottom: 25px;
+                        }
                     }
+
+                    
                 }
             }
         }
@@ -443,12 +453,13 @@
                 height: 45vh;
 
                 @include md {
-                    height: 40vh;
+                    height: 35vh;
                     margin-left: 106px;
                 }
 
                 @include lg {
                     grid-area: img;
+                    height: 30vh;
                     margin: 0px;
                     margin-bottom: 60px;
                 }
@@ -510,12 +521,4 @@
             font-size: rem-calc(25);
         }
     }
-
-    p {
-        @include lg {
-            font-size: rem-calc(19);
-            line-height: rem-calc(26);
-        }
-    }
-    
 }

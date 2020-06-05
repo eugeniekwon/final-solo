@@ -95,7 +95,7 @@
                     }
 
                     @include lg {
-                        height: 70vh;
+                        height: 65vh;
                         margin-left: 400px;
                     }
                 }
@@ -190,7 +190,7 @@
                     }
 
                     @include lg {
-                        height: 70vh;
+                        height: 60vh;
                         margin: 0px;
 
                         grid-area: aside;
@@ -316,13 +316,5 @@
             font-size: rem-calc(25);
         }
     }
-
-    p {
-        @include lg {
-            font-size: rem-calc(19);
-            line-height: rem-calc(26);
-        }
-    }
-
 
 }

@@ -52,6 +52,10 @@
             align-items: center;
             justify-content: center;
 
+            p{
+                color: $white;
+            }
+
             @include xl {
                 grid-area: sale-xl;
             }
@@ -385,7 +389,7 @@
             }
 
             @include lg{
-                margin-left: 420px;
+                margin-left: 320px;
             }
 
             @include xl {
@@ -419,7 +423,6 @@
             line-height: rem-calc(31);
         }
     }
-
     
 
 

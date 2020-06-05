@@ -98,15 +98,8 @@
         }
     }
 
-
-
     p {
         text-align: center;
-        
-        @include lg {
-            font-size: rem-calc(19);
-            line-height: rem-calc(26);
-        }
     }
 
 }

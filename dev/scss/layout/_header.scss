@@ -109,7 +109,7 @@ header{
             display: flex;
             grid-area: burger;
             justify-content: flex-end;
-            padding: 15px;
+            padding: 25px;
 
             @include lg{
                 display: none !important;
@@ -144,7 +144,7 @@ header{
             >div{
                 display: flex;
                 justify-content: flex-end;
-                padding-right: 15px;
+                padding-right: 25px;
 
                 @include lg{
                     align-items: flex-start;
@@ -171,7 +171,6 @@ header{
                         @include md{
                             font-size: rem-calc(18);
                         }
-        
                     }
                 }
             }
