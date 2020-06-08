@@ -135,7 +135,7 @@ header{
 
             @include lg{
                 background-color: $light-pink;
-                display: grid;
+                display: grid !important;
                 grid-template-columns: 10% auto;
                 grid-template-areas: ". nav-container ";
                 padding: 0 45px;
