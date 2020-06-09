@@ -671,7 +671,7 @@ header {
       @media (min-width: 992px) {
         header > div #nav-container {
           background-color: #F7E2DA;
-          display: grid;
+          display: grid !important;
           grid-template-columns: 10% auto;
           grid-template-areas: ". nav-container ";
           padding: 0 45px; } }
@@ -1065,7 +1065,7 @@ footer p {
       margin-right: 200px; } }
   @media (min-width: 992px) {
     #section-2 #tree-xl #tree-container #lemon-img {
-      height: 75vh;
+      height: 90vh;
       background-position: center;
       margin: 0px; } }
 #section-2 #tree-xl #tree-container #tree-content {
@@ -1131,15 +1131,12 @@ footer p {
 
 #section-2 #photography-xl #photography-container #photography-content {
   margin: 0px 10px; }
-  @media (min-width: 992px) {
-    #section-2 #photography-xl #photography-container #photography-content {
-      grid-area: text;
-      margin: 0px 10px; } }
   @media (min-width: 768px) {
     #section-2 #photography-xl #photography-container #photography-content {
       margin: 0px 288px 0px 106px; } }
   @media (min-width: 992px) {
     #section-2 #photography-xl #photography-container #photography-content {
+      grid-area: text;
       margin: 0px 20px 0px 10px; } }
 #section-2 #photography-xl #photography-container #photo-img {
   background-image: url("../img/section-2/photo.jpg");
@@ -1154,7 +1151,7 @@ footer p {
   @media (min-width: 992px) {
     #section-2 #photography-xl #photography-container #photo-img {
       grid-area: img;
-      height: 30vh;
+      height: 40vh;
       margin: 0px;
       margin-bottom: 60px; } }
 @media (min-width: 1200px) {
@@ -1466,9 +1463,6 @@ footer p {
   @media (min-width: 1200px) {
     #section-3 #additional-xl > div {
       grid-area: additional-xl; } }
-#section-3 #additional-xl #short-info-2 {
-  margin: 0px 10px; }
-
 #section-3 h2 {
   display: flex;
   align-items: center;
@@ -1687,19 +1681,22 @@ footer p {
 #section-5 #section-5-xl #section-5-container #section-5a h2 {
   margin-left: 10px;
   align-items: left; }
+  @media (min-width: 768px) {
+    #section-5 #section-5-xl #section-5-container #section-5a h2 {
+      margin-left: 100px; } }
   @media (min-width: 992px) {
     #section-5 #section-5-xl #section-5-container #section-5a h2 {
-      margin-left: 90px; } }
+      margin-left: 100px; } }
 #section-5 #section-5-xl #section-5-container #section-5a p {
-  margin-left: 90px;
+  margin-left: 10px;
   margin-right: 10px; }
   @media (min-width: 768px) {
     #section-5 #section-5-xl #section-5-container #section-5a p {
-      margin-left: 106px;
-      margin-right: 298px; } }
+      margin-left: 100px;
+      margin-right: 300px; } }
   @media (min-width: 992px) {
     #section-5 #section-5-xl #section-5-container #section-5a p {
-      margin-left: 180px;
+      margin-left: 100px;
       margin-right: 500px; } }
 #section-5 #section-5-xl #section-5-container #section-5b #history-1-img {
   background-image: url("../img/section-5/history-1.jpg");
@@ -1721,7 +1718,7 @@ footer p {
 
 @media (min-width: 768px) {
   #section-5 #section-5-xl #section-5-container #section-5b #for-tablet-desktop {
-    margin-left: 105px;
+    margin-left: 200px;
     margin-right: 10px; } }
 
 @media (min-width: 992px) {
@@ -1753,7 +1750,7 @@ footer p {
       background-size: 110%;
       background-position: 0px -100px;
       margin: 0px 0px 120px 0px;
-      height: 65vh;
+      height: 75vh;
       grid-area: img; } }
 #section-5 #section-5-xl #section-5-container #section-5b #history-5bc #history-mobile-content {
   margin-left: 10px;
@@ -1761,8 +1758,8 @@ footer p {
 
 @media (min-width: 768px) {
   #section-5 #section-5-xl #section-5-container #section-5b #history-5bc article {
-    margin-left: 395px;
-    margin-right: 10px; } }
+    margin-left: 10px;
+    margin-right: 298px; } }
 
 @media (min-width: 992px) {
   #section-5 #section-5-xl #section-5-container #section-5b #history-5bc article {
@@ -1787,13 +1784,13 @@ footer p {
       margin-left: 298px; } }
   @media (min-width: 992px) {
     #section-5 #section-5-xl #section-5-container #section-5d #phs-1-img {
-      height: 60vh;
+      height: 80vh;
       margin: 0px;
       grid-area: aside; } }
 @media (min-width: 992px) {
   #section-5 #section-5-xl #section-5-container #section-5d > div {
     display: grid;
-    grid-template-columns: 96px auto 20px;
+    grid-template-columns: 0 auto 0;
     grid-template-areas: ". text ."; } }
 
 #section-5 #section-5-xl #section-5-container #section-5d > div article {
@@ -1801,22 +1798,18 @@ footer p {
   margin-right: 10px; }
   @media (min-width: 768px) {
     #section-5 #section-5-xl #section-5-container #section-5d > div article {
-      margin-left: 10px;
-      margin-right: 395px; } }
+      margin-left: 298px;
+      margin-right: 10px; } }
   @media (min-width: 992px) {
     #section-5 #section-5-xl #section-5-container #section-5d > div article {
       grid-area: text;
-      margin-left: 0px;
-      margin-right: 0px; } }
-@media (min-width: 768px) {
-  #section-5 #section-5-xl #section-5-container #section-5e {
-    display: grid;
-    grid-template-columns: 40% auto;
-    grid-template-areas: "image text"; } }
-
+      margin: 0px;
+      padding: 0px 100px; } }
 @media (min-width: 992px) {
   #section-5 #section-5-xl #section-5-container #section-5e {
+    display: grid;
     grid-template-columns: 45% auto;
+    grid-template-areas: "image text";
     margin-top: 120px; } }
 
 #section-5 #section-5-xl #section-5-container #section-5e #phs-2-img {
@@ -1830,30 +1823,29 @@ footer p {
       grid-area: image;
       background-size: 140%;
       background-position: 0px -130px;
-      margin-left: 10px;
-      height: 25vh; } }
+      height: 30vh;
+      margin-right: 250px; } }
   @media (min-width: 992px) {
     #section-5 #section-5-xl #section-5-container #section-5e #phs-2-img {
       grid-area: image;
       background-size: 120%;
       margin-left: 0px;
-      height: 30vh; } }
+      height: 30vh;
+      margin: 0px; } }
 #section-5 #section-5-xl #section-5-container #section-5e article {
   margin-left: 10px;
-  margin-right: 85px; }
+  margin-right: 10px; }
   @media (min-width: 768px) {
     #section-5 #section-5-xl #section-5-container #section-5e article {
-      grid-area: text;
-      display: grid;
-      grid-template-columns: 107px auto 10px;
-      grid-template-areas: ". text .";
-      margin-left: 0px;
-      margin-right: 0px; } }
+      margin-right: 250px; } }
   @media (min-width: 992px) {
     #section-5 #section-5-xl #section-5-container #section-5e article {
       grid-area: text;
+      display: grid;
       grid-template-columns: 10px auto 10px;
-      grid-template-areas: ". text ."; } }
+      grid-template-areas: ". text .";
+      margin-left: 0px;
+      margin-right: 0px; } }
   @media (min-width: 768px) {
     #section-5 #section-5-xl #section-5-container #section-5e article p {
       grid-area: text; } }

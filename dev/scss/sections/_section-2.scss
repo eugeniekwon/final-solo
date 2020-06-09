@@ -328,7 +328,7 @@
                 }
 
                 @include lg {
-                    height: 75vh;
+                    height: 90vh;
                     background-position: center;
                     margin: 0px;
                 }
@@ -399,12 +399,8 @@
             @include xl {
                 grid-area: quote-text;
             }
-
-
         }
     }
-
-
 
 
     #photography-xl {
@@ -431,16 +427,12 @@
             #photography-content {
                 margin: 0px 10px;
 
-                @include lg {
-                    grid-area: text;
-                    margin: 0px 10px;
-                }
-
                 @include md {
                     margin: 0px 288px 0px 106px;
                 }
 
                 @include lg {
+                    grid-area: text;
                     margin: 0px 20px 0px 10px;
                 }
             }
@@ -459,7 +451,7 @@
 
                 @include lg {
                     grid-area: img;
-                    height: 30vh;
+                    height: 40vh;
                     margin: 0px;
                     margin-bottom: 60px;
                 }
