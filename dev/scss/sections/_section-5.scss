@@ -1,29 +1,26 @@
 /* =============
     Section-5
 ============= */
-
 #section-5 {
-
     #hero-5 {
+        align-items: center;
         background-image: url("../img/section-5/hero-5.jpg");
+        background-position: -320px -350px;
         background-repeat: no-repeat;
         background-size: 300%;
-        background-position: -320px -350px;
-        height: 30vh;
-
         display: flex;
-        align-items: center;
+        height: 30vh;
         justify-content: center;
 
         @include md {
-            background-size: 210%;
             background-position: -360px -500px;
+            background-size: 210%;
             height: 35vh;
         }
 
         @include lg {
-            background-size: 160%;
             background-position: -330px -400px;
+            background-size: 160%;
             height: 45vh;
         }
 
@@ -32,15 +29,12 @@
         }
 
         @include xxl {
-            background-size: 150%;
             background-position: -330px -850px;
+            background-size: 150%;
         }
-
     }
 
-
     #section-5-xl {
-
         @include xl {
             display: grid;
             grid-template-areas: ". section-5-xl .";
@@ -48,16 +42,14 @@
         }
 
         #section-5-container {
-
             @include xl {
                 grid-area: section-5-xl;
             }
 
             #section-5a {
-
                 h2 {
-                    margin-left: 10px;
                     align-items: left;
+                    margin-left: 10px;
 
                     @include md {
                         margin-left: 100px;
@@ -85,12 +77,11 @@
             }
 
             #section-5b {
-
                 #history-1-img {
                     background-image: url("../img/section-5/history-1.jpg");
+                    background-position: center;
                     background-repeat: no-repeat;
                     background-size: cover;
-                    background-position: center;
                     height: 60vh;
 
                     @include md {
@@ -122,49 +113,48 @@
                 }
 
                 #history-5bc {
-
-                    @include lg{
+                    @include lg {
                         display: grid;
-                        grid-template-columns: 50% auto;
                         grid-template-areas: "img history-lg";
+                        grid-template-columns: 50% auto;
                     }
 
                     #history-2-img {
                         background-image: url("../img/section-5/history-2.jpg");
+                        background-position: center;
                         background-repeat: no-repeat;
                         background-size: cover;
-                        background-position: center;
                         height: 40vh;
 
                         @include md {
-                            background-size: 150%;
                             background-position: 0px -150px;
-                            margin-right: 298px;
-                            margin-bottom: 80px;
+                            background-size: 150%;
                             height: 60vh;
+                            margin-bottom: 80px;
+                            margin-right: 298px;
                         }
 
                         @include lg {
-                            background-size: 110%;
                             background-position: 0px -100px;
-                            margin: 0px 0px 120px 0px;
-                            height: 75vh;
+                            background-size: 110%;
                             grid-area: img;
+                            height: 75vh;
+                            margin: 0px 0px 120px 0px;
                         }
                     }
 
-                    #history-mobile-content{
+                    #history-mobile-content {
                         margin-left: 10px;
                         margin-right: 10px;
                     }
 
-                    article{
-                        @include md{
+                    article {
+                        @include md {
                             margin-left: 10px;
                             margin-right: 298px;
                         }
 
-                        @include lg{
+                        @include lg {
                             grid-area: history-lg;
                             margin: 0px;
                             padding: 0px 100px;
@@ -173,20 +163,18 @@
                 }
             }
 
-
             #section-5d {
-
                 @include lg {
                     display: grid;
-                    grid-template-columns: 50% 50%;
                     grid-template-areas: "article aside";
+                    grid-template-columns: 50% 50%;
                 }
 
                 #phs-1-img {
                     background-image: url("../img/section-5/phs-1.jpg");
+                    background-position: center;
                     background-repeat: no-repeat;
                     background-size: cover;
-                    background-position: center;
                     height: 60vh;
 
                     @include md {
@@ -194,19 +182,17 @@
                     }
 
                     @include lg {
+                        grid-area: aside;
                         height: 80vh;
                         margin: 0px;
-
-                        grid-area: aside;
                     }
                 }
 
                 >div {
-
                     @include lg {
                         display: grid;
-                        grid-template-columns: 0 auto 0;
                         grid-template-areas: ". text .";
+                        grid-template-columns: 0 auto 0;
                     }
 
                     article {
@@ -222,66 +208,56 @@
                             grid-area: text;
                             margin: 0px;
                             padding: 0px 100px;
-                            
-
                         }
                     }
-
                 }
-
             }
 
             #section-5e {
-
                 @include lg {
                     display: grid;
-                    grid-template-columns: 45% auto;
                     grid-template-areas: "image text";
+                    grid-template-columns: 45% auto;
                     margin-top: 120px;
                 }
 
                 #phs-2-img {
                     background-image: url("../img/section-5/phs-2.jpg");
+                    background-position: 0px -90px;
                     background-repeat: no-repeat;
                     background-size: cover;
-                    background-position: 0px -90px;
                     height: 40vh;
 
                     @include md {
-                        grid-area: image;
-
-                        background-size: 140%;
                         background-position: 0px -130px;
+                        background-size: 140%;
+                        grid-area: image;
                         height: 30vh;
                         margin-right: 250px;
                     }
 
                     @include lg {
-                        grid-area: image;
-
                         background-size: 120%;
-                        margin-left: 0px;
+                        grid-area: image;
                         height: 30vh;
                         margin: 0px;
+                        margin-left: 0px;
                     }
-
-
                 }
 
                 article {
                     margin-left: 10px;
                     margin-right: 10px;
 
-                    @include md{
+                    @include md {
                         margin-right: 250px;
                     }
 
                     @include lg {
-                        grid-area: text;
-
                         display: grid;
-                        grid-template-columns: 10px auto 10px;
+                        grid-area: text;
                         grid-template-areas: ". text .";
+                        grid-template-columns: 10px auto 10px;
                         margin-left: 0px;
                         margin-right: 0px;
                     }
@@ -297,22 +273,17 @@
                     }
                 }
             }
-
-
         }
-
     }
 
-
     h3 {
+        color: $dark-orange;
         font-family: 'Playfair Display', serif;
         font-size: rem-calc(23);
         font-weight: 700;
-        color: $dark-orange;
 
         @include lg {
             font-size: rem-calc(25);
         }
     }
-
 }

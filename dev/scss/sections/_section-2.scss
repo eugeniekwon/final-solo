@@ -1,30 +1,26 @@
 /* =============
     Section-2
 ============= */
-
 #section-2 {
-
-
     #hero-2 {
+        align-items: center;
         background-image: url("../img/section-2/hero-2.jpg");
+        background-position: -280px -620px;
         background-repeat: no-repeat;
         background-size: 250%;
-        background-position: -280px -620px;
-        height: 30vh;
-
         display: flex;
-        align-items: center;
+        height: 30vh;
         justify-content: center;
 
         @include md {
-            background-size: 190%;
             background-position: -300px -980px;
+            background-size: 190%;
             height: 35vh;
         }
 
         @include lg {
-            background-size: 120%;
             background-position: -120px -750px;
+            background-size: 120%;
             height: 45vh;
         }
 
@@ -35,32 +31,29 @@
         @include xxl {
             background-position: -120px -1300px;
         }
-
     }
 
     #intro-xl {
-
         @include xl {
             display: grid;
             grid-template-areas: ". intro-xl .";
             grid-template-columns: auto 1200px auto;
         }
 
-
         #intro-type {
+            color: $middle-brown;
             font-family: 'Playfair Display', serif;
             font-size: rem-calc(25);
-            line-height: rem-calc(40);
             font-weight: 700;
-            color: $middle-brown;
-            text-align: justify;
+            line-height: rem-calc(40);
             margin: 70px 10px;
+            text-align: justify;
 
             @include md {
                 font-size: rem-calc(40);
                 line-height: rem-calc(65);
-                text-align: center;
                 margin: 80px 10px;
+                text-align: center;
             }
 
             @include lg {
@@ -75,20 +68,18 @@
         }
     }
 
-
     #grid-xl {
-
         @include xl {
             display: grid;
-            grid-template-columns: auto 1200px auto;
             grid-template-areas: ". grid-xl .";
+            grid-template-columns: auto 1200px auto;
         }
 
         >div {
             @include md {
                 display: grid;
-                grid-template-columns: 45% auto;
                 grid-template-areas: "date general-hours";
+                grid-template-columns: 45% auto;
                 margin: 0px 25px;
             }
 
@@ -101,7 +92,6 @@
             }
 
             #date-container {
-
                 h2 {
                     text-align: center;
 
@@ -115,123 +105,113 @@
                 }
 
                 >div {
-                    display: flex;
                     align-items: center;
+                    display: flex;
                     justify-content: center;
 
                     #date-content {
-
                         display: grid;
+                        grid-template-areas: "d1 d3""d2 d4";
                         grid-template-columns: 50% auto;
                         grid-template-rows: repeat(2, 1fr);
-                        grid-template-areas: "d1 d3""d2 d4";
-                        row-gap: 25px;
                         margin: 0px;
+                        row-gap: 25px;
 
                         @include md {
                             row-gap: 10px;
                         }
 
                         #d1 {
-                            grid-area: d1;
-                            text-align: center;
-
-                            display: flex;
                             align-items: center;
+                            display: flex;
+                            grid-area: d1;
                             justify-content: left;
+                            text-align: center;
                         }
 
                         #d2 {
-                            grid-area: d2;
-                            text-align: center;
-
-                            display: flex;
                             align-items: center;
+                            display: flex;
+                            grid-area: d2;
                             justify-content: left;
+                            text-align: center;
                         }
 
                         #d3 {
-                            grid-area: d3;
-                            background-color: $cream;
-                            width: 60px;
-                            height: 71px;
-                            text-align: center;
-                            margin: 0px 20px;
-
-                            display: flex;
                             align-items: center;
+                            background-color: $cream;
+                            display: flex;
+                            grid-area: d3;
+                            height: 71px;
                             justify-content: center;
+                            margin: 0px 20px;
+                            text-align: center;
+                            width: 60px;
 
                             @include md {
-                                width: 107px;
                                 height: 80px;
+                                width: 107px;
                             }
 
                             @include lg {
-                                width: 127px;
                                 height: 95px;
+                                width: 127px;
                             }
                         }
 
                         #d4 {
-                            grid-area: d4;
-                            background-color: $cream;
-                            width: 60px;
-                            height: 71px;
-                            text-align: center;
-                            margin: 0px 20px;
-
-                            display: flex;
                             align-items: center;
+                            background-color: $cream;
+                            display: flex;
+                            grid-area: d4;
+                            height: 71px;
                             justify-content: center;
+                            margin: 0px 20px;
+                            text-align: center;
+                            width: 60px;
 
                             @include md {
-                                width: 107px;
                                 height: 80px;
+                                width: 107px;
                             }
 
                             @include lg {
-                                width: 127px;
                                 height: 95px;
+                                width: 127px;
                             }
                         }
-
                     }
                 }
-
             }
 
             #general-hours-container {
-
                 h2 {
                     text-align: center;
                 }
 
                 >div {
-                    display: flex;
                     align-items: center;
+                    display: flex;
                     justify-content: space-between;
 
                     #hours-content {
-                        width: 100%;
-
                         display: grid;
-                        grid-template-columns: repeat(3, 1fr);
                         gap: 25px;
+                        grid-template-columns: repeat(3, 1fr);
                         margin: 0px;
+                        width: 100%;
 
                         @include md {
                             gap: 10px;
                         }
 
-
                         li {
-                            height: 71px;
-                            display: flex;
                             align-items: center;
+                            background-color: $bright-pink;
+                            display: flex;
+                            height: 71px;
                             justify-content: center;
                             text-align: center;
-                            background-color: $bright-pink;
 
                             @include md {
                                 height: 80px;
@@ -247,26 +227,25 @@
 
                                 a:link,
                                 a:visited {
-                                    display: inline-block;
-                                    height: 100%;
-                                    width: 100%;
-                                    transition: 0.25s;
-
-                                    display: flex;
                                     align-items: center;
+                                    display: flex;
+                                    height: 100%;
                                     justify-content: center;
+                                    transition: 0.25s;
+                                    width: 100%;
                                 }
 
-                                a:hover, a:active{
+                                a:hover,
+                                a:active {
                                     background-color: $dark-pink;
                                 }
 
                                 h4 {
+                                    color: $white;
                                     font-family: Helvetica, sans-serif;
                                     font-size: rem-calc(16);
-                                    line-height: rem-calc(23);
                                     font-weight: 400;
-                                    color: $white;
+                                    line-height: rem-calc(23);
 
                                     @include md {
                                         font-size: rem-calc(18);
@@ -282,20 +261,15 @@
                                         display: block;
                                     }
                                 }
-
                             }
                         }
-
                     }
                 }
             }
         }
     }
 
-
-
     #tree-xl {
-
         @include xl {
             display: grid;
             grid-template-areas: ". tree-xl .";
@@ -303,46 +277,44 @@
         }
 
         #tree-container {
-
             @include xl {
                 grid-area: tree-xl;
             }
 
             @include lg {
                 display: grid;
-                grid-template-columns: 50% 50%;
                 grid-template-areas: "img text";
+                grid-template-columns: 50% 50%;
             }
 
             #lemon-img {
                 background-image: url("../img/section-2/lemons.jpg");
+                background-position: center;
                 background-repeat: no-repeat;
                 background-size: cover;
-                background-position: center;
                 height: 60vh;
 
                 @include md {
-                    height: 70vh;
                     background-position: -330px;
+                    height: 70vh;
                     margin-right: 200px;
                 }
 
                 @include lg {
-                    height: 90vh;
                     background-position: center;
+                    height: 90vh;
                     margin: 0px;
                 }
             }
 
             #tree-content {
+                display: grid;
+                grid-template-areas: ". tree-text .";
+                grid-template-columns: 10px auto 10px;
 
                 @include lg {
                     grid-area: text;
                 }
-
-                display: grid;
-                grid-template-areas: ". tree-text .";
-                grid-template-columns: 10px auto 10px;
 
                 #tree-text {
                     grid-area: tree-text;
@@ -353,22 +325,21 @@
 
                     @include lg {
                         margin: 0px 100px;
-                        p{
-                           margin-bottom: 25px;
+
+                        p {
+                            margin-bottom: 25px;
                         }
                     }
-
-                    
                 }
             }
         }
     }
 
     #quote {
+        background-color: $cream;
         display: grid;
         grid-template-areas: ". quote-text .";
         grid-template-columns: 10px auto 10px;
-        background-color: $cream;
         width: 100%;
 
         @include lg {
@@ -376,16 +347,15 @@
         }
 
         @include xl {
+            background-color: $cream;
             display: grid;
             grid-template-areas: ". quote-text .";
             grid-template-columns: auto 1200px auto;
-            background-color: $cream;
             width: 100%;
         }
 
         #quote-text {
             grid-area: quote-text;
-
             padding: 70px 0px;
 
             @include md {
@@ -402,27 +372,23 @@
         }
     }
 
-
     #photography-xl {
-
         @include xl {
             display: grid;
-            grid-template-columns: auto 1200px auto;
             grid-template-areas: ". photography-xl .";
+            grid-template-columns: auto 1200px auto;
         }
 
         #photography-container {
-
             @include xl {
                 grid-area: photography-xl;
             }
 
             @include lg {
                 display: grid;
-                grid-template-columns: 45% 55%;
                 grid-template-areas: "text img";
+                grid-template-columns: 45% 55%;
             }
-
 
             #photography-content {
                 margin: 0px 10px;
@@ -439,9 +405,9 @@
 
             #photo-img {
                 background-image: url("../img/section-2/photo.jpg");
+                background-position: center;
                 background-repeat: no-repeat;
                 background-size: cover;
-                background-position: center;
                 height: 45vh;
 
                 @include md {
@@ -457,21 +423,19 @@
                 }
             }
         }
-
     }
-
 
     #youtube-xl {
         @include xl {
             display: grid;
-            grid-template-columns: auto 1200px auto;
             grid-template-areas: ". video-xl .";
+            grid-template-columns: auto 1200px auto;
         }
 
         #youtube-video {
             display: grid;
-            grid-template-columns: 10px auto 10px;
             grid-template-areas: ". video .";
+            grid-template-columns: 10px auto 10px;
             margin: 70px 0px;
 
             @include md {
@@ -487,10 +451,10 @@
             }
 
             >div {
-                grid-area: video;
-                display: flex;
-                justify-content: center;
                 align-items: center;
+                display: flex;
+                grid-area: video;
+                justify-content: center;
 
                 section {
                     width: 100%;
@@ -500,10 +464,10 @@
     }
 
     h3 {
+        color: $dark-orange;
         font-family: 'Playfair Display', serif;
         font-size: rem-calc(18);
         font-weight: 400;
-        color: $dark-orange;
 
         @include md {
             font-size: rem-calc(23);

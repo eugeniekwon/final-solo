@@ -16,13 +16,12 @@ p {
 }
 
 .title {
+    align-items: center;
+    color: $white;
+    display: flex;
     font-family: 'Playfair Display', serif;
     font-size: rem-calc(30);
     font-weight: 900;
-    color: $white;
-
-    display: flex;
-    align-items: center;
     justify-content: center;
 
     @include md {
@@ -36,11 +35,10 @@ p {
 }
 
 .darkbrownheading {
-
+    color: $dark-brown;
     font-family: 'Playfair Display', serif;
     font-size: rem-calc(22);
     font-weight: 700;
-    color: $dark-brown;
 
     @include md {
         font-size: rem-calc(28);
@@ -52,27 +50,12 @@ p {
     }
 }
 
-p {
-    font-family: Helvetica, sans-serif;
-    font-size: rem-calc(16);
-    font-weight: 400;
-    line-height: rem-calc(23);
-    text-align: justify;
-    color: $gray;
-
-    @include md {
-        font-size: rem-calc(17);
-        line-height: rem-calc(24);
-    }
-
-}
-
 .sec2-date-type {
+    color: $middle-brown;
     font-family: Helvetica, sans-serif;
     font-size: rem-calc(16);
-    line-height: rem-calc(23);
     font-weight: 400;
-    color: $middle-brown;
+    line-height: rem-calc(23);
 
     @include md {
         font-size: rem-calc(18);
@@ -89,22 +72,36 @@ p {
     }
 }
 
-.pullout-quote{
+.pullout-quote {
+    color: $middle-brown;
     font-family: 'Playfair Display', serif;
-        font-size: rem-calc(30);
-        line-height: rem-calc(42);
-        font-weight: 700;
-        color: $middle-brown;
-        text-align: center;
+    font-size: rem-calc(30);
+    font-weight: 700;
+    line-height: rem-calc(42);
+    text-align: center;
 
-        @include md {
-            font-size: rem-calc(50);
-            line-height: rem-calc(75);
-        }
+    @include md {
+        font-size: rem-calc(50);
+        line-height: rem-calc(75);
+    }
 
-        @include lg {
-            font-size: rem-calc(60);
-            line-height: rem-calc(85);
-        }
+    @include lg {
+        font-size: rem-calc(60);
+        line-height: rem-calc(85);
+    }
 }
 
+p {
+    color: $gray;
+    font-family: Helvetica, sans-serif;
+    font-size: rem-calc(16);
+    font-weight: 400;
+    line-height: rem-calc(23);
+    text-align: justify;
+
+    @include md {
+        font-size: rem-calc(17);
+        line-height: rem-calc(24);
+    }
+
+}

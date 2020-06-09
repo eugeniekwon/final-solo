@@ -2,24 +2,21 @@
     Section-1
 ============= */
 #section-1 {
-
     #hero-1 {
-
+        align-items: center;
         background-image: url("../img/section-1/main-hero.jpg");
+        background-position: -280px -660px;
         background-repeat: no-repeat;
         background-size: 260%;
-        background-position: -280px -660px;
-        height: 50vh;
-        position: relative;
-        margin-top: 90px;
-
         display: flex;
-        align-items: center;
+        height: 50vh;
         justify-content: center;
+        margin-top: 90px;
+        position: relative;
 
         @include md {
-            background-size: 150%;
             background-position: -280px -750px;
+            background-size: 150%;
             height: 70vh;
         }
 
@@ -28,24 +25,22 @@
             height: 100vh;
         }
 
-        @include xl{
+        @include xl {
             background-size: 130%;
         }
 
-        @include xxl{
+        @include xxl {
             background-position: -300px -1450px;
         }
 
-
         >div {
-
-            font-family: 'Playfair Display', serif;
             color: $white;
-        
+            font-family: 'Playfair Display', serif;
+
             h1 {
                 font-size: rem-calc(37);
-                line-height: rem-calc(49);
                 font-weight: 900;
+                line-height: rem-calc(49);
                 margin-bottom: 25px;
 
                 @include md {
@@ -60,13 +55,12 @@
             }
 
             h3 {
-                font-size: rem-calc(22);
-                line-height: rem-calc(30);
-                font-weight: 700;
-
-                display: flex;
                 align-items: center;
+                display: flex;
+                font-size: rem-calc(22);
+                font-weight: 700;
                 justify-content: center;
+                line-height: rem-calc(30);
 
                 @include md {
                     font-size: rem-calc(45);
@@ -77,11 +71,7 @@
                     font-size: rem-calc(50);
                     line-height: rem-calc(67);
                 }
-
             }
-
         }
-
     }
-
 }

@@ -19,12 +19,10 @@ ul {
     @include lg {
         margin-bottom: 120px;
     }
-
 }
 
 .spacing-h-content {
     margin-bottom: 25px;
-
 }
 
 .medium-b-spacing {
@@ -37,11 +35,7 @@ ul {
     @include lg {
         margin-bottom: 60px;
     }
-
 }
-
-
-
 
 .show-for-md {
     display: none;
@@ -83,12 +77,9 @@ ul {
     }
 }
 
-
-
-
 .icon {
-    font-size: rem-calc(40);
     color: $light-orange;
+    font-size: rem-calc(40);
 
     @include lg {
         font-size: rem-calc(50);

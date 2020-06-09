@@ -1,31 +1,28 @@
 /* =============
     Section-6
 ============= */
-
 #section-6 {
-
     text-align: center;
 
     #hero-6 {
+        align-items: center;
         background-image: url("../img/section-6/hero-6.jpg");
+        background-position: -350px -170px;
         background-repeat: no-repeat;
         background-size: 270%;
-        background-position: -350px -170px;
-        height: 30vh;
-
         display: flex;
-        align-items: center;
+        height: 30vh;
         justify-content: center;
 
         @include md {
-            background-size: 200%;
             background-position: -550px -200px;
+            background-size: 200%;
             height: 35vh;
         }
 
         @include lg {
-            background-size: 145%;
             background-position: -290px -130px;
+            background-size: 145%;
             height: 45vh;
         }
 
@@ -36,9 +33,7 @@
         @include xxl {
             background-position: -500px -400px;
         }
-
     }
-
 
     #section-6-container {
         @include lg {
@@ -54,7 +49,6 @@
         }
 
         #total {
-
             @include lg {
                 grid-area: desktop;
             }
@@ -68,7 +62,6 @@
                 grid-template-areas: "address phone email";
                 grid-template-columns: repeat(3, 1fr);
                 margin: 0px 10px;
-                
             }
 
             #address {
@@ -101,5 +94,4 @@
     p {
         text-align: center;
     }
-
 }

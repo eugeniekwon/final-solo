@@ -1,50 +1,51 @@
 /* =============
     Navigation
 ============= */
-#nav-container{
-    ul{
+#nav-container {
+    ul {
         height: 100%;
         text-align: right;
 
-        @include lg{
+        @include lg {
             display: flex;
             justify-content: flex-end;
         }
 
-        li{
+        li {
             margin-bottom: 30px;
 
-            @include lg{
+            @include lg {
                 align-items: center;
                 display: flex;
                 margin: 0px 30px 0 0;
             }
 
             a:link,
-            a:visited{
+            a:visited {
                 color: $middle-pink;
                 text-decoration: none;
                 transition: 0.25s;
             }
 
             a:hover,
-            a:active{
+            a:active {
                 color: $dark-pink;
             }
         }
     }
 }
 
-h1{
+h1 {
+
     a:link,
-    a:visited{
+    a:visited {
         color: $dark-pink;
         text-decoration: none;
         transition: 0.25s;
-        }
+    }
 
     a:hover,
-    a:active{
+    a:active {
         color: $dark-brown;
-        }
+    }
 }

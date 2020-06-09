@@ -1,52 +1,48 @@
 /* =============
     Buttons
 ============= */
-
-.button{
+.button {
+    align-items: center;
+    display: flex;
     font-family: Helvetica, sans-serif;
     font-size: rem-calc(16);
-    font-weight: 700; 
-
-    display: flex;
-    align-items: center;
+    font-weight: 700;
     justify-content: center;
 
     a:link,
-    a:visited{
-        color: $white;
+    a:visited {
         background-color: $green;
         border-radius: 5px;
+        color: $white;
         padding: 10px 20px;
         transition: 0.25s;
     }
 
-    a:hover, a:active{
+    a:hover,
+    a:active {
         background-color: $dark-green;
     }
-
-    
-
 }
 
-.button-sg{
+.button-sg {
+    align-items: center;
+    display: flex;
     font-family: Helvetica, sans-serif;
     font-size: rem-calc(16);
-    font-weight: 700; 
-
-    display: flex;
-    align-items: center;
+    font-weight: 700;
     justify-content: center;
 
     a:link,
-    a:visited{
-        color: $white;
+    a:visited {
         background-color: $green;
         border-radius: 5px;
+        color: $white;
         padding: 10px 20px;
         transition: 0.25s;
     }
 
-    a:hover, a:active{
+    a:hover,
+    a:active {
         background-color: $dark-green;
     }
 }

@@ -1,28 +1,24 @@
 /* =============
     Footer
 ============= */
-
 footer {
-
     @include xl {
-        display: grid;
-        grid-template-columns: auto 1200px auto;
-        grid-template-areas: ". footer-xl .";
         background-color: $light-pink;
-        width: 100%;
         border-bottom: 1px solid $light-pink;
+        display: grid;
+        grid-template-areas: ". footer-xl .";
+        grid-template-columns: auto 1200px auto;
+        width: 100%;
     }
 
     #footer-xl {
+        background-color: $light-pink;
+        border-bottom: 1px solid $light-pink;
+        width: 100%;
 
         @include xl {
             grid-area: footer-xl;
-
         }
-
-        background-color: $light-pink;
-        width: 100%;
-        border-bottom: 1px solid $light-pink;
 
         #address-footer {
             @include md {
@@ -32,20 +28,20 @@ footer {
 
         #social-medias {
             ul {
-                display: flex;
                 align-items: center;
+                display: flex;
+                font-size: rem-calc(25);
                 justify-content: space-evenly;
                 margin: 25px 120px;
-                font-size: rem-calc(25);
 
                 @include md {
-                    margin: 25px 300px;
                     font-size: rem-calc(30);
+                    margin: 25px 300px;
                 }
 
                 @include lg {
-                    margin: 25px 400px;
                     font-size: rem-calc(40);
+                    margin: 25px 400px;
                 }
 
                 li {
@@ -66,12 +62,12 @@ footer {
     }
 
     h2 {
+        color: $dark-pink;
         font-family: 'Playfair Display', serif;
         font-size: rem-calc(18);
         font-weight: 700;
-        color: $dark-pink;
-        text-align: center;
         padding: 35px 0px;
+        text-align: center;
 
         @include md {
             font-size: rem-calc(28);
@@ -81,18 +77,18 @@ footer {
 
     h3 {
         @include md {
+            color: $dark-pink;
             font-family: 'Playfair Display', serif;
             font-size: rem-calc(22);
             font-weight: 400;
-            text-align: center;
-            color: $dark-pink;
             margin-bottom: 25px;
+            text-align: center;
         }
     }
 
     p {
-        text-align: center;
         color: $dark-pink;
+        text-align: center;
 
         @include md {
             margin-bottom: 15px;
