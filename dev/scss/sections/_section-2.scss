@@ -5,7 +5,7 @@
     #hero-2 {
         align-items: center;
         background-image: url("../img/section-2/hero-2.jpg");
-        background-position: -280px -620px;
+        background-position: -280px -680px;
         background-repeat: no-repeat;
         background-size: 250%;
         display: flex;
@@ -219,6 +219,7 @@
 
                             @include lg {
                                 height: 95px;
+                                
                             }
 
                             >div {

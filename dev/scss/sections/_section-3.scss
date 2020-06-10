@@ -5,7 +5,7 @@
 #section-3 {
     #hero-3 {
         background-image: url("../img/section-3/hero-3.jpg");
-        background-position: -150px -1000px;
+        background-position: -150px -1100px;
         background-repeat: no-repeat;
         background-size: 230%;
         height: 30vh;
@@ -365,18 +365,13 @@
     }
 
 
-    #additional-xl {
-        @include xl {
-            display: grid;
-            grid-template-areas: ". additional-xl .";
-            grid-template-columns: auto 1200px auto;
-        }
+    #additional {
 
         >div {
             margin-left: 10px;
 
             @include md {
-                margin-left: 210px;
+                margin-left: 230px;
             }
 
             @include lg {
@@ -384,7 +379,11 @@
             }
 
             @include xl {
-                grid-area: additional-xl;
+                margin-left: 425px;
+            }
+
+            @include xxl {
+                margin-left: 625px;
             }
         }
     }

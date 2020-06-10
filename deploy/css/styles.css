@@ -777,11 +777,11 @@ footer p {
 #section-1 #hero-1 {
   align-items: center;
   background-image: url("../img/section-1/main-hero.jpg");
-  background-position: -280px -660px;
+  background-position: -280px -750px;
   background-repeat: no-repeat;
   background-size: 260%;
   display: flex;
-  height: 50vh;
+  height: 55vh;
   justify-content: center;
   margin-top: 90px;
   position: relative; }
@@ -837,7 +837,7 @@ footer p {
 #section-2 #hero-2 {
   align-items: center;
   background-image: url("../img/section-2/hero-2.jpg");
-  background-position: -280px -620px;
+  background-position: -280px -680px;
   background-repeat: no-repeat;
   background-size: 250%;
   display: flex;
@@ -1200,7 +1200,7 @@ footer p {
 ============= */
 #section-3 #hero-3 {
   background-image: url("../img/section-3/hero-3.jpg");
-  background-position: -150px -1000px;
+  background-position: -150px -1100px;
   background-repeat: no-repeat;
   background-size: 230%;
   height: 30vh;
@@ -1448,23 +1448,20 @@ footer p {
     #section-3 #bottom-xl #bottom-container article {
       grid-area: article;
       margin: 0px 10px 0px 20px; } }
-@media (min-width: 1200px) {
-  #section-3 #additional-xl {
-    display: grid;
-    grid-template-areas: ". additional-xl .";
-    grid-template-columns: auto 1200px auto; } }
-
-#section-3 #additional-xl > div {
+#section-3 #additional > div {
   margin-left: 10px; }
   @media (min-width: 768px) {
-    #section-3 #additional-xl > div {
-      margin-left: 210px; } }
+    #section-3 #additional > div {
+      margin-left: 230px; } }
   @media (min-width: 992px) {
-    #section-3 #additional-xl > div {
+    #section-3 #additional > div {
       margin-left: 320px; } }
   @media (min-width: 1200px) {
-    #section-3 #additional-xl > div {
-      grid-area: additional-xl; } }
+    #section-3 #additional > div {
+      margin-left: 425px; } }
+  @media (min-width: 1600px) {
+    #section-3 #additional > div {
+      margin-left: 625px; } }
 #section-3 h2 {
   align-items: center;
   display: flex;
@@ -1487,7 +1484,7 @@ footer p {
 #section-4 #hero-4 {
   align-items: center;
   background-image: url("../img/section-4/hero-4.jpg");
-  background-position: -150px -60px;
+  background-position: -150px -130px;
   background-repeat: no-repeat;
   background-size: 200%;
   display: flex;
@@ -1647,7 +1644,7 @@ footer p {
 #section-5 #hero-5 {
   align-items: center;
   background-image: url("../img/section-5/hero-5.jpg");
-  background-position: -320px -350px;
+  background-position: -320px -430px;
   background-repeat: no-repeat;
   background-size: 300%;
   display: flex;
@@ -1655,7 +1652,7 @@ footer p {
   justify-content: center; }
   @media (min-width: 768px) {
     #section-5 #hero-5 {
-      background-position: -360px -500px;
+      background-position: -360px -550px;
       background-size: 210%;
       height: 35vh; } }
   @media (min-width: 992px) {

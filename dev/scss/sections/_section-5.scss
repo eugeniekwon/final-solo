@@ -5,7 +5,7 @@
     #hero-5 {
         align-items: center;
         background-image: url("../img/section-5/hero-5.jpg");
-        background-position: -320px -350px;
+        background-position: -320px -430px;
         background-repeat: no-repeat;
         background-size: 300%;
         display: flex;
@@ -13,7 +13,7 @@
         justify-content: center;
 
         @include md {
-            background-position: -360px -500px;
+            background-position: -360px -550px;
             background-size: 210%;
             height: 35vh;
         }
