@@ -5,7 +5,7 @@
     #hero-1 {
         align-items: center;
         background-image: url("../img/section-1/main-hero.jpg");
-        background-position: -280px -750px;
+        background-position: -280px -650px;
         background-repeat: no-repeat;
         background-size: 260%;
         display: flex;
@@ -30,7 +30,7 @@
         }
 
         @include xxl {
-            background-position: -300px -1450px;
+            background-position: -300px -1250px;
         }
 
         >div {

@@ -31,6 +31,7 @@
         @include xxl {
             background-position: -330px -850px;
             background-size: 150%;
+            height: 50vh;
         }
     }
 
@@ -242,6 +243,10 @@
                         height: 30vh;
                         margin: 0px;
                         margin-left: 0px;
+                    }
+
+                    @include xxl{
+                        height: 40vh; 
                     }
                 }
 

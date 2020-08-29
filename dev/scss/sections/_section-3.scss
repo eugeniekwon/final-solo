@@ -5,7 +5,7 @@
 #section-3 {
     #hero-3 {
         background-image: url("../img/section-3/hero-3.jpg");
-        background-position: -150px -1100px;
+        background-position: -150px -1000px;
         background-repeat: no-repeat;
         background-size: 230%;
         height: 30vh;
@@ -32,7 +32,8 @@
         }
 
         @include xxl {
-            background-position: -50px -2550px;
+            background-position: -50px -2050px;
+            height: 50vh;
         }
 
     }
@@ -347,6 +348,10 @@
                     grid-area: aside;
                     margin: 0px;
                 }
+                
+                @include xxl{
+                    height: 40vh; 
+                }
             }
 
             article {
@@ -371,7 +376,7 @@
             margin-left: 10px;
 
             @include md {
-                margin-left: 230px;
+                margin-left: 210px;
             }
 
             @include lg {
@@ -383,7 +388,7 @@
             }
 
             @include xxl {
-                margin-left: 625px;
+                margin-left: 550px;
             }
         }
     }

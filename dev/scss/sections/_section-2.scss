@@ -30,6 +30,7 @@
 
         @include xxl {
             background-position: -120px -1300px;
+            height: 50vh;
         }
     }
 
@@ -46,20 +47,19 @@
             font-size: rem-calc(25);
             font-weight: 700;
             line-height: rem-calc(40);
-            margin: 70px 10px;
+            margin: 0px 10px 70px 10px;
             text-align: justify;
 
             @include md {
                 font-size: rem-calc(40);
                 line-height: rem-calc(65);
-                margin: 80px 10px;
-                text-align: center;
+                margin: 0px 20px 80px 20px;
             }
 
             @include lg {
                 font-size: rem-calc(45);
                 line-height: rem-calc(70);
-                margin: 120px 65px;
+                margin: 0px 65px 120px 65px;
             }
 
             @include xl {
@@ -409,7 +409,7 @@
                 background-position: center;
                 background-repeat: no-repeat;
                 background-size: cover;
-                height: 45vh;
+                height: 40vh;
 
                 @include md {
                     height: 35vh;
@@ -421,6 +421,10 @@
                     height: 40vh;
                     margin: 0px;
                     margin-bottom: 60px;
+                }
+
+                @include xxl{
+                    height: 50vh;
                 }
             }
         }
