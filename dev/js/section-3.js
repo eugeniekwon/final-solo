@@ -7,7 +7,7 @@ gsap.registerPlugin(ScrollTrigger);
 const sectionThree = gsap.timeline();
 const sectionThreeTime = 1;
 
-sectionThree.from("#hero-3", {duration: sectionThreeTime, alpha:0, x:-100})
+sectionThree.from("#hero-3", {duration:1.5, alpha:0, x:-100})
             .from("#sale-xl", {duration: sectionThreeTime, alpha:0, x:100})
             .from("#bottom-container", {duration: 2, alpha:0});
             

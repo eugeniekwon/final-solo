@@ -7,12 +7,12 @@ gsap.registerPlugin(ScrollTrigger);
 const sectionTwo = gsap.timeline();
 const sectionTwoTime = 1;
 
-sectionTwo.from("#hero-2", {duration: sectionTwoTime, alpha:0, x:-100})
+sectionTwo.from("#hero-2", {duration:1.5, alpha:0, x:-100})
             .from("#intro-xl", {duration: sectionTwoTime, alpha: 0, x:200})
             .from("#grid-xl", {duration: sectionTwoTime, alpha: 0, y:-150})
             .from("#tree-xl", {duration: sectionTwoTime, alpha: 0})
             .from("#quote", {duration: sectionTwoTime, alpha: 0, x:-400})
-            .from("#photography-xl", {duration: sectionTwoTime, alpha: 0});
+            .from("#photography-xl", {duration: sectionTwoTime, alpha: 0}, "+=0.2");
 
 
 

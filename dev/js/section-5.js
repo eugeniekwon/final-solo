@@ -7,7 +7,7 @@ gsap.registerPlugin(ScrollTrigger);
 const sectionFive = gsap.timeline();
 const sectionFiveTime = 1;
 
-sectionFive.from("#hero-5", {duration: sectionFiveTime, alpha:0, x:-100})
+sectionFive.from("#hero-5", {duration:1.5, alpha:0, x:-100})
             .from("#section-5-xl", {duration: sectionFiveTime, alpha:0})
             .from("#section-5b", {duration: sectionFiveTime, alpha:0, x:150})  
             .from("#history-5bc", {duration: sectionFiveTime, alpha:0, x:-150})

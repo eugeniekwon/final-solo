@@ -5,9 +5,9 @@ gsap.registerPlugin(ScrollTrigger);
 
 
 const sectionSix = gsap.timeline();
-const sectionSixTime = 1;
+const sectionSixTime = 0.6;
 
-sectionSix.from("#hero-6", {duration: sectionSixTime, alpha:0, x:-100})
+sectionSix.from("#hero-6", {duration:1.5, alpha:0, x:-100})
             .from("#address", {duration: sectionSixTime, alpha:0, x:-100}, "-=0.3")   
             .from("#phone", {duration: sectionSixTime, alpha:0, x:-100}, "-=0.3")
             .from("#email", {duration: sectionSixTime, alpha:0, x:-100}, "-=0.3");
