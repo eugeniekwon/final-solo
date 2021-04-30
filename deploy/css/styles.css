@@ -677,7 +677,7 @@ header {
           display: grid !important;
           grid-template-areas: ". nav-container ";
           grid-template-columns: 5% auto;
-          padding: 0 45px; } }
+          padding: 0px 45px 20px 45px; } }
       header > div #nav-container > div {
         display: flex;
         justify-content: flex-end;
